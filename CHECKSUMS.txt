@@ -1,0 +1,18 @@
+# SHA-256 checksums
+# generated (UTC): 2026-09-13 21:41:18
+# The instrument was frozen 2026-09-12; round 1 was run 2026-09-13.
+
+a8df71f40668faea78b78212916574ed2a9b3316ab3f8b02fb4c65ef0d9afc87  CITATION.cff
+1c7f82fdbc909bbef4390dbe4dc29d018e460887e4dfb0ae9ca4eb975bbd67df  LICENSE
+5ca3ce4bb05068cffe83a08a2dd03a9688b606b9591d94b5d665fe236a76f3bb  README.md
+5080f81bace4b282f4dc09db650d35206ca8c544982e5e6c06f680954195eeda  analysis/LICENSE
+67d98f960b739ab3624329f3b57ac096c3cd0ba00e02548b66b8c7768788eabb  analysis/character_analysis.py
+524cdc7e9d7752fe58f1828fe2fd33edc42f6b6b6b0cfc91197aa01c9b42f459  data/round1/conditions.md
+9b8bf75eafd279098e391023b517d21801c7405dd8b298b678a72401caa62c04  data/round1/tool1-round1-raw.txt
+0ed9aae7f7f6f138192b9fe4212f8deeaad600028231cc2bb05cd963bc260082  data/round1/tool2-round1-raw.txt
+1c08b41b5955812505c37ac6925357ce2453bde3b0993d25e01c9298fa661349  data/round1/tool3-round1-raw.txt
+5d2279f4060a3922e6c01cabd15fd055cd3ec2d656425712ec208dbdafdaa03c  data/round1/tool4-round1-raw.txt
+ead3700d79dae7ddf1c5969309d866b39cf3c79b65cbe497e7f5112cbc691e87  data/round1/tool5-round1-raw.txt
+3eeee2c94eaa4ca7b926b174d7580aed892cef8d9e9938fa1e65ed85c5e1ec42  protocol/coding-scheme.md
+e8f6fb82c4fbfc43ffd77e9dc5087795c3250b7101aaf35de23fe8762631c2ae  protocol/instrument-v1.0.0.md
+59fda58697616035f930b2da6a112977a3efb196fae31983d8ecc7d78988784a  protocol/source-paragraph-ady.txt

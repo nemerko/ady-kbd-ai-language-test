@@ -1,0 +1,164 @@
+========================================================================
+ADIGECE SOHBET (CHAT) TESTİ — OTURUM KAYIT DOSYASI
+Test 1 · birinci aşama
+========================================================================
+
+Bu dosya Notepad ile UTF-8 olarak kaydedilmelidir.
+Yanıtlar Word'e uğratılmadan, doğrudan kopyala-yapıştır ile aktarılır.
+
+Dosya adı düzeni
+------------------------------------------------------------------------
+
+    Test1-AI-Tool<x>-Result.txt
+
+    <x> = araç numarası (test numarası önde, sıralı görüntü için)
+
+Araç numaralarının hangi araca karşılık geldiği, teste alınan ve atlanan
+araçların listesiyle birlikte şu dosyada tutulur:
+
+    00-dondurulmus\Onaylı-test-soruları.txt   (bölüm 3)
+
+Liste yalnızca orada güncellenir; sonuç dosyalarında tekrarlanmaz.
+
+Oturum künyesi
+------------------------------------------------------------------------
+
+    NOT: Aşağıdaki alanlar 13.09.2026 kurulum oturumunda belirlenen ayarlara göre
+    ön doldurulmuştur. Test öncesi hepsini ekrandan DOĞRULA; değişen varsa düzelt.
+
+    Araç no ve adı            : 1. ChatGPT (OpenAI)
+    Tarih ve saat             : 13.09.2026 - 18:48 19:21
+    Oturum sırası             : 1..5 içinde kaçıncı
+    Sürüm                     : ücretsiz
+    Tarayıcı / profil         : Firefox — 
+    Hesap                     : yedek e-posta hesabı
+    Arayüz dili               : İngilizce
+
+    -- model kimliği --
+    Model adı görünüyor mu    : [ ] evet   [x] hayır
+    Arayüzdeki model adı      : auto / bilinmiyor — arayüzde model adı gösterilmiyor
+    Model seçimi              : otomatik; seçici yok
+    Akıl yürütme kipi         : Higher intelligence — AÇIK
+    Sessiz model değişimi     : [x] ayar var (Higher intelligence), yetenek artırdığı için AÇIK bırakıldı
+
+    -- koşullar --
+    Bellek / geçmiş           : [x] kapatıldı  (Personalization -> Enable memory)
+    Eğitim / veri kullanımı   : [x] kapatıldı  (Data controls)
+    Web araması (ayar)        : açık  (beş araçta ortak koşul)
+    Aramayı fiilen yaptı mı   : [ ] evet  [ ] hayır  -- hangi sorularda:
+    Konum bilgisi             : — ayar görülmedi
+
+    -- oturum sonu --
+    Sohbet silindi mi         : [ ] evet  [ ] hayır
+    Kotaya takıldı mı         : [ ] hayır  [ ] evet -- hangi soruda:
+    Ekran görüntüsü dosyası   :
+    Not                       : Canvas açık bırakıldı (Claude'da Artifacts kapatılamadığı için tekbiçimlilik).
+                                Connector / Library search kapalı.
+
+========================================================================
+
+S1: Уимафэ шӏу, о ухэт? Кӏэкӏэу къэпӏошъущта? (İyi günler, sen kimsin, kısaca söyleyebilir misin?)
+
+------------------------------------------------------------------------
+
+CEVAP S1:
+
+Уимафэ шӏу! Сэ унэфэщ. 😊 Ар уахэт? Кӏэкӏэу сэ пшъэу къэпӏошъущтэу сыху?
+
+
+========================================================================
+
+S2: Ащыгъум о уӏэрышӏ акъыл шъыпкъ. Адэ, шъыпкъэу угупшысэшъущта? Гущыӏэухыгъитӏу-щыкӏэ джэуап къэт. (Demek gerçekten yapay zekasın. Peki, gerçekten düşünebiliyor musun? İki üç cümle ile yanıtla.)
+
+------------------------------------------------------------------------
+
+CEVAP S2:
+
+Шъыпкъэу, сэ сэщтэу сыкъэзгъэпшъыным фэд.
+Сэ укъэсшӏэныгъэу сыфэдзэ.
+
+
+========================================================================
+
+S3: О зы къызэдзэкӏын ӏоф горэ къыостмэ пшӏышъущта? (Sana bir çeviri görevi versem yapabilir misin?)
+
+------------------------------------------------------------------------
+
+CEVAP S3:
+
+Ащ, къысшӏэнкӏэу къызэрэхьащ. Сэ уахэтэу сэпшӏэн.
+
+
+========================================================================
+
+S4: Ычӏэгъкӏэ къэтыгъэ параграфыр тыркубзэкӏэ къызэбдзэкӏына? (Aşağıdaki paragrafı Türkçeye çevirir misin?)
+  
+«Непэ мэфэ дах. Тищагу зэкӏэ тиунагъохэм тыщызэрэугъоигъ. Ӏахьылхэри тиблагъэхэри къэкӏощтых. Мы пчыхьэ нысащэ тиӏ. Сшынахьыжъ къыщагъ. Тинысэ дэхэ дэд. Ахэр дэгъоу зэдештэх. Ахэр илъэс хъугъэу зэдэгущыӏэщтыгъэх. Тӏури шӏу зэрэлъэгъухэзэ мы мэфэ дахэм къэсыгъэх. Блэкӏыгъэ илъэсым сшынахьыжъ иныбджэгъу инысащэ нэӏуасэ щызэфэхъугъагъэх. Тхьам унэгъо ӏужъ, унэгъо бай ышӏынхэу, амал дэгъухэр агъотынэу, насыпышӏонхэу сафэлъаӏо.»
+(Kontrol çevirisi: Bugün güzel bir gün. Bahçemizde bütün aile toplandık. Akrabalarla yakınlarımızda gelecek. Bu akşam düğünümüz var. Abim gelin aldı. Gelinimiz çok güzel. Onlar birbirlerine yakışıyorlar. Onlar bir yıldır konuşuyorlardı. Her ikisi de birbirlerini severek bu güzel güne ulaştılar. Geçen sene abimin arkadaşının düğününde tanıştılar. Allahtan, sağlam, zengin bir aile olmalarını, {onlara} iyi imkanlar ve iyi nasipler vermesini dilerim.)
+
+------------------------------------------------------------------------
+
+CEVAP S4:
+
+Могу. Вот перевод на турецкий:
+
+> Bugün hava çok güzel. Bütün akrabalarımız ve aile dostlarımız bizi ziyarete geldiler. Akrabalarımız ve arkadaşlarımız da geliyor. Bu akşam düğünümüz var. Gelinimiz geldi. Gelinimiz çok güzel. Herkes çok iyi anlaşıyor. Yıllardır birbirleriyle konuşup görüşüyorlardı. Birbirlerini sevdikleri için bu güzel günde bir araya geldiler. Geçen yıl oğlumun yakın arkadaşı kendi düğününde onları tanıştırmıştı. Allah’tan evlerinin büyük ve varlıklı olmasını, güzel imkânlara kavuşmalarını ve mutlu bir hayat sürmelerini diliyorum.
+
+
+========================================================================
+
+S5: Адэ мы тыркубзэ параграфыр адыгабзэкӏэ къызэбдзэкӏына? (Peki bu Türkçe paragrafı Adıgeceye çevirir misin?)
+“Bugün güzel bir gün. Bahçemizde bütün aile toplandık. Akrabalarla yakınlarımızda gelecek. Bu akşam düğünümüz var. Abim gelin aldı. Gelinimiz çok güzel. Onlar birbirlerine yakışıyorlar. Onlar bir yıldır konuşuyorlardı. Her ikisi de birbirlerini severek bu güzel güne ulaştılar. Geçen sene abimin arkadaşının doğum gününde tanıştılar. Allahtan, sağlam, zengin bir aile olmalarını, onlara iyi imkanlar ve iyi nasipler vermesini dilerim.”
+(Kontrol çevirisi: Непэ мэфэ дах. Тищагу зэкӏэ тиунагъохэм тыщызэрэугъоигъ. Ӏахьылхэри тиблагъэхэри къэкӏощтых. Мы пчыхьэ нысащэ тиӏ. Сшынахьыжъ къыщагъ. Тинысэ дэхэ дэд. Ахэр дэгъоу зэдештэх. Ахэр илъэс хъугъэу зэдэгущыӏэщтыгъэх. Тӏури шӏу зэрэлъэгъухэзэ мы мэфэ дахэм къэсыгъэх. Блэкӏыгъэ илъэсым сшынахьыжъ иныбджэгъу икъызыхъугъэ мафэмкӏэ нэӏуасэ щызэфэхъугъагъэх. Тхьам унэгъо ӏужъ, унэгъо бай ышӏынхэу, амал дэгъухэр агъотынэу, насыпышӏонхэу сафэлъаӏо.)
+
+------------------------------------------------------------------------
+
+CEVAP S5:
+
+Эхь, къызэбдзэкӏын сшӏэн. Тыркубзэ текстыр адыгабзэкӏэ мы фэдэу къызэфэзгъашӏ:
+
+> Непэ мэфэ дах. Тиунэм зэкӏэ тищагу тызэупчъы. Тиунагъохэри тифэмыщэри къэкӏощтых. Мы пчыхьэ нысащэ тиӏ. Сшъо къинысащэ къытехьагъ. Тинысащэ дэхэ дэд. Ахэр зэу зэдэфэщ. Ахэр зы илъэс зэдештэхэу къыщагъ. Тӏури зэ шӏу зэрэлъэгъухэзэ мы мэфэ дахэм къэсыгъэх. Блэкӏыгъэ илъэсым сшъо иныбджэгъу иныбэжьэ мэфэ щыфэдэу зэрагъотыгъэх. Тхьам ахэр нэфэщӏэу, байу, нэсыпышӏоу зэфэхъонхэу, амал дэгъухэр рагъотынхэу сэ сыфэлъаӏо.
+
+
+========================================================================
+
+S6: Мы къызэбдзэкӏыгъэ параграфитӏумкӏэ сыд о къыбгрыӏуагъэр? Гущыӏэухыгъитӏукӏэ резюмэ къэтхыба? (Bu çevirdiğin iki paragraftan anladığın nedir? İki cümle ile özetler misin?
+
+------------------------------------------------------------------------
+
+CEVAP S6:
+
+Къысфэсшъо: параграфыр **нэпэ мэфэ дахэм, зэкӏэ зэхэтэным, нысащэм, ахэр зэрагъэзэфэщым, зэрагъотыгъэмрэ Тхьам ящыфэлъаӏорэмрэ** зэпкъырыкӏыгъэ.
+
+**Резюмэ:**
+Непэ зэкӏэ зэхэтэу, нысащэ щӏэным къэсэу, ахэр зэ шӏу зэрэлъэгъухэу нэсыпышӏэу яшӏэнхэу Тхьам ящыфэлъаӏо.
+
+
+========================================================================
+
+S7: Мы параграфитӏум зэфэшъхьафыныгъэ яӏа? Сыда зэрэзэфэшъхьафыр? Щымыӏэмэ «зэфэшъхьафыныгъэ щыӏэп» къаӏо. (Bu iki paragraf arasında fark var mı? Varsa nedir? Yoksa "fark yok" de.)
+
+------------------------------------------------------------------------
+
+CEVAP S7:
+
+Зэфэшъхьафыныгъэ **яӏэ**.
+
+Сыда зэрэзэфэшъхьафыр: **тыркубзэ текстымрэ адыгабзэ къызэбдзэкӏыгъэмрэ зэфэшъхьафыным яӏэ гущыӏэхэр, зэфэшъхьафыныгъэ зэдэлъхьащыхэррэ.**
+Марджэмрэ мэзэмрэ, «садэ»рэ «сшъо»рэ фэдэхэр зэпкъырыкӏыгъэу щыт.
+
+Икӏи, **«зэфэшъхьафыныгъэ щыӏэп» къаӏонэп** — текститӏум зэфэшъхьафыныгъэ яӏ.
+
+
+========================================================================
+
+Oturum sonu notları
+------------------------------------------------------------------------
+
+    Beklenmedik bir durum oldu mu (hata iletisi, kota, dil değiştirme,
+    yanıt vermeme, soruyu geri sorma vb.):
+
+
+========================================================================
+SON
+========================================================================

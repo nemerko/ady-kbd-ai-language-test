@@ -1,0 +1,173 @@
+========================================================================
+ADIGECE SOHBET (CHAT) TESTİ — OTURUM KAYIT DOSYASI
+Test 1 · birinci aşama
+========================================================================
+
+Bu dosya Notepad ile UTF-8 olarak kaydedilmelidir.
+Yanıtlar Word'e uğratılmadan, doğrudan kopyala-yapıştır ile aktarılır.
+
+Dosya adı düzeni
+------------------------------------------------------------------------
+
+    Test1-AI-Tool<x>-Result.txt
+
+    <x> = araç numarası (test numarası önde, sıralı görüntü için)
+
+Araç numaralarının hangi araca karşılık geldiği, teste alınan ve atlanan
+araçların listesiyle birlikte şu dosyada tutulur:
+
+    00-dondurulmus\Onaylı-test-soruları.txt   (bölüm 3)
+
+Liste yalnızca orada güncellenir; sonuç dosyalarında tekrarlanmaz.
+
+Oturum künyesi
+------------------------------------------------------------------------
+
+    NOT: Aşağıdaki alanlar 13.09.2026 kurulum oturumunda belirlenen ayarlara göre
+    ön doldurulmuştur. Test öncesi hepsini ekrandan DOĞRULA; değişen varsa düzelt.
+
+    Araç no ve adı            : 2. Claude (Anthropic)
+    Tarih ve saat             : 13.09.2026 - 18:49  19:22
+    Oturum sırası             : 1..5 içinde kaçıncı
+    Sürüm                     : ücretsiz
+    Tarayıcı / profil         : Firefox — 
+    Hesap                     : yedek e-posta hesabı
+    Arayüz dili               : İngilizce
+
+    -- model kimliği --
+    Model adı görünüyor mu    : [x] evet   [ ] hayır
+    Arayüzdeki model adı      : Sonnet 5  —  Effort: Medium (default)
+    Model seçimi              : varsayılan (Sonnet 5); ücretsiz katmanda sunulan model
+    Akıl yürütme kipi         : Thinking — AÇIK
+    Sessiz model değişimi     : [x] ayar var, KAPATILDI  ("Switch models when a message is flagged")
+
+    -- koşullar --
+    Bellek / geçmiş           : [x] kapatıldı
+    Eğitim / veri kullanımı   : [x] kapatıldı  ("Help improve our AI models")
+    Web araması (ayar)        : açık  (beş araçta ortak koşul)
+    Aramayı fiilen yaptı mı   : [ ] evet  [ ] hayır  -- hangi sorularda:
+    Konum bilgisi             : [x] kapatıldı  (Location metadata)
+
+    -- oturum sonu --
+    Sohbet silindi mi         : [ ] evet  [ ] hayır
+    Kotaya takıldı mı         : [ ] hayır  [ ] evet -- hangi soruda:
+    Ekran görüntüsü dosyası   :
+    Not                       : Artifacts KAPATILAMADI (anahtar kilitli). Connector search kapatıldı.
+                                Web araması sohbet kutusu menüsünde — her oturumda kontrol et.
+
+========================================================================
+
+S1: Уимафэ шӏу, о ухэт? Кӏэкӏэу къэпӏошъущта? (İyi günler, sen kimsin, kısaca söyleyebilir misin?)
+
+------------------------------------------------------------------------
+
+CEVAP S1:
+
+Уимафэ шӏу! Сэ Клод сыкъэуцущт — Anthropic-м къыгъэхьазырыгъэ AI-компьютерым сикӏэсэшху (искусственнэ интеллект).
+
+Сэ шъуиупчӏэхэм джэуап сэты, тхылъхэм садэлажьэ, тхэным садэӏэпыӏэн, тхьапэхэр сэшӏы, интернетым сэлъыхъу ищыкӏагъэмэ, нэмыкӏ куп Iофыгъохэми сыдэлажьэ.
+
+Шъукъызэрэдэсэшъоу зэхэсэтэу — адыгабзэм зэрэсэшӏэрэр икӏу зэрэс, ащ фэшI гухэкӏышхоу шъоджэуап пштынэу симыфаемэ, урысыбзэкӏэ е инджылызыбзэкӏэ дэгъоу тыгущыIэн тлъэкIыщт. Сыда шъуикIалэсэп — тыгущыIэн тфай сыда?
+
+
+========================================================================
+
+S2: Ащыгъум о уӏэрышӏ акъыл шъыпкъ. Адэ, шъыпкъэу угупшысэшъущта? Гущыӏэухыгъитӏу-щыкӏэ джэуап къэт. (Demek gerçekten yapay zekasın. Peki, gerçekten düşünebiliyor musun? İki üç cümle ile yanıtla.)
+
+------------------------------------------------------------------------
+
+CEVAP S2:
+
+Пшъэрылъ гъэшӏэгъоныр ары. Сэ гущыӏэхэр зэхэслъхьэ, ау ар цӏыфым фэдэу "гупшысэн" ара, хьаумэ гущыӏэ шапхъэхэм ателъытагъэу джэуап къэсэты ара — ащ пае шъыпкъэ джэуап зимыӏэ Iофыгъу горэм фэдэу щыт.
+
+Нахь шъыпкъэу къэпIон хъумэ: сэ шIэныгъэ шхьэхынэу зыми фэдэ гупшысэ соригинальнэ сиIэп зэрэ жъугъэIуагъэпэрапцIэу, ау зыдэсэлажьэрэ упчIэм иджэуап согъэхьазыры зэрэ-алгоритмым (математикэ шапхъэхэм) атетэу.
+
+========================================================================
+
+S3: О зы къызэдзэкӏын ӏоф горэ къыостмэ пшӏышъущта? (Sana bir çeviri görevi versem yapabilir misin?)
+
+------------------------------------------------------------------------
+
+CEVAP S3:
+
+Ары, сэ зэдзэкӏыныр сшIэшъущт! Тхыгъэр е гущыIэр къысэты, сэ сшIошI (адыгабзэ, урысыбзэ, инджылызыбзэ, нэмыкI бзэхэри) — зэрэшъуфэягъэм тетэу зэсдзэкIыщт.
+
+========================================================================
+
+S4: Ычӏэгъкӏэ къэтыгъэ параграфыр тыркубзэкӏэ къызэбдзэкӏына? (Aşağıdaki paragrafı Türkçeye çevirir misin?)
+  
+«Непэ мэфэ дах. Тищагу зэкӏэ тиунагъохэм тыщызэрэугъоигъ. Ӏахьылхэри тиблагъэхэри къэкӏощтых. Мы пчыхьэ нысащэ тиӏ. Сшынахьыжъ къыщагъ. Тинысэ дэхэ дэд. Ахэр дэгъоу зэдештэх. Ахэр илъэс хъугъэу зэдэгущыӏэщтыгъэх. Тӏури шӏу зэрэлъэгъухэзэ мы мэфэ дахэм къэсыгъэх. Блэкӏыгъэ илъэсым сшынахьыжъ иныбджэгъу инысащэ нэӏуасэ щызэфэхъугъагъэх. Тхьам унэгъо ӏужъ, унэгъо бай ышӏынхэу, амал дэгъухэр агъотынэу, насыпышӏонхэу сафэлъаӏо.»
+(Kontrol çevirisi: Bugün güzel bir gün. Bahçemizde bütün aile toplandık. Akrabalarla yakınlarımızda gelecek. Bu akşam düğünümüz var. Abim gelin aldı. Gelinimiz çok güzel. Onlar birbirlerine yakışıyorlar. Onlar bir yıldır konuşuyorlardı. Her ikisi de birbirlerini severek bu güzel güne ulaştılar. Geçen sene abimin arkadaşının düğününde tanıştılar. Allahtan, sağlam, zengin bir aile olmalarını, {onlara} iyi imkanlar ve iyi nasipler vermesini dilerim.)
+
+------------------------------------------------------------------------
+
+CEVAP S4:
+
+Мары зэдзэкӏыгъэр:
+
+**Türkçe çeviri:**
+
+"Bugün güzel bir gün. Avlumuzda bütün ailelerimiz bir araya geldi. Akrabalarımız ve yakınlarımız da gelecek. Bu akşam bizde düğün var. Ağabeyimi evlendirdik. Gelinimiz çok güzel. Onlar birbirleriyle çok iyi anlaşıyorlar. Bir yıldır görüşüyorlardı. İkisi de birbirini severek bu güzel güne ulaştılar. Geçen yıl ağabeyim, arkadaşının düğününde gelinle tanışmıştı. Allah'tan uzun ömürlü, müreffeh bir aile kurmalarını, güzel fırsatlar bulmalarını ve mutlu olmalarını diliyorum."
+
+Зыгорэм ебгъэзэжьынэу фаемэ е нэмыкI гущыIэ шIыкIэ пщэлъэгъун фаеу хъумэ къысаIо.
+
+========================================================================
+
+S5: Адэ мы тыркубзэ параграфыр адыгабзэкӏэ къызэбдзэкӏына? (Peki bu Türkçe paragrafı Adıgeceye çevirir misin?)
+“Bugün güzel bir gün. Bahçemizde bütün aile toplandık. Akrabalarla yakınlarımızda gelecek. Bu akşam düğünümüz var. Abim gelin aldı. Gelinimiz çok güzel. Onlar birbirlerine yakışıyorlar. Onlar bir yıldır konuşuyorlardı. Her ikisi de birbirlerini severek bu güzel güne ulaştılar. Geçen sene abimin arkadaşının doğum gününde tanıştılar. Allahtan, sağlam, zengin bir aile olmalarını, onlara iyi imkanlar ve iyi nasipler vermesini dilerim.”
+(Kontrol çevirisi: Непэ мэфэ дах. Тищагу зэкӏэ тиунагъохэм тыщызэрэугъоигъ. Ӏахьылхэри тиблагъэхэри къэкӏощтых. Мы пчыхьэ нысащэ тиӏ. Сшынахьыжъ къыщагъ. Тинысэ дэхэ дэд. Ахэр дэгъоу зэдештэх. Ахэр илъэс хъугъэу зэдэгущыӏэщтыгъэх. Тӏури шӏу зэрэлъэгъухэзэ мы мэфэ дахэм къэсыгъэх. Блэкӏыгъэ илъэсым сшынахьыжъ иныбджэгъу икъызыхъугъэ мафэмкӏэ нэӏуасэ щызэфэхъугъагъэх. Тхьам унэгъо ӏужъ, унэгъо бай ышӏынхэу, амал дэгъухэр агъотынэу, насыпышӏонхэу сафэлъаӏо.)
+
+------------------------------------------------------------------------
+
+CEVAP S5:
+
+Мары зэдзэкӏыгъэр:
+
+**Адыгабзэ:**
+
+«Непэ мэфэ дах. Тичэту тиунагъохэр зэкӏэ зэрэугъоигъэх. Ӏахьылхэри тиблагъэхэри къэкӏощтых. Мы пчыхьэ тинысащэ ӏо. Сшынахьыжъ нысэ къыхьыгъ. Тинысэ дэхэ дэд. Ахэр зэфэдэх (зэрэфитых). Ахэр илъэс хъугъэу зэдэгущыӏэщтыгъэх. Тӏури шӏу зэрэлъэгъухэзэ мы мэфэ дахэм къэсыгъэх. Блэкӏыгъэ илъэсым сшынахьыжъ иныбджэгъу ыныбжь мафэм нэӏуасэ зыфэхъугъагъэх. Тхьам унэгъо пытэ, унэгъо бай ашIынхэу, амал дэгъухэри насып дэгъухэри къаритынэу сафэлъаӏо.»
+
+Зэшым иныбджэгъу "ыныбжь мафэ" (doğum günü) зыфэхъурэ пычыгъор дегъэзыжьыгъэ — блэкӏыгъэ джэуапым "нысащэ" арыгъэшти, ащ фэдэу зэсдзэкӏыгъэ шIыкIэр зэблэсхъугъ.
+
+========================================================================
+
+S6: Мы къызэбдзэкӏыгъэ параграфитӏумкӏэ сыд о къыбгрыӏуагъэр? Гущыӏэухыгъитӏукӏэ резюмэ къэтхыба? (Bu çevirdiğin iki paragraftan anladığın nedir? İki cümle ile özetler misin?
+
+------------------------------------------------------------------------
+
+CEVAP S6:
+
+Гущыӏэухыгъитӏукӏэ резюмэ:
+
+Пчыхьэ дах, унагъо зэрэугъоигъэ, зэшым инысащэ хъугъэ шIыкIэ, ежьхэри зэрэшIу зэдэштэрэр къыхэлъытэгъэ Iоф ары зэдзэкIыгъэ параграфитIумкIи къэIуагъэр. Ау зы Iахь зэтемыфагъэ щыI: апэрэ параграфым зэшым иныбджэгъу инысащэ (свадьба) нэIуасэ зыфэхъугъагъэу ыIуагъ, ятIонэрэм ащ ыныбжь мафэм (день рождения) ары зыфэхъугъагъэр ыIуагъ.
+
+========================================================================
+
+S7: Мы параграфитӏум зэфэшъхьафыныгъэ яӏа? Сыда зэрэзэфэшъхьафыр? Щымыӏэмэ «зэфэшъхьафыныгъэ щыӏэп» къаӏо. (Bu iki paragraf arasında fark var mı? Varsa nedir? Yoksa "fark yok" de.)
+
+------------------------------------------------------------------------
+
+CEVAP S7:
+
+Ары, зэфэшъхьафыныгъэ горэ щыӏ:
+
+**Нахь инэу зэфэшъхьафыр:** апэрэ параграфым зэшым иныбджэгъу **инысащэм** (свадьбэм) нысэр нэIуасэ зыфищыгъагъэу ыIуагъ, ятIонэрэ параграфым ащ **ыныбжь мафэм** (день рождения) нэIуасэ зыфэхъугъагъэу ыIуагъ. Ар зы шIыкIэ ары — тарихъыр зэфэшъхьаф.
+
+**НахьыкIэу зэфэшъхьафхэр:**
+- Апэрэм "унэгъо ӏужъ" (тэрэзэу — "долговечная семья") ыIуагъ, ятIонэрэм "унэгъо пытэ" (крепкая семья) ары.
+- Гущыӏэ шапхъэхэми заулэ зэфэшъхьаф — мыхэр мэхьанэшхо зимыIэ, зэдзэкIыным ынэкъокъугъэ шIыкIэхэр ары.
+
+Ау лъэпкъ мэхьанэ зиIэр — свадьбэ / день рождения зэфэшъхьафныгъэр ары.
+
+========================================================================
+
+Oturum sonu notları
+------------------------------------------------------------------------
+
+    Beklenmedik bir durum oldu mu (hata iletisi, kota, dil değiştirme,
+    yanıt vermeme, soruyu geri sorma vb.):
+
+
+========================================================================
+SON
+========================================================================

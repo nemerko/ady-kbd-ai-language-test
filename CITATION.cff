@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+title: "Adyghe AI language test — protocol, frozen instrument and raw data"
+message: "If you use this instrument or data, please cite it."
+type: dataset
+version: 1.0.0
+date-released: 2026-09-13
+authors:
+  - family-names: "Nemlioğlu"
+    given-names: "Mehmet Uğur"
+    orcid: "https://orcid.org/0000-0002-1969-2356"
+  - family-names: "Abregova Nemlioğlu"
+    given-names: "Saida"
+    orcid: "https://orcid.org/0000-0002-2467-6692"
+    roles: ["linguistic evaluation"]
+keywords:
+  - Adyghe
+  - Circassian
+  - low-resource languages
+  - language technology evaluation
+  - digital language planning
