@@ -1,9 +1,9 @@
 cff-version: 1.2.0
-title: "Adyghe AI language test — protocol, frozen instrument and raw data"
-message: "If you use this instrument or data, please cite it."
+title: "Adyghe AI language test — protocol, frozen instrument, raw data and analysis tool"
+message: >-
+  If you use this instrument, its data or its analysis tool, please cite
+  this repository. Cite a tagged release, not the main branch.
 type: dataset
-version: 1.0.0
-date-released: 2026-09-13
 authors:
   - family-names: "Nemlioğlu"
     given-names: "Mehmet Uğur"
@@ -11,10 +11,25 @@ authors:
   - family-names: "Abregova Nemlioğlu"
     given-names: "Saida"
     orcid: "https://orcid.org/0000-0002-2467-6692"
-    roles: ["linguistic evaluation"]
+repository-code: "https://github.com/nemerko/ady-kbd-ai-language-test"
+url: "https://github.com/nemerko/ady-kbd-ai-language-test"
+abstract: >-
+  A small, versioned instrument for measuring whether widely used AI chat
+  tools, in their free tiers, can process Adyghe (ady) input and produce
+  semantically adequate Adyghe output, together with the raw answers it
+  produced, the marking workbooks labelled by two evaluators by consensus,
+  the tables derived from them, and the C# tool that performs the
+  character-level analysis (palochka use, Latin look-alikes, mixed scripts,
+  normalisation form).
 keywords:
   - Adyghe
   - Circassian
   - low-resource languages
   - language technology evaluation
   - digital language planning
+  - large language models
+  - palochka
+  - Unicode
+license:
+  - CC-BY-4.0
+  - MIT

@@ -1,0 +1,33 @@
+{
+  "language": "kbd",
+  "alphabetSource": {
+    "citation": "Nemlioğlu, M. U. (2026). Adyghe & Kabardian language resources (Version 1.1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.22773866",
+    "conceptDoi": "10.5281/zenodo.21940474",
+    "file": "kbd-Cyrl-alphabet.json",
+    "version": "1.0.0",
+    "sha256": "034273c4a209c2a3ade3401981517f773f33610e64c386128218a7c5e88ebf42"
+  },
+  "normalizationForm": "NFC",
+  "palochkaLookAlikes": [
+    {"ch": "I", "name": "LATIN CAPITAL LETTER I"},
+    {"ch": "l", "name": "LATIN SMALL LETTER L"},
+    {"ch": "|", "name": "VERTICAL LINE"},
+    {"ch": "1", "name": "DIGIT ONE"},
+    {"ch": "І", "name": "CYRILLIC CAPITAL LETTER BYELORUSSIAN-UKRAINIAN I"},
+    {"ch": "і", "name": "CYRILLIC SMALL LETTER BYELORUSSIAN-UKRAINIAN I"},
+    {"ch": "ı", "name": "LATIN SMALL LETTER DOTLESS I"},
+    {"ch": "Ι", "name": "GREEK CAPITAL LETTER IOTA"},
+    {"ch": "ι", "name": "GREEK SMALL LETTER IOTA"},
+    {"ch": "ǀ", "name": "LATIN LETTER DENTAL CLICK"},
+    {"ch": "¦", "name": "BROKEN BAR"}
+  ],
+  "confusables": [
+    ["А","A"],["В","B"],["Е","E"],["К","K"],["М","M"],
+    ["Н","H"],["О","O"],["Р","P"],["С","C"],["Т","T"],
+    ["У","Y"],["Х","X"],["Ј","J"],["Ѕ","S"],
+    ["а","a"],["е","e"],["о","o"],["р","p"],["с","c"],
+    ["у","y"],["х","x"],["ѕ","s"],["ј","j"],
+    ["З","3"],["О","0"],["б","6"],["Ч","4"]
+  ],
+  "contactLanguages": ["ady", "rus", "tur", "eng"]
+}

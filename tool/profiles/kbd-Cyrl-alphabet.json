@@ -1,0 +1,544 @@
+{
+  "format_version": "1.0",
+  "id": "kbd-Cyrl-alphabet",
+  "title": "Kabardian (kbd) Cyrillic Alphabet",
+  "description": "The letters of the Kabardian Cyrillic alphabet in alphabetical order with their lower-, title- and upper-case forms, together with the auxiliary letters used for dialectal sounds that are not part of the official alphabet. Intended as the source object for collation, validation, keyboard work and for the transliteration and IPA tables derived from it.",
+  "version": "1.0.0",
+  "updated": "2026-09-15",
+  "status": "stable",
+  "language": "kbd",
+  "script": "Cyrl",
+  "documentation": "./kbd-Cyrl-alphabet.md",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "authors": [
+    {
+      "name": "M. Uğur Nemlioğlu",
+      "orcid": "0000-0002-1969-2356"
+    }
+  ],
+  "cite_as": "Nemlioğlu, M. U. (2026). Kabardian (kbd) Cyrillic Alphabet (Version 1.0.0) [Data set]. ady-kbd-language-resources. https://github.com/nemerko/ady-kbd-language-resources",
+  "unicode_normalisation": "NFC",
+  "exemplar_main": "а э б в г {гу} {гъ} {гъу} д {дж} {дз} е ё ж {жь} з и й к {ку} {кӏ} {кӏу} {къ} {къу} {кхъ} {кхъу} л {лъ} {лӏ} м н о п {пӏ} р с т {тӏ} у ф {фӏ} х {ху} {хь} {хъ} {хъу} ц {цӏ} ч ш щ {щӏ} ъ ы ь ю я ӏ {ӏу}",
+  "exemplar_auxiliary": "{гь} {кь} {кӏь}",
+  "exemplar_syntax": "Unicode CLDR exemplar notation: a space separates letters; braces group the characters of a multi-character letter.",
+  "letter_count": 59,
+  "auxiliary_count": 3,
+  "characters_of_note": {
+    "palochka_upper": "Ӏ",
+    "palochka_lower": "ӏ",
+    "note": "U+04C0 and U+04CF. Never the Latin capital I (U+0049), the Latin small l (U+006C) or the digit 1 (U+0031)."
+  },
+  "rules": {
+    "order": "Alphabetical order is given by \"alphabet_index\". Do not sort by codepoint: ё is U+0451 and would fall after я.",
+    "matching": "When matching letters in running text, sort the entries by the length of \"cyrl_lower\", longest first. The array is in alphabetical order and must not be applied in that order.",
+    "case": "\"cyrl_title\" uppercases the first character only; \"cyrl_upper\" uppercases every character. For multi-character letters these are different strings (кӏ -> Кӏ / КӀ). Do not derive one from the other at runtime.",
+    "auxiliary": "Letters that occur in real material but are not part of the official Kabardian alphabet. They are kept out of \"main\" and carry no position in the alphabetical order. The \"dialect\" field records where each one is used.",
+    "characters": "\"characters\" is derived from the single-character entries of \"main\". Use it to test whether a character belongs to the alphabet; use \"main\" for anything letter-based."
+  },
+  "main": [
+    {
+      "n": 1,
+      "alphabet_index": 1,
+      "cyrl_lower": "а",
+      "cyrl_title": "А",
+      "cyrl_upper": "А",
+      "type": "single"
+    },
+    {
+      "n": 2,
+      "alphabet_index": 2,
+      "cyrl_lower": "э",
+      "cyrl_title": "Э",
+      "cyrl_upper": "Э",
+      "type": "single"
+    },
+    {
+      "n": 3,
+      "alphabet_index": 3,
+      "cyrl_lower": "б",
+      "cyrl_title": "Б",
+      "cyrl_upper": "Б",
+      "type": "single"
+    },
+    {
+      "n": 4,
+      "alphabet_index": 4,
+      "cyrl_lower": "в",
+      "cyrl_title": "В",
+      "cyrl_upper": "В",
+      "type": "single"
+    },
+    {
+      "n": 5,
+      "alphabet_index": 5,
+      "cyrl_lower": "г",
+      "cyrl_title": "Г",
+      "cyrl_upper": "Г",
+      "type": "single"
+    },
+    {
+      "n": 6,
+      "alphabet_index": 6,
+      "cyrl_lower": "гу",
+      "cyrl_title": "Гу",
+      "cyrl_upper": "ГУ",
+      "type": "digraph"
+    },
+    {
+      "n": 7,
+      "alphabet_index": 7,
+      "cyrl_lower": "гъ",
+      "cyrl_title": "Гъ",
+      "cyrl_upper": "ГЪ",
+      "type": "digraph"
+    },
+    {
+      "n": 8,
+      "alphabet_index": 8,
+      "cyrl_lower": "гъу",
+      "cyrl_title": "Гъу",
+      "cyrl_upper": "ГЪУ",
+      "type": "trigraph"
+    },
+    {
+      "n": 9,
+      "alphabet_index": 9,
+      "cyrl_lower": "д",
+      "cyrl_title": "Д",
+      "cyrl_upper": "Д",
+      "type": "single"
+    },
+    {
+      "n": 10,
+      "alphabet_index": 10,
+      "cyrl_lower": "дж",
+      "cyrl_title": "Дж",
+      "cyrl_upper": "ДЖ",
+      "type": "digraph"
+    },
+    {
+      "n": 11,
+      "alphabet_index": 11,
+      "cyrl_lower": "дз",
+      "cyrl_title": "Дз",
+      "cyrl_upper": "ДЗ",
+      "type": "digraph"
+    },
+    {
+      "n": 12,
+      "alphabet_index": 12,
+      "cyrl_lower": "е",
+      "cyrl_title": "Е",
+      "cyrl_upper": "Е",
+      "type": "single"
+    },
+    {
+      "n": 13,
+      "alphabet_index": 13,
+      "cyrl_lower": "ё",
+      "cyrl_title": "Ё",
+      "cyrl_upper": "Ё",
+      "type": "single"
+    },
+    {
+      "n": 14,
+      "alphabet_index": 14,
+      "cyrl_lower": "ж",
+      "cyrl_title": "Ж",
+      "cyrl_upper": "Ж",
+      "type": "single"
+    },
+    {
+      "n": 15,
+      "alphabet_index": 15,
+      "cyrl_lower": "жь",
+      "cyrl_title": "Жь",
+      "cyrl_upper": "ЖЬ",
+      "type": "digraph"
+    },
+    {
+      "n": 16,
+      "alphabet_index": 16,
+      "cyrl_lower": "з",
+      "cyrl_title": "З",
+      "cyrl_upper": "З",
+      "type": "single"
+    },
+    {
+      "n": 17,
+      "alphabet_index": 17,
+      "cyrl_lower": "и",
+      "cyrl_title": "И",
+      "cyrl_upper": "И",
+      "type": "single"
+    },
+    {
+      "n": 18,
+      "alphabet_index": 18,
+      "cyrl_lower": "й",
+      "cyrl_title": "Й",
+      "cyrl_upper": "Й",
+      "type": "single"
+    },
+    {
+      "n": 19,
+      "alphabet_index": 19,
+      "cyrl_lower": "к",
+      "cyrl_title": "К",
+      "cyrl_upper": "К",
+      "type": "single"
+    },
+    {
+      "n": 20,
+      "alphabet_index": 20,
+      "cyrl_lower": "ку",
+      "cyrl_title": "Ку",
+      "cyrl_upper": "КУ",
+      "type": "digraph"
+    },
+    {
+      "n": 21,
+      "alphabet_index": 21,
+      "cyrl_lower": "кӏ",
+      "cyrl_title": "Кӏ",
+      "cyrl_upper": "КӀ",
+      "type": "digraph"
+    },
+    {
+      "n": 22,
+      "alphabet_index": 22,
+      "cyrl_lower": "кӏу",
+      "cyrl_title": "Кӏу",
+      "cyrl_upper": "КӀУ",
+      "type": "trigraph"
+    },
+    {
+      "n": 23,
+      "alphabet_index": 23,
+      "cyrl_lower": "къ",
+      "cyrl_title": "Къ",
+      "cyrl_upper": "КЪ",
+      "type": "digraph"
+    },
+    {
+      "n": 24,
+      "alphabet_index": 24,
+      "cyrl_lower": "къу",
+      "cyrl_title": "Къу",
+      "cyrl_upper": "КЪУ",
+      "type": "trigraph"
+    },
+    {
+      "n": 25,
+      "alphabet_index": 25,
+      "cyrl_lower": "кхъ",
+      "cyrl_title": "Кхъ",
+      "cyrl_upper": "КХЪ",
+      "type": "trigraph"
+    },
+    {
+      "n": 26,
+      "alphabet_index": 26,
+      "cyrl_lower": "кхъу",
+      "cyrl_title": "Кхъу",
+      "cyrl_upper": "КХЪУ",
+      "type": "tetragraph"
+    },
+    {
+      "n": 27,
+      "alphabet_index": 27,
+      "cyrl_lower": "л",
+      "cyrl_title": "Л",
+      "cyrl_upper": "Л",
+      "type": "single"
+    },
+    {
+      "n": 28,
+      "alphabet_index": 28,
+      "cyrl_lower": "лъ",
+      "cyrl_title": "Лъ",
+      "cyrl_upper": "ЛЪ",
+      "type": "digraph"
+    },
+    {
+      "n": 29,
+      "alphabet_index": 29,
+      "cyrl_lower": "лӏ",
+      "cyrl_title": "Лӏ",
+      "cyrl_upper": "ЛӀ",
+      "type": "digraph"
+    },
+    {
+      "n": 30,
+      "alphabet_index": 30,
+      "cyrl_lower": "м",
+      "cyrl_title": "М",
+      "cyrl_upper": "М",
+      "type": "single"
+    },
+    {
+      "n": 31,
+      "alphabet_index": 31,
+      "cyrl_lower": "н",
+      "cyrl_title": "Н",
+      "cyrl_upper": "Н",
+      "type": "single"
+    },
+    {
+      "n": 32,
+      "alphabet_index": 32,
+      "cyrl_lower": "о",
+      "cyrl_title": "О",
+      "cyrl_upper": "О",
+      "type": "single"
+    },
+    {
+      "n": 33,
+      "alphabet_index": 33,
+      "cyrl_lower": "п",
+      "cyrl_title": "П",
+      "cyrl_upper": "П",
+      "type": "single"
+    },
+    {
+      "n": 34,
+      "alphabet_index": 34,
+      "cyrl_lower": "пӏ",
+      "cyrl_title": "Пӏ",
+      "cyrl_upper": "ПӀ",
+      "type": "digraph"
+    },
+    {
+      "n": 35,
+      "alphabet_index": 35,
+      "cyrl_lower": "р",
+      "cyrl_title": "Р",
+      "cyrl_upper": "Р",
+      "type": "single"
+    },
+    {
+      "n": 36,
+      "alphabet_index": 36,
+      "cyrl_lower": "с",
+      "cyrl_title": "С",
+      "cyrl_upper": "С",
+      "type": "single"
+    },
+    {
+      "n": 37,
+      "alphabet_index": 37,
+      "cyrl_lower": "т",
+      "cyrl_title": "Т",
+      "cyrl_upper": "Т",
+      "type": "single"
+    },
+    {
+      "n": 38,
+      "alphabet_index": 38,
+      "cyrl_lower": "тӏ",
+      "cyrl_title": "Тӏ",
+      "cyrl_upper": "ТӀ",
+      "type": "digraph"
+    },
+    {
+      "n": 39,
+      "alphabet_index": 39,
+      "cyrl_lower": "у",
+      "cyrl_title": "У",
+      "cyrl_upper": "У",
+      "type": "single"
+    },
+    {
+      "n": 40,
+      "alphabet_index": 40,
+      "cyrl_lower": "ф",
+      "cyrl_title": "Ф",
+      "cyrl_upper": "Ф",
+      "type": "single"
+    },
+    {
+      "n": 41,
+      "alphabet_index": 41,
+      "cyrl_lower": "фӏ",
+      "cyrl_title": "Фӏ",
+      "cyrl_upper": "ФӀ",
+      "type": "digraph"
+    },
+    {
+      "n": 42,
+      "alphabet_index": 42,
+      "cyrl_lower": "х",
+      "cyrl_title": "Х",
+      "cyrl_upper": "Х",
+      "type": "single"
+    },
+    {
+      "n": 43,
+      "alphabet_index": 43,
+      "cyrl_lower": "ху",
+      "cyrl_title": "Ху",
+      "cyrl_upper": "ХУ",
+      "type": "digraph"
+    },
+    {
+      "n": 44,
+      "alphabet_index": 44,
+      "cyrl_lower": "хь",
+      "cyrl_title": "Хь",
+      "cyrl_upper": "ХЬ",
+      "type": "digraph"
+    },
+    {
+      "n": 45,
+      "alphabet_index": 45,
+      "cyrl_lower": "хъ",
+      "cyrl_title": "Хъ",
+      "cyrl_upper": "ХЪ",
+      "type": "digraph"
+    },
+    {
+      "n": 46,
+      "alphabet_index": 46,
+      "cyrl_lower": "хъу",
+      "cyrl_title": "Хъу",
+      "cyrl_upper": "ХЪУ",
+      "type": "trigraph"
+    },
+    {
+      "n": 47,
+      "alphabet_index": 47,
+      "cyrl_lower": "ц",
+      "cyrl_title": "Ц",
+      "cyrl_upper": "Ц",
+      "type": "single"
+    },
+    {
+      "n": 48,
+      "alphabet_index": 48,
+      "cyrl_lower": "цӏ",
+      "cyrl_title": "Цӏ",
+      "cyrl_upper": "ЦӀ",
+      "type": "digraph"
+    },
+    {
+      "n": 49,
+      "alphabet_index": 49,
+      "cyrl_lower": "ч",
+      "cyrl_title": "Ч",
+      "cyrl_upper": "Ч",
+      "type": "single"
+    },
+    {
+      "n": 50,
+      "alphabet_index": 50,
+      "cyrl_lower": "ш",
+      "cyrl_title": "Ш",
+      "cyrl_upper": "Ш",
+      "type": "single"
+    },
+    {
+      "n": 51,
+      "alphabet_index": 51,
+      "cyrl_lower": "щ",
+      "cyrl_title": "Щ",
+      "cyrl_upper": "Щ",
+      "type": "single"
+    },
+    {
+      "n": 52,
+      "alphabet_index": 52,
+      "cyrl_lower": "щӏ",
+      "cyrl_title": "Щӏ",
+      "cyrl_upper": "ЩӀ",
+      "type": "digraph"
+    },
+    {
+      "n": 53,
+      "alphabet_index": 53,
+      "cyrl_lower": "ъ",
+      "cyrl_title": "Ъ",
+      "cyrl_upper": "Ъ",
+      "type": "single"
+    },
+    {
+      "n": 54,
+      "alphabet_index": 54,
+      "cyrl_lower": "ы",
+      "cyrl_title": "Ы",
+      "cyrl_upper": "Ы",
+      "type": "single"
+    },
+    {
+      "n": 55,
+      "alphabet_index": 55,
+      "cyrl_lower": "ь",
+      "cyrl_title": "Ь",
+      "cyrl_upper": "Ь",
+      "type": "single"
+    },
+    {
+      "n": 56,
+      "alphabet_index": 56,
+      "cyrl_lower": "ю",
+      "cyrl_title": "Ю",
+      "cyrl_upper": "Ю",
+      "type": "single"
+    },
+    {
+      "n": 57,
+      "alphabet_index": 57,
+      "cyrl_lower": "я",
+      "cyrl_title": "Я",
+      "cyrl_upper": "Я",
+      "type": "single"
+    },
+    {
+      "n": 58,
+      "alphabet_index": 58,
+      "cyrl_lower": "ӏ",
+      "cyrl_title": "Ӏ",
+      "cyrl_upper": "Ӏ",
+      "type": "single"
+    },
+    {
+      "n": 59,
+      "alphabet_index": 59,
+      "cyrl_lower": "ӏу",
+      "cyrl_title": "Ӏу",
+      "cyrl_upper": "ӀУ",
+      "type": "digraph"
+    }
+  ],
+  "auxiliary": [
+    {
+      "n": 1,
+      "dialect": "some sub-dialects",
+      "cyrl_lower": "гь",
+      "cyrl_title": "Гь",
+      "cyrl_upper": "ГЬ",
+      "type": "digraph"
+    },
+    {
+      "n": 2,
+      "dialect": "some sub-dialects",
+      "cyrl_lower": "кь",
+      "cyrl_title": "Кь",
+      "cyrl_upper": "КЬ",
+      "type": "digraph"
+    },
+    {
+      "n": 3,
+      "dialect": "some sub-dialects",
+      "cyrl_lower": "кӏь",
+      "cyrl_title": "Кӏь",
+      "cyrl_upper": "КӀЬ",
+      "type": "trigraph"
+    }
+  ],
+  "characters": {
+    "count": 34,
+    "lower": "аэбвгдеёжзийклмнопрстуфхцчшщъыьюяӏ",
+    "upper": "АЭБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЮЯӀ"
+  }
+}

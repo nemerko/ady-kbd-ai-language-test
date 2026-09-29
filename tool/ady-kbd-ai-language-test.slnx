@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/AdyKbdTest.Cli/AdyKbdTest.Cli.csproj" />
+    <Project Path="src/AdyKbdTest.Instrument/AdyKbdTest.Instrument.csproj" />
+    <Project Path="src/AdyKbdTest.TextAnalysis/AdyKbdTest.TextAnalysis.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/AdyKbdTest.Tests/AdyKbdTest.Tests.csproj" />
+  </Folder>
+</Solution>

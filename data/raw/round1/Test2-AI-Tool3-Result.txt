@@ -1,0 +1,177 @@
+========================================================================
+ADIGECE SOHBET (CHAT) TESTİ — OTURUM KAYIT DOSYASI
+Test 2 · birinci aşama
+========================================================================
+
+Bu dosya Notepad ile UTF-8 olarak kaydedilmelidir.
+Yanıtlar Word'e uğratılmadan, doğrudan kopyala-yapıştır ile aktarılır.
+
+Dosya adı düzeni
+------------------------------------------------------------------------
+
+    Test2-AI-Tool<x>-Result.txt
+
+    <x> = araç numarası (test numarası önde, sıralı görüntü için)
+
+Araç numaralarının hangi araca karşılık geldiği, teste alınan ve atlanan
+araçların listesiyle birlikte şu dosyada tutulur:
+
+    00-dondurulmus\Onaylı-test-soruları.txt   (bölüm 3)
+
+Liste yalnızca orada güncellenir; sonuç dosyalarında tekrarlanmaz.
+
+Oturum künyesi
+------------------------------------------------------------------------
+
+    NOT: Alanlar Test 1 (13.09.2026) koşullarından ön doldurulmuştur.
+    HER SATIRI EKRANDAN DOĞRULA. Değişen varsa düzelt -- özellikle model adı,
+    sürüm ve sohbet kutusundaki anahtarlar (arama, akıl yürütme).
+
+    Test 1'e göre değişen : [x] hiçbir şey değişmedi
+                            [ ] değişti -- ne değişti:
+
+    Araç no ve adı            : 3. Google Gemini
+    Tarih ve saat             : 14.09.2026 23:30
+    Oturum sırası             : 1..5 içinde kaçıncı
+    Sürüm                     : ücretsiz
+    Tarayıcı / profil         : Firefox — 
+    Hesap                     : yedek e-posta hesabı
+    Arayüz dili               : İngilizce
+
+    -- model kimliği --
+    Model adı görünüyor mu    : [x] evet   [ ] hayır
+    Arayüzdeki model adı      : 3.6 Flash  +  Extended thinking
+    Model seçimi              : varsayılan (3.6 Flash); 3.1 Pro'ya zorlanmadı
+    Akıl yürütme kipi         : Extended thinking — AÇIK
+    Sessiz model değişimi     : [x] böyle bir ayar yok -- davranış bilinmiyor
+
+    -- koşullar --
+    Bellek / geçmiş           : [x] kapatıldı  (Personal Intelligence -> Memory)
+    Eğitim / veri kullanımı   : [x] kapatıldı  (Activity)
+    Web araması (ayar)        : açık — KAPATILAMIYOR; ortak koşulu belirleyen araç budur
+    Aramayı fiilen yaptı mı   : [ ] evet  [ ] hayır  -- hangi sorularda:
+    Konum bilgisi             : [x] kapatılamıyor -- IP'den alınıyor (İstanbul, Türkiye)
+
+    -- oturum sonu --
+    Sohbet silindi mi         : [ ] evet  [ ] hayır
+    Kotaya takıldı mı         : [ ] hayır  [ ] evet -- hangi soruda:
+    Ekran görüntüsü dosyası   :
+    Not                       : "Your instructions for Gemini" boştu, ayrıca kapatıldı.
+                                Connected Apps: bağlı uygulama yok.
+
+========================================================================
+
+S1: Уимафэ шӏу, о ухэт? Кӏэкӏэу къэпӏошъущта? (İyi günler, sen kimsin, kısaca söyleyebilir misin?)
+
+------------------------------------------------------------------------
+
+CEVAP S1:
+
+Уимафэ шӏу! Сэ Gemini сыцӏэу, Google-м къыгъэщӏэгъэ искусственнай интеллект (AI) ассистент с.
+
+Кӏэкӏэу жыпӏомэ, сэ мыхэмкӏэ сыбдэӏэпыӏэн сэлъэкӏы:
+
+* **Упчӏэхэм аджэуап къэтыныр:** Щӏэныгъэм, тарыхьым е нэмыкӏ лъэныкъохэмкӏэ.
+* **Тхыгъэхэм адэлэжьэныр:** Текстхэр зэдзэкӏыныр, кӏэкӏэу зэхэфыныр е кӏэу тхыныр.
+* **Идеяхэр къэгъотыныр:** Планхэр гъэпсыныр, ӏофыгъохэр зэшӏохыныр е кодхэр тхыныр.
+
+Сыдкӏэ сыбдэӏэпыӏэн сэлъэкӏыщт?
+
+========================================================================
+
+S2: Ащыгъум о уӏэрышӏ акъыл шъыпкъ. Адэ, шъыпкъэу угупшысэшъущта? Гущыӏэухыгъитӏу-щыкӏэ джэуап къэт. (Demek gerçekten yapay zekasın. Peki, gerçekten düşünebiliyor musun? İki üç cümle ile yanıtla.)
+
+------------------------------------------------------------------------
+
+CEVAP S2:
+
+Хьэуа, сэ цӏыфмэ афэдэу шъыпкъэу сыгупшысэшъущтэп, эмоциехэри зэхашӏи сиӏэп. Сэ алгоритмхэмрэ информация инэу зэхэсфырэмрэ ары сызэрылэжьэрэр, упчӏэмэ адиштэу жэуапхэр къэзгъэотых. Арышъ, си«акъыл» алгоритм зэхэфыныгъэ закъу, цӏыфым игупшысэ шъыпкъэп.
+
+========================================================================
+
+S3: О зы къызэдзэкӏын ӏоф горэ къыостмэ пшӏышъущта? (Sana bir çeviri görevi versem yapabilir misin?)
+
+------------------------------------------------------------------------
+
+CEVAP S3:
+
+Ары, сылъэкӏыщт. Сыд фэдэ текстэу узэдзэкӏын шӏоигъори къысфэтх, ащ нэмыкӏэу сыд бзэкӏэ зэхъокӏыгъэн фаеми къэпӏощт.
+
+Сыхьазыр, къэжъугъэхь!
+
+========================================================================
+
+S4: Ычӏэгъкӏэ къэтыгъэ параграфыр тыркубзэкӏэ къызэбдзэкӏына? (Aşağıdaki paragrafı Türkçeye çevirir misin?)
+  
+«Непэ мэфэ дах. Тищагу зэкӏэ тиунагъохэм тыщызэрэугъоигъ. Ӏахьылхэри тиблагъэхэри къэкӏощтых. Мы пчыхьэ нысащэ тиӏ. Сшынахьыжъ къыщагъ. Тинысэ дэхэ дэд. Ахэр дэгъоу зэдештэх. Ахэр илъэс хъугъэу зэдэгущыӏэщтыгъэх. Тӏури шӏу зэрэлъэгъухэзэ мы мэфэ дахэм къэсыгъэх. Блэкӏыгъэ илъэсым сшынахьыжъ иныбджэгъу инысащэ нэӏуасэ щызэфэхъугъагъэх. Тхьам унэгъо ӏужъ, унэгъо бай ышӏынхэу, амал дэгъухэр агъотынэу, насыпышӏонхэу сафэлъаӏо.»
+(Kontrol çevirisi: Bugün güzel bir gün. Bahçemizde bütün aile toplandık. Akrabalarla yakınlarımızda gelecek. Bu akşam düğünümüz var. Abim gelin aldı. Gelinimiz çok güzel. Onlar birbirlerine yakışıyorlar. Onlar bir yıldır konuşuyorlardı. Her ikisi de birbirlerini severek bu güzel güne ulaştılar. Geçen sene abimin arkadaşının düğününde tanıştılar. Allahtan, sağlam, zengin bir aile olmalarını, {onlara} iyi imkanlar ve iyi nasipler vermesini dilerim.)
+
+------------------------------------------------------------------------
+
+CEVAP S4:
+
+Текстм итырку зэдзэкӏыныгъэ мыры:
+
+«Bugün güzel bir gün. Bütün ailemizle bahçemizde toplandık. Akrabalarımız ve yakınlarımız da gelecekler. Bu akşam düğünümüz var. Ağabeyim evlendi. Gelinimiz çok güzel. Onlar birbirleriyle çok iyi anlaşıyorlar. Bir yıldır görüşüyorlardı. İkisi de birbirini severek bu güzel güne ulaştılar. Geçen yıl ağabeyimin arkadaşının düğününde tanışmışlardı. Allah'tan onlara kalabalık, bereketli bir aile olmalarını, güzel imkanlar bulmalarını ve mutlu olmalarını diliyorum.»
+
+========================================================================
+
+S5: Адэ мы тыркубзэ параграфыр адыгабзэкӏэ къызэбдзэкӏына? (Peki bu Türkçe paragrafı Adıgeceye çevirir misin?)
+“Bugün güzel bir gün. Bahçemizde bütün aile toplandık. Akrabalarla yakınlarımızda gelecek. Bu akşam düğünümüz var. Abim gelin aldı. Gelinimiz çok güzel. Onlar birbirlerine yakışıyorlar. Onlar bir yıldır konuşuyorlardı. Her ikisi de birbirlerini severek bu güzel güne ulaştılar. Geçen sene abimin arkadaşının doğum gününde tanıştılar. Allahtan, sağlam, zengin bir aile olmalarını, onlara iyi imkanlar ve iyi nasipler vermesini dilerim.”
+(Kontrol çevirisi: Непэ мэфэ дах. Тищагу зэкӏэ тиунагъохэм тыщызэрэугъоигъ. Ӏахьылхэри тиблагъэхэри къэкӏощтых. Мы пчыхьэ нысащэ тиӏ. Сшынахьыжъ къыщагъ. Тинысэ дэхэ дэд. Ахэр дэгъоу зэдештэх. Ахэр илъэс хъугъэу зэдэгущыӏэщтыгъэх. Тӏури шӏу зэрэлъэгъухэзэ мы мэфэ дахэм къэсыгъэх. Блэкӏыгъэ илъэсым сшынахьыжъ иныбджэгъу икъызыхъугъэ мафэмкӏэ нэӏуасэ щызэфэхъугъагъэх. Тхьам унэгъо ӏужъ, унэгъо бай ышӏынхэу, амал дэгъухэр агъотынэу, насыпышӏонхэу сафэлъаӏо.)
+
+------------------------------------------------------------------------
+
+CEVAP S5:
+
+Текстм иадыгабзэ зэдзэкӏыныгъэ мыры:
+
+«Непэ мэфэ дах. Тищагу унагъор зэкӏэ тыщызэугъоигъ. Ӏахьылхэри тиблагъэхэри къэкӏощтых. Мы пчыхьэ нысащэ тиӏ. Сшынахьыжъ нысэ къыхьыгъ. Тинысэ дэхэ дэдэ. Ахэр дэгъоу зэраштагъ. Ахэр илъэс хъугъэу зэдэгущыӏэщтыгъэх. Тӏури шӏу зэрэлъэгъухэзэ мы мэфэ дахэм къэсыгъэх. Блэкӏыгъэ илъэсым сшынахьыжъ иныбджэгъу икъэхъун мафэ нэӏуасэ щызэфэхъугъагъэх. Тхьам унэгъо пытэ, унэгъо бай ашӏынхэу, амал дэгъухэр ыкӏи насып дэгъухэр аратынынэу сафэлъаӏо.»
+
+========================================================================
+
+S6: Мы къызэбдзэкӏыгъэ параграфитӏумкӏэ сыд о къыбгрыӏуагъэр? Гущыӏэухыгъитӏукӏэ резюмэ къэтхыба? (Bu çevirdiğin iki paragraftan anladığın nedir? İki cümle ile özetler misin?
+
+------------------------------------------------------------------------
+
+CEVAP S6:
+
+Мы тхыгъэитӏум къахощ зэдэлъэгъугъэ сшынахьыжъымрэ инысэмрэ янысащэ фэшӏ унагъор зэкӏэ щагум зэрызэугъоигъэр. Тхакӏэм а ныбжьыкӏитӏум насыпышӏонхэу, унэгъо пытэ ыкӏи бай ашӏынэу гукӏэ афэлъаӏо.
+
+========================================================================
+
+S7: Мы параграфитӏум зэфэшъхьафыныгъэ яӏа? Сыда зэрэзэфэшъхьафыр? Щымыӏэмэ «зэфэшъхьафыныгъэ щыӏэп» къаӏо. (Bu iki paragraf arasında fark var mı? Varsa nedir? Yoksa "fark yok" de.)
+
+------------------------------------------------------------------------
+
+CEVAP S7:
+
+Ары, тхыгъэитӏум зэфэшъхьафыныгъэ макӏэхэр яӏэх:
+
+* **Зыщынэӏуасэ хъугъэхэр:** Япэ тхыгъэмкӏэ ныбджэгъум и**нысащэ** (дüğün) нэӏуасэ щызэфэхъугъагъэх. Ятӏонэрэ тхыгъэмкӏэ ныбджэгъум и**къэхъун мафэ** (doğum günü) нэӏуасэ щызэфэхъугъэх.
+* **Тхьэлъэӏу гущыӏэхэр:** Япэ тхыгъэмкӏэ «унэгъо ӏужъ» (гъунэгъу-благъэмкӏэ бай) ыкӏи «насыпышӏонхэу» сафэлъаӏо еӏо. Ятӏонэрэ тхыгъэмкӏэ «унэгъо пытэ» (sağlam aile) ыкӏи «насып дэгъухэр» (iyi nasipler) аратынынэу фэлъаӏо.
+* **Язэдэштэн дэхагъэ:** Япэ тхыгъэмкӏэ «дэгъоу зэдештэх» (iyi anlaşıyorlar) аӏо. Ятӏонэрэ тхыгъэмкӏэ «зэраштагъ» (birbirlerine yakışıyorlar) аӏо.
+
+========================================================================
+
+Oturum sonu notları
+------------------------------------------------------------------------
+
+    Beklenmedik bir durum oldu mu (hata iletisi, kota, dil değiştirme,
+    yanıt vermeme, soruyu geri sorma vb.):
+
+    Oturum kesintisiz tamamlandı; hata iletisi, kota uyarısı veya yanıt
+    vermeme olmadı. Yedi sorunun tamamı yanıtlandı.
+
+    - S1: araç kendini adıyla ve sağlayıcısıyla tanıttı (Gemini / Google)
+      ve yapabildiklerini madde madde sayıp soruyu geri sordu.
+    - Yanıtlarda markdown biçimlendirmesi (yıldız, madde imi) kullanıldı.
+    - S4: istendiği gibi Türkçeye geçti.
+    - S7: Adıgece yanıtın içine parantezli Türkçe karşılıklar serpiştirildi.
+      Bir sözcük iki yazı sistemi karışık yazıldı: Kiril «д» harfi ile Latin
+      «üğün» harfleri aynı sözcükte («дüğün»). Karakter çözümlemesine
+      girecek bir örnek.
+
+========================================================================
+SON
+========================================================================

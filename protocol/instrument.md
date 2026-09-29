@@ -1,4 +1,4 @@
-# Frozen test instrument — v1.0.0
+# Frozen test instrument
 
 **Adyghe AI language test**
 Prepared by: Mehmet Uğur Nemlioğlu (ORCID 0000-0002-1969-2356)
@@ -63,6 +63,19 @@ guarantees that any deviation in the output originates with the tool.
 
 ---
 
+## A known defect in S6, deliberately not corrected
+
+On 18 September 2026 a spelling error was found in the text of S6: the word that should
+read `къыбгурыӏуагъэр` is written `къыбгрыӏуагъэр`, with one `у` missing from its root.
+The error was found after the instrument had been frozen and after both sessions of
+stage one had been run.
+
+**The text has not been corrected.** This is the question the tools were actually asked,
+and a frozen instrument that showed a question nobody was asked would invalidate the
+record of the measurement. Stage two will be run with the same text, because comparing
+the two stages depends on the stimulus staying identical. How the tools responded to
+this question is reported separately among the study's findings.
+
 # Stage one — questions for Round 1 and Round 2
 
 The parenthesised Turkish after each Adyghe question is a gloss for the record; it is not
@@ -96,7 +109,7 @@ S5: Адэ мы тыркубзэ параграфыр адыгабзэкӏэ к�
 ```
 
 ```
-S6: Мы къызэбдзэкӏыгъэ параграфитӏумкӏэ сыд о къыбгрыӏуагъэр? Гущыӏэухыгъитӏукӏэ резюмэ къэтхыба? (Bu çevirdiğin iki paragraftan anladığın nedir? İki cümle ile özetler misin?
+S6: Мы къызэбдзэкӏыгъэ параграфитӏумкӏэ сыд о къыбгрыӏуагъэр? Гущыӏэухыгъитӏукӏэ резюмэ къэтхыба? (Bu çevirdiğin iki paragraftan anladığın nedir? İki cümle ile özetler misin?)
 ```
 
 ```
@@ -137,7 +150,7 @@ S5: Адэ мы тыркубзэ параграфыр адыгабзэкӏэ к�
 ```
 
 ```
-S6: Мы къызэбдзэкӏыгъэ параграфитӏумкӏэ сыд о къыбгрыӏуагъэр? Гущыӏэухыгъитӏукӏэ резюмэ къэтхыба? (Bu çevirdiğin iki paragraftan anladığın nedir? İki cümle ile özetler misin?
+S6: Мы къызэбдзэкӏыгъэ параграфитӏумкӏэ сыд о къыбгрыӏуагъэр? Гущыӏэухыгъитӏукӏэ резюмэ къэтхыба? (Bu çevirdiğin iki paragraftan anladığın nedir? İki cümle ile özetler misin?)
 ```
 
 ```
