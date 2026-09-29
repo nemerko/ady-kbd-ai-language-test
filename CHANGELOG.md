@@ -40,6 +40,9 @@ It will not be tagged before then. Round 2 entries will be added here.
   its own revision history.
 - `README.md`, `LICENSE` (now the full CC BY 4.0 legal code), `CITATION.cff`
   and `CHECKSUMS.txt` updated for the new layout.
+- `README.md` → On timestamps: the end times of three repetition-2 sessions
+  (tools 1–3), read afterwards from the tools' chat histories, are recorded
+  there rather than in `data/raw/`.
 
 ### Removed
 

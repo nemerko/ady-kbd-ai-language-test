@@ -75,6 +75,13 @@ repetition were not committed before marking. They enter the repository for the 
 with the commit that reorganised its folders, after round 1 had been marked; for them the
 record is the hashes in the current `CHECKSUMS.txt`.
 
+The session files of repetition 2 record only the start time for tools 1–3; the end times
+were not written down during the sessions. They were read afterwards from the timestamps in
+each tool's chat history: tool 1 ended at 00:03, tool 2 at 00:04 and tool 3 at 00:04 on
+15 September 2026. They are recorded here rather than in the session files, so that
+`data/raw/` stays as it was collected. Tool 4's file and tool 5's repeated session
+(`Test2-AI-Tool5-Result2.txt`) record both times.
+
 This is **not** a pre-registration. The instrument was frozen before the test, and the first
 repetition's raw data was committed before the marking — no more and no less than that. `CHECKSUMS.txt`
 records a SHA-256 for every tracked file, and what those hashes attest to differs by folder.
