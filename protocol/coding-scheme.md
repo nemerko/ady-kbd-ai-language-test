@@ -218,7 +218,7 @@ examined", which is why that flag is mandatory.
 Where language compliance is `BASKA`, the sentence and word labels are left empty:
 labelling a text that is not in the target language against that language's categories
 would be meaningless. This value is not hypothetical — in round 1 one tool answered the
-first question with 176 words of English metalinguistic commentary instead of answering it.
+first question with 173 words of English metalinguistic commentary instead of answering it.
 
 Two questions carry a reading of their own, because the seven questions are not
 homogeneous and a single semantic scale would miss the copying probe entirely.
@@ -302,6 +302,13 @@ Blinding will be reconsidered for a scaled study.
 Changes to **this file only**. Any change that alters how material is coded is noted as such.
 The numbering is a revision count for this document, not a release version: nothing in this
 repository has been released, and every file in it belongs to the same unreleased 1.0.0.
+
+### Revision 5 — 2026-09-30
+
+A number in an example was corrected; nothing about coding changed. The answer-level section
+gave the English answer to the first question in round 1 as "176 words". The tool counts
+173, under the word definition of revision 2 (an item with no letter in it is not a word),
+and 173 is the figure in the analysis output and in the thesis. No label, count or rate moved.
 
 ### Revision 4 — 2026-09-20
 

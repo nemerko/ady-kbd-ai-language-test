@@ -1,5 +1,5 @@
 # SHA-256 checksums
-# generated (UTC): 2026-09-29 21:34:39
+# generated (UTC): 2026-09-29 22:37:09
 # The instrument was frozen 2026-09-12; round 1 was run 2026-09-13 (repetition 1)
 # and 2026-09-14/15 (repetition 2).
 #
@@ -59,7 +59,7 @@ ead3700d79dae7ddf1c5969309d866b39cf3c79b65cbe497e7f5112cbc691e87  data/raw/round
 20b799287a038be34348bc340d093cd718f7be3ff519f8d6e7d760a38561c626  data/raw/round1/Test2-AI-Tool5-Result2.txt
 09dc8198425c3ab4d942caf5652240309ae1fc54536d69d19ea1dadb95bbbee7  data/workbooks/test1-marking.xlsx
 2bcabdbcb7fd767c4185e842effdd28847ed8dad452170f9f59bd4473536f7b0  data/workbooks/test2-marking.xlsx
-08d3730997ac91d048a29cadc18ea8a6459ae8a7303495cb15b4338f5ff94fa3  protocol/coding-scheme.md
+76ed77f2997b99d60cdf8dd8d5ea322320b98923f4c26984083754fcf2bd1492  protocol/coding-scheme.md
 217580d9d5c8a0b13adc636b94113e5c984ca4686f859b2df8a02e7ca24703e3  protocol/instrument.md
 87fcbe8cc7378311c6cdf11cf04b88f0443646de5b55a15cf4bb8e4ccefec784  protocol/source-paragraph-ady.txt
 6a4ac99eecaaca8a0df0eb3af335cdd21b2f4b43ce4d3301a83235e77ec76436  tool/.gitignore
