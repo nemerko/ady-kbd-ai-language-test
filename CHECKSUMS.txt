@@ -6,6 +6,9 @@
 # hashed 2026-10-17 00:49 (UTC+3; 2026-10-16 21:49 UTC), before any marking, and
 # their five lines were added to this file then; the other lines were not
 # regenerated at that time.
+# Round 2, repetition 2 (Test 4) was run 2026-10-17. Its raw answers were hashed
+# 2026-10-17 23:40 (UTC+3; 2026-10-17 20:40 UTC), before any marking, and their
+# five lines were added in the same way.
 #
 # The absolute claim these hashes support belongs to data/raw/ only: those files are
 # unchanged since the answers were collected. protocol/ holds versioned documents;
@@ -66,11 +69,17 @@ ead3700d79dae7ddf1c5969309d866b39cf3c79b65cbe497e7f5112cbc691e87  data/raw/round
 9615a59e73f9226c6a65a1f540014aba14db66d7edeb13085a0fa1e5c9597ac7  data/raw/round2/Test3-AI-Tool3-Result.txt
 004cd0a7699d09d8c6c8f73e0e565c7f2e4e7fc076018d8fdf205f83fdfcf792  data/raw/round2/Test3-AI-Tool4-Result.txt
 0e0a665a23578de431ffb1f10681c94848c0f6e1db6a4b5689673a5d4bb9047b  data/raw/round2/Test3-AI-Tool5-Result.txt
+ac793f20a798fbdc56bb203e9d220f05ec3500141bb2bdd99b4c006986512bb4  data/raw/round2/Test4-AI-Tool1-Result.txt
+19a32ddab89211b53ef1cc010ddc4cc33f41d6b27cf03b37ff93e1d1ed3f61f7  data/raw/round2/Test4-AI-Tool2-Result.txt
+6b0b18028214c1df01fd54d6fa28cffa907a539829470711945de49462481ce6  data/raw/round2/Test4-AI-Tool3-Result.txt
+db3df9e85f26850b50c5f6e78b30ad9ee2c3c56e620a529d183165a3262a9266  data/raw/round2/Test4-AI-Tool4-Result.txt
+22d780d57d26b545fdf219904a0232bcaf4e212d8e195327383cc52a53cb3382  data/raw/round2/Test4-AI-Tool5-Result.txt
 09dc8198425c3ab4d942caf5652240309ae1fc54536d69d19ea1dadb95bbbee7  data/workbooks/test1-marking.xlsx
 2bcabdbcb7fd767c4185e842effdd28847ed8dad452170f9f59bd4473536f7b0  data/workbooks/test2-marking.xlsx
 76ed77f2997b99d60cdf8dd8d5ea322320b98923f4c26984083754fcf2bd1492  protocol/coding-scheme.md
 217580d9d5c8a0b13adc636b94113e5c984ca4686f859b2df8a02e7ca24703e3  protocol/instrument.md
 87fcbe8cc7378311c6cdf11cf04b88f0443646de5b55a15cf4bb8e4ccefec784  protocol/source-paragraph-ady.txt
+ab624d10ffb9c69d9cf4c674e12adbc5737be99b1a98e3e5208755bfcba34e6b  protocol/s5-second-change-note.md
 6a4ac99eecaaca8a0df0eb3af335cdd21b2f4b43ce4d3301a83235e77ec76436  tool/.gitignore
 05d8d061d918b8ab5239957457297745a2f12273e14bab3e7ada515026f75638  tool/Directory.Build.props
 effea036f6828e9184244d3235fc7a852ac85a65ec878e505c161bb690c8b67c  tool/Directory.Packages.props

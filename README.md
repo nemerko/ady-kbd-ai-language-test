@@ -78,6 +78,8 @@ record is the hashes in the current `CHECKSUMS.txt`.
 Round 2's first repetition (Test 3) was run on 16–17 October 2026. Its raw answers were
 hashed on 17 October 2026, before any marking was carried out, and the five hashes were
 added to `CHECKSUMS.txt` at that point.
+Round 2's second repetition (Test 4) was run on 17 October 2026 and its raw answers were
+hashed the same evening, again before any marking.
 
 The session files of repetition 2 record only the start time for tools 1–3; the end times
 were not written down during the sessions. They were read afterwards from the timestamps in

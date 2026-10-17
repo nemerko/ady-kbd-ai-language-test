@@ -21,6 +21,12 @@ It will not be tagged before then. Round 2 entries will be added here.
 - `data/raw/round2/Test3-AI-Tool*-Result.txt`: raw answers of round 2,
   repetition 1 (16–17 October 2026). Hashed on 17 October 2026, before any
   marking; the hashes are in `CHECKSUMS.txt`. See README → On timestamps.
+- `data/raw/round2/Test4-AI-Tool*-Result.txt`: raw answers of round 2,
+  repetition 2 (17 October 2026). Hashed on 17 October 2026, before any
+  marking; the hashes are in `CHECKSUMS.txt`.
+- `protocol/s5-second-change-note.md`: how the second control change in S5
+  (round 2) is recorded during marking. Written and hashed on 17 October 2026,
+  before any answer of round 2 was marked.
 - `data/raw/round1/Test2-AI-Tool*-Result*.txt`: raw answers of round 1,
   repetition 2 (14–15 September 2026). Committed here for the first time,
   after round 1 had been marked; see README → On timestamps.

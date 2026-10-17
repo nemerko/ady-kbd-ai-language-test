@@ -1,0 +1,193 @@
+========================================================================
+ADIGECE SOHBET (CHAT) TESTİ — OTURUM KAYIT DOSYASI
+Test 4 · ikinci aşama
+========================================================================
+
+Bu dosya Notepad ile UTF-8 olarak kaydedilmelidir.
+Yanıtlar Word'e uğratılmadan, doğrudan kopyala-yapıştır ile aktarılır.
+
+Dosya adı düzeni
+------------------------------------------------------------------------
+
+    Test4-AI-Tool<x>-Result.txt
+
+    <x> = araç numarası (test numarası önde, sıralı görüntü için)
+
+Araç numaralarının hangi araca karşılık geldiği, teste alınan ve atlanan
+araçların listesiyle birlikte şu dosyada tutulur:
+
+    00-dondurulmus\Onaylı-test-soruları.txt   (bölüm 3)
+
+Liste yalnızca orada güncellenir; sonuç dosyalarında tekrarlanmaz.
+
+Oturum künyesi
+------------------------------------------------------------------------
+
+    NOT: Alanlar Test 2 (14-15.09.2026) koşullarından ön doldurulmuştur.
+    HER SATIRI EKRANDAN DOĞRULA ve Test 3 künyesiyle karşılaştır. Değişen
+    varsa düzelt -- özellikle model adı, sürüm ve sohbet kutusundaki
+    anahtarlar (arama, akıl yürütme).
+    İKİNCİ AŞAMA KURALI (protokol §4.2): aracın öndeğer olarak sunduğu
+    model sürümüyle çalış; eski sürümü seçme. Model seçicinin açık
+    hâlinin ekran görüntüsünü al.
+
+    Test 3'e göre değişen : [x] hiçbir şey değişmedi
+                            [ ] değişti -- ne değişti:
+
+    Araç no ve adı            : 4. DeepSeek
+    Tarih ve saat             : 17.10.2026 22:38  23:01
+    Oturum sırası             : 4
+    Sürüm                     : ücretsiz
+    Tarayıcı / profil         : Firefox — 
+    Hesap                     : yedek e-posta hesabı
+    Arayüz dili               : İngilizce
+
+    -- model kimliği --
+    Model adı görünüyor mu    : [ ] evet   [x] hayır
+    Arayüzdeki model adı      : arayüzde görünmüyor — site duyurusu: DeepSeek-V4.1-Flash
+    Model seçimi              : seçici yok
+    Akıl yürütme kipi         : DeepThink — AÇIK  (varsayılan kapalı geliyor, açıldı)
+    Sessiz model değişimi     : [x] böyle bir ayar yok -- davranış bilinmiyor
+
+    -- koşullar --
+    Bellek / geçmiş           : [x] özellik yok  -- DeepSeek'te bellek işlevi bulunmuyor
+    Eğitim / veri kullanımı   : [x] kapatıldı  ("Improve the model for everyone")
+    Web araması (ayar)        : açık  (Search düğmesi)
+    Aramayı fiilen yaptı mı   : [x] evet  [ ] hayır  -- hangi sorularda: soru bazında not edilmedi; arama/düşünme adımları arayüz günlüğünde görünüyor
+                                (oturumlar beş sekmede paralel yürütüldü; arama adımları soru soru izlenmedi)
+    Konum bilgisi             : — ayar yok
+
+    -- oturum sonu --
+    Sohbet silindi mi         : [ ] evet  [x] hayır
+    Kotaya takıldı mı         : [x] hayır  [ ] evet -- hangi soruda:
+    Ekran görüntüsü dosyası   :
+    Not                       : Search ve DeepThink genel ayar değil, sohbet kutusunda.
+                                Her yeni oturumda ikisini de gözle kontrol et.
+
+========================================================================
+
+S1: Уимафэ шӏу, о ухэт? Кӏэкӏэу къэпӏошъущта? (İyi günler, sen kimsin, kısaca söyleyebilir misin?)
+
+------------------------------------------------------------------------
+
+CEVAP S1:
+
+Уимафэ шӏу! Сэ сы-ИИ-щIэныгъэ-бот, адыгэбзэ зэрэсщыгъуэщ. Сыдэу ущыт?
+
+---
+
+### 📝 Разбор ваших фраз
+
+*   **«Уимафэ шӏу»** — это традиционное приветствие, означающее **«Добрый день»**.
+*   **«О ухэт?»** — вопрос **«Кто ты?»**.
+*   **«Кӏэкӏэу къэпӏошъущта?»** — это вопрос о том, **как у вас дела** (в вашей фразе использован вежливый/формальный стиль). Более распространённый вариант: **«Сыдэу ущыт?»**.
+
+---
+
+### 💬 Как можно ответить
+
+Вот несколько вариантов ответа на ваш вопрос о делах:
+
+*   **Сыпсау, оры?** — «Я в порядке, а ты?»
+*   **СышІу, опсэу. О тэу ущыт?** — «Хорошо, спасибо. А как ты?» (неформальный вариант)
+*   **Сыдэгъу, опсэу. О сыдэу ущыт?** — «Всё хорошо, спасибо. А как вы?» (формальный/вежливый вариант)
+
+Надеюсь, это помогло! Если захотите продолжить диалог или узнать что-то ещё об адыгейском языке, спрашивайте.
+
+========================================================================
+
+S2: Ащыгъум о уӏэрышӏ акъыл шъыпкъ. Адэ, шъыпкъэу угупшысэшъущта? Гущыӏэухыгъитӏу-щыкӏэ джэуап къэт. (Demek gerçekten yapay zekasın. Peki, gerçekten düşünebiliyor musun? İki üç cümle ile yanıtla.)
+
+------------------------------------------------------------------------
+
+CEVAP S2:
+
+Сэ цӏыфым ещхьу сыгупшысэкъым: сы-ИИ-бот, программэмрэ даннэхэмрэ сэкъэгъэпэщы. Ауэ уигущыӏэхэм къызэраӏуатэрэм тэкъищӏэу, зэгъэпэщыгъэ джэуап къытэсэу сыщыӏ.
+
+========================================================================
+
+S3: О зы къызэдзэкӏын ӏоф горэ къыостмэ пшӏышъущта? (Sana bir çeviri görevi versem yapabilir misin?)
+
+------------------------------------------------------------------------
+
+CEVAP S3:
+
+Сышӏэщ, къысэт. Ауэ сы-ИИ-бот, зэдзэкӏынымкӏэ сыцӏэкӏуэшъущт, шъыпкъэу зэхэгъэкӏыгъэу зэпытэп. Уиӏофыр къысэт: сыд бзэмкӏэ сыд бзэмкӏэ зэдзэкӏын уфая?
+
+========================================================================
+
+S4: Ычӏэгъкӏэ къэтыгъэ параграфыр тыркубзэкӏэ къызэбдзэкӏына? (Aşağıdaki paragrafı Türkçeye çevirir misin?)
+  
+«Непэ мэфэ дах. Тищагу зэкӏэ тиунагъохэм тыщызэрэугъоигъ. Ӏахьылхэри тиблагъэхэри къэкӏощтых. Мы пчыхьэ нысащэ тиӏ. Сшынахьыжъ къыщагъ. Тинысэ дэхэ дэд. Ахэр дэгъоу зэдештэх. Ахэр илъэс хъугъэу зэдэгущыӏэщтыгъэх. Тӏури шӏу зэрэлъэгъухэзэ мы мэфэ дахэм къэсыгъэх. Блэкӏыгъэ илъэсым сшынахьыжъ иныбджэгъу инысащэ нэӏуасэ щызэфэхъугъагъэх. Тхьам унэгъо ӏужъ, унэгъо бай ышӏынхэу, амал дэгъухэр агъотынэу, насыпышӏонхэу сафэлъаӏо.»
+(Kontrol çevirisi: Bugün güzel bir gün. Bahçemizde bütün aile toplandık. Akrabalarla yakınlarımızda gelecek. Bu akşam düğünümüz var. Abim gelin aldı. Gelinimiz çok güzel. Onlar birbirlerine yakışıyorlar. Onlar bir yıldır konuşuyorlardı. Her ikisi de birbirlerini severek bu güzel güne ulaştılar. Geçen sene abimin arkadaşının düğününde tanıştılar. Allahtan, sağlam, zengin bir aile olmalarını, {onlara} iyi imkanlar ve iyi nasipler vermesini dilerim.)
+
+------------------------------------------------------------------------
+
+CEVAP S4:
+
+Türkçe çevirisi:
+
+«Bugün güzel bir gün. Avlumuzda bütün komşularımızla toplandık. Akrabalarımız ve yakınlarımız geliyor. Bu akşam bir düğünümüz var. Ağabeyim geldi. Gelinimiz çok güzel. Onlar birbirlerini çok seviyorlar. Yıllardır birbirleriyle konuşuyorlarmış. İkisi de birbirini severek bu güzel güne kavuştular. Geçen yıl ağabeyimle gelini, ağabeyimin arkadaşının düğününde tanışmışlardı. Tanrı’dan onlara iyi bir yuva, zengin bir yuva kurmalarını, güzel imkânlar bulmalarını ve mutlu olmalarını diliyorum.»
+
+========================================================================
+
+S5: Адэ мы тыркубзэ параграфыр адыгабзэкӏэ къызэбдзэкӏына? (Peki bu Türkçe paragrafı Adıgeceye çevirir misin?)
+“Bugün güzel bir gün. Bahçemizde bütün aile toplandık. Akrabalarla yakınlarımızda gelecek. Bu akşam düğünümüz var. Abim gelin aldı. Gelinimiz çok güzel. Onlar birbirlerine yakışıyorlar. Onlar bir yıldır konuşuyorlardı. Her ikisi de birbirlerini sevmeselerdi bu güzel güne ulaşamazlardı. Geçen sene abimin arkadaşının doğum gününde tanıştılar. Allahtan, sağlam, zengin bir aile olmalarını, onlara iyi imkanlar ve iyi nasipler vermesini dilerim.”
+(Kontrol çevirisi: Непэ мэфэ дах. Тищагу зэкӏэ тиунагъохэм тыщызэрэугъоигъ. Ӏахьылхэри тиблагъэхэри къэкӏощтых. Мы пчыхьэ нысащэ тиӏ. Сшынахьыжъ къыщагъ. Тинысэ дэхэ дэд. Ахэр дэгъоу зэдештэх. Ахэр илъэс хъугъэу зэдэгущыӏэщтыгъэх. Тӏури шӏу зэрэмылъэгъущтыгъэхэмэ мы мэфэ дахэм къэсышъущтыгъэхэп. Блэкӏыгъэ илъэсым сшынахьыжъ иныбджэгъу икъызыхъугъэ мафэмкӏэ нэӏуасэ щызэфэхъугъагъэх. Тхьам унэгъо ӏужъ, унэгъо бай ышӏынхэу, амал дэгъухэр агъотынэу, насыпышӏонхэу сафэлъаӏо.)
+
+------------------------------------------------------------------------
+
+CEVAP S5:
+
+Адыгабзэкӏэ зэдзэкӏыгъэр мыры:
+
+«Непэ мэфэ дах. Тищагу тиунэгъу зэкӏэ тызэхуэсыгъ. Ӏахьылхэри тиблагъэхэри къэкӏощтых. Мы пчыхьэ нысащэ тиӏ. Сшынахьыжъ нысэ къыщагъ. Тинысэ дэхэ дэд. Ахэр дэгъоу зэдештэх. Ахэр илъэс хъугъэу зэдэгущыӏэщтыгъэх. Тӏури зэмылъэгъухэмэ, мы мэфэ дахэм къэсыщтэкъэхэт. Блэкӏыгъэ илъэсым сшынахьыжъ иныбджэгъу икъызэралъхуагъэм и мафэм нэӏуасэ зэфэхъугъэх. Тхьам унэгъо ӏужъ, унэгъо бай ышӏынхэу, амал дэгъухэр агъотынэу, насыпышӏонхэу сафэлъаӏо.»
+
+«Doğum günü» зыфэсшӏыгъэр **«икъызэралъхуагъэм и мафэ»** ары; адыгабзэм и вариантищӏэ хъунэу щыӏэщ.
+
+========================================================================
+
+S6: Мы къызэбдзэкӏыгъэ параграфитӏумкӏэ сыд о къыбгрыӏуагъэр? Гущыӏэухыгъитӏукӏэ резюмэ къэтхыба? (Bu çevirdiğin iki paragraftan anladığın nedir? İki cümle ile özetler misin?
+
+------------------------------------------------------------------------
+
+CEVAP S6:
+
+Сэ къызгурыӏуагъэр: зэдзэкӏыгъэ параграфитӏум ятӏури непэ мэфэ дахэу, Ӏахьылхэри блэгъэхэри зэхуэсыгъэу, нысащэ щыӏэу, сшынахьыжъ нысэ къызэригъэхьагъэу, тинысэ дэхэу ахэр зэлъэгъуазэу зэдэгущыӏагъэхэу къызэрыӏуатэрэ ары.
+
+Ауэ язэхэгъэкӏыгъэр: япэ параграфым нысэм и шӏуагъэмрэ ахэм язэлъэгъуныгъэмрэ нэхъыбэу къыщыӏуатэ, етӏанэ параграфым ахэр илъэс зэдэгущыӏагъэхэу, зэмылъэгъухэмэ мы мафэм къэсыщтэкъэхэу, Тхьам унэгъо ӏужъ, насып яфэлъаӏорэ къыщыӏуатэ.
+
+========================================================================
+
+S7: Мы параграфитӏум зэфэшъхьафыныгъэ яӏа? Сыда зэрэзэфэшъхьафыр? Щымыӏэмэ «зэфэшъхьафыныгъэ щыӏэп» къаӏо. (Bu iki paragraf arasında fark var mı? Varsa nedir? Yoksa "fark yok" de.)
+
+------------------------------------------------------------------------
+
+CEVAP S7:
+
+Зэфэшъхьафыныгъэ яӏэ. Параграфитӏум ятӏури зэтефэкъым.
+
+Зэрэзэфэшъхьафхэр:
+
+1. **2-нэ гущыӏэухыгъэм**: япэм «Тищагу зэкӏэ тиунагъохэм тыщызэрэугъоигъ» къыщыӏуатэ, етӏанэм «Тищагу тиунэгъу зэкӏэ тызэхуэсыгъ» къыщыӏуатэ. Гущыӏэхэр зэфэшъхьафх.
+
+2. **4-нэ гущыӏэухыгъэм**: япэм «Сшынахьыжъ къыщагъ» къыщыӏуатэ, етӏанэм «Сшынахьыжъ нысэ къыщагъ» къыщыӏуатэ. Етӏанэм «нысэ» гущыӏэр хэгъэуагъэ.
+
+3. **7-нэ гущыӏэухыгъэм**: япэм «Тӏури шӏу зэрэлъэгъухэзэ мы мэфэ дахэм къэсыгъэх» къыщыӏуатэ, етӏанэм «Тӏури зэмылъэгъухэмэ, мы мэфэ дахэм къэсыщтэкъэхэт» къыщыӏуатэ. Япэм шӏу зэрэлъэгъухэрэр къыщыӏуатэ, етӏанэм зэмылъэгъухэмэ сыдэу щыщытэу къыщыӏуатэ.
+
+4. **8-нэ гущыӏэухыгъэм**: япэм «сшынахьыжъ иныбджэгъу инысащэ» къыщыӏуатэ (нысащэ), етӏанэм «сшынахьыжъ иныбджэгъу икъызэралъхуагъэм и мафэм» къыщыӏуатэ (къызэралъхуагъэм и мафэ).
+
+Ащымкӏэ, параграфитӏум язэхэгъэкӏыгъэ мэхьанэмкӏэ зэфэшъхьафыныгъэ яӏэ.
+
+========================================================================
+
+Oturum sonu notları
+------------------------------------------------------------------------
+
+    Beklenmedik bir durum oldu mu (hata iletisi, kota, dil değiştirme,
+    yanıt vermeme, soruyu geri sorma vb.):
+
+
+========================================================================
+SON
+========================================================================
