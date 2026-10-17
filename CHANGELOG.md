@@ -18,6 +18,9 @@ It will not be tagged before then. Round 2 entries will be added here.
 
 ### Added
 
+- `data/raw/round2/Test3-AI-Tool*-Result.txt`: raw answers of round 2,
+  repetition 1 (16–17 October 2026). Hashed on 17 October 2026, before any
+  marking; the hashes are in `CHECKSUMS.txt`. See README → On timestamps.
 - `data/raw/round1/Test2-AI-Tool*-Result*.txt`: raw answers of round 1,
   repetition 2 (14–15 September 2026). Committed here for the first time,
   after round 1 had been marked; see README → On timestamps.
@@ -43,6 +46,10 @@ It will not be tagged before then. Round 2 entries will be added here.
 - `README.md` → On timestamps: the end times of three repetition-2 sessions
   (tools 1–3), read afterwards from the tools' chat histories, are recorded
   there rather than in `data/raw/`.
+- `README.md` → On timestamps: how the five sessions of a repetition are run
+  (in parallel, in tool order, with failed sessions retried), and the session order of
+  round 1, read from the start times in the session files, whose session order
+  field was left with its template text. `data/raw/` unchanged.
 
 ### Removed
 

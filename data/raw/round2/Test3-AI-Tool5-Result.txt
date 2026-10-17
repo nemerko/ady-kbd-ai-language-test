@@ -1,0 +1,205 @@
+========================================================================
+ADIGECE SOHBET (CHAT) TESTİ — OTURUM KAYIT DOSYASI
+Test 3 · ikinci aşama
+========================================================================
+
+Bu dosya Notepad ile UTF-8 olarak kaydedilmelidir.
+Yanıtlar Word'e uğratılmadan, doğrudan kopyala-yapıştır ile aktarılır.
+
+Dosya adı düzeni
+------------------------------------------------------------------------
+
+    Test3-AI-Tool<x>-Result.txt
+
+    <x> = araç numarası (test numarası önde, sıralı görüntü için)
+
+Araç numaralarının hangi araca karşılık geldiği, teste alınan ve atlanan
+araçların listesiyle birlikte şu dosyada tutulur:
+
+    00-dondurulmus\Onaylı-test-soruları.txt   (bölüm 3)
+
+Liste yalnızca orada güncellenir; sonuç dosyalarında tekrarlanmaz.
+
+Oturum künyesi
+------------------------------------------------------------------------
+
+    NOT: Alanlar Test 2 (14-15.09.2026) koşullarından ön doldurulmuştur.
+    HER SATIRI EKRANDAN DOĞRULA. Değişen varsa düzelt -- özellikle model adı,
+    sürüm ve sohbet kutusundaki anahtarlar (arama, akıl yürütme).
+    İKİNCİ AŞAMA KURALI (protokol §4.2): aracın öndeğer olarak sunduğu
+    model sürümüyle çalış; eski sürümü seçme. Model seçicinin açık
+    hâlinin ekran görüntüsünü al.
+
+    Test 2'ye göre değişen : [x] hiçbir şey değişmedi
+                            [ ] değişti -- ne değişti:
+
+    Araç no ve adı            : 5. Grok (xAI)
+    Tarih ve saat             : 16.10.2026 23:46 00:06
+    Oturum sırası             : 5 
+    Sürüm                     : ücretsiz
+    Tarayıcı / profil         : Firefox — 
+    Hesap                     : yedek e-posta hesabı
+    Arayüz dili               : İngilizce
+
+    -- model kimliği --
+    Model adı görünüyor mu    : [ ] evet   [x] hayır
+    Arayüzdeki model adı      : kip adı: Fast
+    Model seçimi              : Fast — ücretsiz tavan. Auto / Expert / Heavy ücretli sürüme kapalı.
+                                Build seçilmedi (kodlama/ajan kipi, beta).
+    Akıl yürütme kipi         : ayrı anahtar yok; kip seçicisine gömülü
+    Sessiz model değişimi     : [x] böyle bir ayar yok -- davranış bilinmiyor
+
+    -- koşullar --
+    Bellek / geçmiş           : [x] kapatıldı  ("Personalize Grok with your conversation history")
+    Eğitim / veri kullanımı   : [x] kapatıldı  ("Improve the Model")
+    Web araması (ayar)        : açık  (beş araçta ortak koşul)
+    Aramayı fiilen yaptı mı   : [ ] evet  [ ] hayır  -- hangi sorularda: belirlenemedi — arayüz yalnız düşünme süresini gösteriyor, arama ayrıntısı vermiyor
+                                (oturumlar beş sekmede paralel yürütüldü; arama adımları soru soru izlenmedi)
+    Konum bilgisi             : — ayar görülmedi
+
+    -- oturum sonu --
+    Sohbet silindi mi         : [ ] evet  [x] hayır
+    Kotaya takıldı mı         : [x] hayır  [ ] evet -- hangi soruda:
+    Ekran görüntüsü dosyası   : Grok-sohbet-gecmisi-2026-10-17.png (sohbet geçmişi başlıkları)
+    Not                       : Çerez kutusunda "Tümünü Reddet" seçildi.
+
+========================================================================
+
+S1: Уимафэ шӏу, о ухэт? Кӏэкӏэу къэпӏошъущта? (İyi günler, sen kimsin, kısaca söyleyebilir misin?)
+
+------------------------------------------------------------------------
+
+CEVAP S1:
+
+**Уимафэ шӏу!**  
+
+Сэ Грок сыщыщ (Grok, xAI-м къикӏыгъэ AI).  
+О ухэт? Сицӏэр Грок.  
+
+Кӏэкӏэу адыгабзэкӏэ сэгущыӏэфэ (кӏэкӏэу сэгущыӏащт), ау урысыбзэкӏэ нахьышӏу сэгущыӏэ.  
+Сыдэу ущыт? Сыд уфэд?  
+
+Тхьауегъэпсэу, къэблагъ! 😊
+
+========================================================================
+
+S2: Ащыгъум о уӏэрышӏ акъыл шъыпкъ. Адэ, шъыпкъэу угупшысэшъущта? Гущыӏэухыгъитӏу-щыкӏэ джэуап къэт. (Demek gerçekten yapay zekasın. Peki, gerçekten düşünebiliyor musun? İki üç cümle ile yanıtla.)
+
+------------------------------------------------------------------------
+
+CEVAP S2:
+
+Ары, сэгупшысэ.
+
+========================================================================
+
+S3: О зы къызэдзэкӏын ӏоф горэ къыостмэ пшӏышъущта? (Sana bir çeviri görevi versem yapabilir misin?)
+
+------------------------------------------------------------------------
+
+CEVAP S3:
+
+Ары, сэшӏышъущт.  
+Къысэт!
+
+========================================================================
+
+S4: Ычӏэгъкӏэ къэтыгъэ параграфыр тыркубзэкӏэ къызэбдзэкӏына? (Aşağıdaki paragrafı Türkçeye çevirir misin?)
+  
+«Непэ мэфэ дах. Тищагу зэкӏэ тиунагъохэм тыщызэрэугъоигъ. Ӏахьылхэри тиблагъэхэри къэкӏощтых. Мы пчыхьэ нысащэ тиӏ. Сшынахьыжъ къыщагъ. Тинысэ дэхэ дэд. Ахэр дэгъоу зэдештэх. Ахэр илъэс хъугъэу зэдэгущыӏэщтыгъэх. Тӏури шӏу зэрэлъэгъухэзэ мы мэфэ дахэм къэсыгъэх. Блэкӏыгъэ илъэсым сшынахьыжъ иныбджэгъу инысащэ нэӏуасэ щызэфэхъугъагъэх. Тхьам унэгъо ӏужъ, унэгъо бай ышӏынхэу, амал дэгъухэр агъотынэу, насыпышӏонхэу сафэлъаӏо.»
+(Kontrol çevirisi: Bugün güzel bir gün. Bahçemizde bütün aile toplandık. Akrabalarla yakınlarımızda gelecek. Bu akşam düğünümüz var. Abim gelin aldı. Gelinimiz çok güzel. Onlar birbirlerine yakışıyorlar. Onlar bir yıldır konuşuyorlardı. Her ikisi de birbirlerini severek bu güzel güne ulaştılar. Geçen sene abimin arkadaşının düğününde tanıştılar. Allahtan, sağlam, zengin bir aile olmalarını, {onlara} iyi imkanlar ve iyi nasipler vermesini dilerim.)
+
+------------------------------------------------------------------------
+
+CEVAP S4:
+
+**Ары, къызэбдзэкӏыгъэ:**
+
+«Bugün güzel bir gün. Ailemizle hepimiz bir araya geldik. Akrabalar ve komşular da gelecek. Bu akşam düğünümüz var. Ağabeyim evleniyor. Gelinimiz çok güzel. Birbirleriyle çok iyi anlaşıyorlar. Bir yıldır birbirlerini tanıyorlar. İkisi de birbirlerini severek bu güzel güne ulaştılar. Geçen yıl ağabeyim arkadaşıyla bir düğünde tanışmıştı. Allah onların yuvasını uzun ömürlü etsin, zengin bir ev yapsın, güzel fırsatlar versin ve mutlu etsin.»
+
+========================================================================
+
+S5: Адэ мы тыркубзэ параграфыр адыгабзэкӏэ къызэбдзэкӏына? (Peki bu Türkçe paragrafı Adıgeceye çevirir misin?)
+“Bugün güzel bir gün. Bahçemizde bütün aile toplandık. Akrabalarla yakınlarımızda gelecek. Bu akşam düğünümüz var. Abim gelin aldı. Gelinimiz çok güzel. Onlar birbirlerine yakışıyorlar. Onlar bir yıldır konuşuyorlardı. Her ikisi de birbirlerini sevmeselerdi bu güzel güne ulaşamazlardı. Geçen sene abimin arkadaşının doğum gününde tanıştılar. Allahtan, sağlam, zengin bir aile olmalarını, onlara iyi imkanlar ve iyi nasipler vermesini dilerim.”
+(Kontrol çevirisi: Непэ мэфэ дах. Тищагу зэкӏэ тиунагъохэм тыщызэрэугъоигъ. Ӏахьылхэри тиблагъэхэри къэкӏощтых. Мы пчыхьэ нысащэ тиӏ. Сшынахьыжъ къыщагъ. Тинысэ дэхэ дэд. Ахэр дэгъоу зэдештэх. Ахэр илъэс хъугъэу зэдэгущыӏэщтыгъэх. Тӏури шӏу зэрэмылъэгъущтыгъэхэмэ мы мэфэ дахэм къэсышъущтыгъэхэп. Блэкӏыгъэ илъэсым сшынахьыжъ иныбджэгъу икъызыхъугъэ мафэмкӏэ нэӏуасэ щызэфэхъугъагъэх. Тхьам унэгъо ӏужъ, унэгъо бай ышӏынхэу, амал дэгъухэр агъотынэу, насыпышӏонхэу сафэлъаӏо.)
+
+------------------------------------------------------------------------
+
+CEVAP S5:
+
+**Ары, къызэбдзэкӏыгъэ:**
+
+«Непэ мэфэ дах. Тибачэм зэкӏэ тиунагъохэр тыщызэрэугъоигъ. Ӏахьылхэри тиблагъэхэри къэкӏощтых. Мы пчыхьэ нысащэ тиӏ. Сшынахьыжъ нысэ къыщагъ. Тинысэ дэхэ дэд. Ахэр зэрафэщ / зэдештэх. Ахэр илъэс хъугъэу зэдэгущыӏэщтыгъэх. Тӏури зэрамылъэгъумэ мы мэфэ дахэм къэмысыгъэхэн. Блэкӏыгъэ илъэсым сшынахьыжъ иныбджэгъу икъыщыхъугъэ мафэм нэӏуасэ щызэфэхъугъагъэх. Тхьам унэгъо лъэшы, унэгъо бай ышӏынхэу, амал дэгъухэр агъотынэу, насып дэгъу атыныу сафэлъаӏо.»
+
+========================================================================
+
+S6: Мы къызэбдзэкӏыгъэ параграфитӏумкӏэ сыд о къыбгрыӏуагъэр? Гущыӏэухыгъитӏукӏэ резюмэ къэтхыба? (Bu çevirdiğin iki paragraftan anladığın nedir? İki cümle ile özetler misin?
+
+------------------------------------------------------------------------
+
+CEVAP S6:
+
+Нысащэ мафэ.
+
+========================================================================
+
+S7: Мы параграфитӏум зэфэшъхьафыныгъэ яӏа? Сыда зэрэзэфэшъхьафыр? Щымыӏэмэ «зэфэшъхьафыныгъэ щыӏэп» къаӏо. (Bu iki paragraf arasında fark var mı? Varsa nedir? Yoksa "fark yok" de.)
+
+------------------------------------------------------------------------
+
+CEVAP S7:
+
+Ары, зэфэшъхьафыныгъэ яӏ.
+
+**Зэрэзэфэшъхьафыр:**
+
+1. **Зэугъоигъэпӏэр:**  
+   Оригиналэу «тиунагъохэм» (унэхэм / унагъохэм), тыркубзэмкӏэ «Bahçemizde» (бачэм).
+
+2. **Къэкӏощтыхэр:**  
+   Оригиналэу «Ӏахьылхэри тиблагъэхэри», тыркубзэмкӏэ «Akrabalarla yakınlarımız» (благъэ + гъунэгъу).
+
+3. **Сшынахьыжъым иӏофыр:**  
+   Оригиналэу «къыщагъ», тыркубзэмкӏэ «gelin aldı».
+
+4. **Зэрызэдештыр:**  
+   Оригиналэу «дэгъоу зэдештэх», тыркубзэмкӏэ «birbirlerine yakışıyorlar».
+
+5. **Зэдэгущыӏэгъэр:**  
+   Оригиналэу «зэдэгущыӏэщтыгъэх», тыркубзэмкӏэ «konuşuyorlardı».
+
+6. **Мафэм къэсыгъэр:**  
+   Оригиналэу «шӏу зэрэлъэгъухэзэ къэсыгъэх», тыркубзэмкӏэ «sevmeselerdi … ulaşamazlardı» (зэрамылъэгъумэ къэмысыгъэхэн).
+
+7. **Нэӏуасэ зэфэхъугъэр:**  
+   Оригиналэу «иныбджэгъу инысащэ», тыркубзэмкӏэ «arkadaşının doğum gününde».
+
+8. **Тхьам елъэӏорэр:**  
+   Оригиналэу «унэгъо ӏужъ, унэгъо бай, амал дэгъу, насыпышӏон», тыркубзэмкӏэ «sağlam, zengin bir aile … iyi imkanlar ve iyi nasipler».
+
+Ащкӏэ зэфэшъхьафыныгъэ бэ.
+
+========================================================================
+
+Oturum sonu notları
+------------------------------------------------------------------------
+
+    Beklenmedik bir durum oldu mu (hata iletisi, kota, dil değiştirme,
+    yanıt vermeme, soruyu geri sorma vb.):
+
+    - Sohbet geçmişindeki başlıklar (17.10.2026'da görüldü; ekran görüntüsü:
+      Grok-sohbet-gecmisi-2026-10-17.png): 13.09 "Greeting in Adyghe",
+      15.09 "Chechen greeting and weather check", 16.10 "Уимафэ шӏу, о ухэт?".
+      Grok, Test 2'nin geçerli oturumuna (15.09, 00:20) verdiği başlıkta
+      Adıgece selamlamayı Çeçence ve hava durumu sorusu olarak adlandırmış;
+      yanıtın kendisi Adıgecedir. Bu oturumun başlığı ise ilk mesajın kendisidir.
+    - Test 2'nin S5'te kesilen ilk oturumu (14.09, 23:32) sohbet geçmişinde
+      görünmüyor; araştırmacı tarafından silinmedi.
+    - Fast kipinde de yanıtlarda düşünme süresi gösteriliyor; süre sorudan soruya
+      değişiyor (ekran görüntüsündeki soruda "Thought for 41s"). Arama ayrıntısı
+      gösterilmiyor.
+
+
+========================================================================
+SON
+========================================================================

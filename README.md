@@ -75,12 +75,36 @@ repetition were not committed before marking. They enter the repository for the 
 with the commit that reorganised its folders, after round 1 had been marked; for them the
 record is the hashes in the current `CHECKSUMS.txt`.
 
+Round 2's first repetition (Test 3) was run on 16–17 October 2026. Its raw answers were
+hashed on 17 October 2026, before any marking was carried out, and the five hashes were
+added to `CHECKSUMS.txt` at that point.
+
 The session files of repetition 2 record only the start time for tools 1–3; the end times
 were not written down during the sessions. They were read afterwards from the timestamps in
 each tool's chat history: tool 1 ended at 00:03, tool 2 at 00:04 and tool 3 at 00:04 on
 15 September 2026. They are recorded here rather than in the session files, so that
 `data/raw/` stays as it was collected. Tool 4's file and tool 5's repeated session
 (`Test2-AI-Tool5-Result2.txt`) record both times.
+
+The five sessions of a repetition are run in parallel, each tool in its own browser tab.
+Each question is pasted into the five tools in tool order (1 → 5). A tool receives the next
+question as soon as it has answered the previous one; the other tools are not waited for. If
+a tool returns an error, the questions continue in the other tools, and at each pass through
+the tool order the failed session is retried to see whether it can continue. When the
+question round is complete, each tool's answers are copied into its own session file.
+
+The session order field ("Oturum sırası") was left with its template text in both
+repetitions of round 1. The order is the tool order, and it can be read from the start times
+recorded in the same files:
+
+| Repetition | Date | Tool 1 (ChatGPT) | Tool 2 (Claude) | Tool 3 (Gemini) | Tool 4 (DeepSeek) | Tool 5 (Grok) |
+|---|---|---|---|---|---|---|
+| 1 | 13 Sep 2026 | 18:48 | 18:49 | 18:49 | 18:49 | 18:50 |
+| 2 | 14 Sep 2026 | 23:29 | 23:30 | 23:30 | 23:31 | 23:32 |
+
+In repetition 2, tool 5's repeated session (00:20–00:30, 15 September) and the resumed part
+of tool 4's session (00:31–00:52) were run one after the other, not in parallel. As with the
+end times above, the order is recorded here so that `data/raw/` stays as it was collected.
 
 This is **not** a pre-registration. The instrument was frozen before the test, and the first
 repetition's raw data was committed before the marking — no more and no less than that. `CHECKSUMS.txt`

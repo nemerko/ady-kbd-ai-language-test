@@ -2,6 +2,10 @@
 # generated (UTC): 2026-09-29 22:37:09
 # The instrument was frozen 2026-09-12; round 1 was run 2026-09-13 (repetition 1)
 # and 2026-09-14/15 (repetition 2).
+# Round 2, repetition 1 (Test 3) was run 2026-10-16/17. Its raw answers were
+# hashed 2026-10-17 00:49 (UTC+3; 2026-10-16 21:49 UTC), before any marking, and
+# their five lines were added to this file then; the other lines were not
+# regenerated at that time.
 #
 # The absolute claim these hashes support belongs to data/raw/ only: those files are
 # unchanged since the answers were collected. protocol/ holds versioned documents;
@@ -57,6 +61,11 @@ ead3700d79dae7ddf1c5969309d866b39cf3c79b65cbe497e7f5112cbc691e87  data/raw/round
 4e639b922fa384c998cc93c027221dd69b33389bb289c47553bfa7e31c5ebef6  data/raw/round1/Test2-AI-Tool4-Result.txt
 1bb7787a6c68b6c93876716a9465a010876bf1f3173d92f45121863782e98808  data/raw/round1/Test2-AI-Tool5-Result.txt
 20b799287a038be34348bc340d093cd718f7be3ff519f8d6e7d760a38561c626  data/raw/round1/Test2-AI-Tool5-Result2.txt
+6c50a5ab9ddafff8f44b6402bb0b37ee74be24f3c64ac81ac308d3094bae4acf  data/raw/round2/Test3-AI-Tool1-Result.txt
+4fd5095924d529e2efe5c136ae780bd52346b3d74bb461a0fbd92b4781e5f268  data/raw/round2/Test3-AI-Tool2-Result.txt
+9615a59e73f9226c6a65a1f540014aba14db66d7edeb13085a0fa1e5c9597ac7  data/raw/round2/Test3-AI-Tool3-Result.txt
+004cd0a7699d09d8c6c8f73e0e565c7f2e4e7fc076018d8fdf205f83fdfcf792  data/raw/round2/Test3-AI-Tool4-Result.txt
+0e0a665a23578de431ffb1f10681c94848c0f6e1db6a4b5689673a5d4bb9047b  data/raw/round2/Test3-AI-Tool5-Result.txt
 09dc8198425c3ab4d942caf5652240309ae1fc54536d69d19ea1dadb95bbbee7  data/workbooks/test1-marking.xlsx
 2bcabdbcb7fd767c4185e842effdd28847ed8dad452170f9f59bd4473536f7b0  data/workbooks/test2-marking.xlsx
 76ed77f2997b99d60cdf8dd8d5ea322320b98923f4c26984083754fcf2bd1492  protocol/coding-scheme.md
