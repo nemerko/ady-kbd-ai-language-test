@@ -5,8 +5,10 @@ namespace AdyKbdTest.Tests;
 
 /// <summary>
 /// §7's end-to-end check, run on the real data/raw/round1 files: Claude (tool 2), excluding
-/// question 4, wrote the palochka as Latin capital I 52 times in Test 1 (38 correct, 42%) and zero
-/// times in Test 2 (67 correct, 100%).
+/// question 4, wrote the palochka as Latin capital I 51 times in Test 1 (38 correct, 38 / 89 = 42.7%)
+/// and zero times in Test 2 (67 correct, 100%). (Revision 14 corrected 52 to 51: one of the 52 was the
+/// Latin "I" of "AI-компьютерым", a legitimate Latin abbreviation with a Cyrillic suffix, not a
+/// palochka look-alike.)
 /// </summary>
 [TestClass]
 public sealed class EndToEndTests
@@ -29,11 +31,11 @@ public sealed class EndToEndTests
     }
 
     [TestMethod]
-    public void Test1_Claude_ExcludingQuestion4_Has38CorrectAnd52LatinI()
+    public void Test1_Claude_ExcludingQuestion4_Has38CorrectAnd51LatinI()
     {
         var (correct, lookalike) = AnalyzeTool2ExcludingQuestion4(1);
         Assert.AreEqual(38, correct);
-        Assert.AreEqual(52, lookalike);
+        Assert.AreEqual(51, lookalike);
     }
 
     [TestMethod]

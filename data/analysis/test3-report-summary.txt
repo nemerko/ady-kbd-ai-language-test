@@ -1,0 +1,7 @@
+﻿ady-kbd AI Language Testing Tool 1.0.0 -- report for Test 3
+Responses in workbook: 35
+Responses matched to analysis output: 35
+
+Responses excluded (no evaluable content): 0
+Words in unlabeled sentences of included responses (outside the denominator): 0
+Data integrity warnings: 0

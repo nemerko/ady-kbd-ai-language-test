@@ -16,7 +16,7 @@ public sealed record IntegrityWarning(string Kind, string Detail);
 /// column), cross-test stability, a character-layer summary, and a separate, un-hidden list of
 /// data-integrity warnings.
 /// </summary>
-public static class ReportBuilder
+public static partial class ReportBuilder
 {
     public static void Build(string workbookPath, string analysisDir, string outDir)
     {
@@ -35,10 +35,20 @@ public static class ReportBuilder
         var warnings = CollectIntegrityWarnings(markings, recordsById);
         WriteIntegrityWarnings(Path.Combine(outDir, $"test{test}-integrity-warnings.tsv"), warnings);
 
-        WriteToolCategoryTable(Path.Combine(outDir, $"test{test}-tool-x-category.tsv"), markings, recordsById, test);
+        WriteToolCategoryTable(Path.Combine(outDir, $"test{test}-tool-x-category.tsv"), markings);
         WriteContactLanguagesTable(Path.Combine(outDir, $"test{test}-contact-languages.tsv"), markings);
         WriteToolQuestionTable(Path.Combine(outDir, $"test{test}-tool-x-question.tsv"), markings, recordsById);
         WriteExcludedResponsesTable(Path.Combine(outDir, $"test{test}-excluded-responses.tsv"), markings, recordsById);
+
+        // Revision 16: the task-type tables and the score table. Cross-test totals are not written
+        // here -- `akt summary` does that, deliberately, so re-running one test's report never
+        // silently changes the overall result.
+        WriteNotesTable(Path.Combine(outDir, $"test{test}-notes.tsv"), markings);
+
+        var taskTypeRows = TaskTypeTables.Compute(markings);
+        TaskTypeTables.WriteLong(Path.Combine(outDir, $"test{test}-task-type.tsv"), taskTypeRows);
+        TaskTypeTables.WriteWide(Path.Combine(outDir, $"test{test}-main-table.tsv"), taskTypeRows);
+        ScoreRule.WriteTestScores(Path.Combine(outDir, $"test{test}-scores.tsv"), ScoreRule.ComputeForTest(markings));
         WriteSentenceVerdictDistribution(Path.Combine(outDir, $"test{test}-sentence-verdicts.tsv"), markings);
         WriteLanguageComplianceDistribution(Path.Combine(outDir, $"test{test}-language-compliance.tsv"), markings);
         WriteCopyProbeResult(Path.Combine(outDir, $"test{test}-copy-probe.tsv"), recordsById, test);
@@ -62,7 +72,7 @@ public static class ReportBuilder
     /// in <see cref="CollectIntegrityWarnings"/> all call this one predicate rather than each
     /// re-deriving the condition, which is what let them silently disagree before this revision.
     /// </summary>
-    private static bool HasNoEvaluableContent(ResponseMarking m) =>
+    internal static bool HasNoEvaluableContent(ResponseMarking m) =>
         m.LanguageCompliance == LanguageComplianceWord.UyumYok
         && m.Semantic == SemanticAdequacyWord.Alakasiz;
 
@@ -174,9 +184,29 @@ public static class ReportBuilder
                 }
             }
 
-            if (!recordsById.ContainsKey(m.Id.ToString()))
+            // Revision 16 §3.3: a response that is in the measurement but has no evaluated words
+            // cannot be scored (it scores 0); the rule expects this never to happen, so it is flagged.
+            if (!HasNoEvaluableContent(m) && EvaluatedWordCount(m) == 0)
+            {
+                warnings.Add(new IntegrityWarning("SCORE_NO_WORDS",
+                    $"{m.Id}: not excluded, but none of its sentences carries a verdict -- it has no evaluated words and scores 0."));
+            }
+
+            if (!recordsById.TryGetValue(m.Id.ToString(), out var analysisRecord))
             {
                 warnings.Add(new IntegrityWarning("KEY_NOT_IN_ANALYSIS", $"{m.Id}: not found in the analysis output for this test."));
+            }
+            else
+            {
+                // Revision 15 §2: the report's denominator is summed from the workbook's Sentences!F
+                // values, the analysis output's WordCount is what the tool computed for the same
+                // response -- the two must agree, or a sentence was lost, merged or edited.
+                var sentenceWordTotal = m.Sentences.Sum(s => s.WordCount ?? 0);
+                if (sentenceWordTotal != analysisRecord.WordCount)
+                {
+                    warnings.Add(new IntegrityWarning("WORD_COUNT_MISMATCH",
+                        $"{m.Id}: the Sentences sheet's word counts (column F) add up to {sentenceWordTotal.ToString(CultureInfo.InvariantCulture)}, but the analysis output says {analysisRecord.WordCount.ToString(CultureInfo.InvariantCulture)}."));
+                }
             }
 
             if (m.Id.Question == 7 && m.Marked == MarkedWord.Evet && m.Question7Verdict is null)
@@ -205,26 +235,53 @@ public static class ReportBuilder
         File.WriteAllText(path, sb.ToString(), Encoding.UTF8);
     }
 
-    private static void WriteToolCategoryTable(string path, IReadOnlyList<ResponseMarking> markings, Dictionary<string, AnalysisRecord> recordsById, int test)
-    {
-        // Revision 13 §1/§3.2: the denominator (word count, from the analysis records) and the
-        // numerator (error counts, from the marked sentences) must be excluded from the same set of
-        // responses -- matched by response key, since that is the only thing the two sides share. A
-        // marking with no corresponding analysis record needs no special handling here: it already
-        // contributes nothing to wordCountsByTool (which only ever sums recordsById), whether
-        // excluded or not; CollectIntegrityWarnings' KEY_NOT_IN_ANALYSIS already reports it.
-        var excludedIds = markings.Where(HasNoEvaluableContent).Select(m => m.Id.ToString()).ToHashSet(StringComparer.Ordinal);
+    /// <summary>
+    /// Revision 15 §2: the sentences a response contributes to the measurement -- none if the
+    /// response has no evaluable content (revision 13), otherwise exactly those that carry a
+    /// sentence verdict. A sentence left unlabelled (typically one not in the target language,
+    /// inside a partly compliant KISMEN response) is outside both the numerator and the
+    /// denominator of every rate.
+    /// </summary>
+    internal static IEnumerable<SentenceMarking> EvaluatedSentences(ResponseMarking m) =>
+        HasNoEvaluableContent(m) ? [] : m.Sentences.Where(s => !s.VerdictBlank);
 
+    /// <summary>
+    /// Revision 15 §2: the words that enter the denominator -- the Sentences!F word counts of
+    /// <see cref="EvaluatedSentences"/>. The single definition every report table uses.
+    /// </summary>
+    internal static int EvaluatedWordCount(ResponseMarking m) => EvaluatedSentences(m).Sum(s => s.WordCount ?? 0);
+
+    /// <summary>
+    /// FRM + CHO + INV + MIX over all of a response's sentences -- the <c>error_word_count</c> column
+    /// of <c>tool-x-question</c>, and the question-score numerator (revision 16 §3.3). TRM is not an error.
+    /// </summary>
+    internal static int ErrorWordCount(ResponseMarking m) =>
+        m.Sentences.Sum(s => (s.WrongForm ?? 0) + (s.WrongWord ?? 0) + (s.Invented ?? 0) + (s.CodeMixing ?? 0));
+
+    /// <summary>Words of unlabelled sentences in responses that are otherwise included (revision 15 §3.3).</summary>
+    private static int UnlabelledWordCountOfIncludedResponses(ResponseMarking m) =>
+        HasNoEvaluableContent(m) ? 0 : m.Sentences.Where(s => s.VerdictBlank).Sum(s => s.WordCount ?? 0);
+
+    private static void WriteToolCategoryTable(string path, IReadOnlyList<ResponseMarking> markings)
+    {
+        // Revision 13 §1/§3.2 tied the numerator (error counts) and the denominator (words) to the
+        // same set of *responses*; revision 15 §2 takes the same step one level down, to *sentences*.
+        // Both now come from EvaluatedSentences: a response with no evaluable content contributes
+        // nothing (revision 13), and within any other response only the sentences that carry a
+        // verdict do (revision 15) -- so the unlabelled, non-target-language sentences of a
+        // KISMEN response no longer add words to the denominator while adding no errors to the
+        // numerator. Word counts are read from the same workbook rows the errors are, not from the
+        // analysis records; CollectIntegrityWarnings' WORD_COUNT_MISMATCH checks the two agree.
         var wordCountsByTool = ToolRegistry.Tools.ToDictionary(
             t => t.Number,
-            t => recordsById.Values.Where(r => r.Test == test && r.Tool == t.Number && !excludedIds.Contains(r.Id)).Sum(r => r.WordCount));
+            t => markings.Where(m => m.Id.Tool == t.Number).Sum(EvaluatedWordCount));
 
         var sb = new StringBuilder();
         sb.Append("tool\tfrm\tcho\tinv\tmix\ttrm\ttotal_errors\twords\terrors_per_100_words\n");
 
         foreach (var tool in ToolRegistry.Tools)
         {
-            var sentences = markings.Where(m => m.Id.Tool == tool.Number && !HasNoEvaluableContent(m)).SelectMany(m => m.Sentences).ToList();
+            var sentences = markings.Where(m => m.Id.Tool == tool.Number).SelectMany(EvaluatedSentences).ToList();
             var frm = sentences.Sum(s => s.WrongForm ?? 0);
             var cho = sentences.Sum(s => s.WrongWord ?? 0);
             var inv = sentences.Sum(s => s.Invented ?? 0);
@@ -260,19 +317,48 @@ public static class ReportBuilder
     private static void WriteToolQuestionTable(string path, IReadOnlyList<ResponseMarking> markings, Dictionary<string, AnalysisRecord> recordsById)
     {
         var sb = new StringBuilder();
-        sb.Append("tool\tquestion\tword_count\terror_word_count\tsentence_count\tcorrect\tfaulty_comprehensible\tfaulty_incomprehensible\texcluded\n");
+        sb.Append("tool\tquestion\tword_count\tevaluated_word_count\terror_word_count\tsentence_count\tcorrect\tfaulty_comprehensible\tfaulty_incomprehensible\texcluded\n");
         foreach (var m in markings.OrderBy(m => m.Id.Tool).ThenBy(m => m.Id.Question))
         {
             // Revision 13 §3.3: the real word count, even for an excluded response -- this table is
             // the raw, per-response breakdown, not the report's own filtered aggregate, so a reader
             // who does not accept the exclusion rule can compute their own total from it.
             var wordCount = recordsById.TryGetValue(m.Id.ToString(), out var record) ? record.WordCount : 0;
-            var errorWords = m.Sentences.Sum(s => (s.WrongForm ?? 0) + (s.WrongWord ?? 0) + (s.Invented ?? 0) + (s.CodeMixing ?? 0));
+            var errorWords = ErrorWordCount(m);
             var correct = m.Sentences.Count(s => s.Verdict == SentenceVerdict.Dogru);
             var faultyComprehensible = m.Sentences.Count(s => s.Verdict == SentenceVerdict.YanlisAmaAnlasilir);
             var faultyIncomprehensible = m.Sentences.Count(s => s.Verdict == SentenceVerdict.YanlisVeAnlamsiz);
             var excluded = HasNoEvaluableContent(m) ? "true" : "false";
-            sb.Append(string.Join('\t', m.Id.Tool, m.Id.Question, wordCount, errorWords, m.Sentences.Count, correct, faultyComprehensible, faultyIncomprehensible, excluded)).Append('\n');
+            // Revision 15 §3.2: the words that actually enter the denominator (0 for an excluded
+            // response, and only labelled sentences' words for any other), next to the raw count.
+            sb.Append(string.Join('\t', m.Id.Tool, m.Id.Question, wordCount, EvaluatedWordCount(m), errorWords, m.Sentences.Count, correct, faultyComprehensible, faultyIncomprehensible, excluded)).Append('\n');
+        }
+        File.WriteAllText(path, sb.ToString(), Encoding.UTF8);
+    }
+
+    /// <summary>
+    /// Revision 18 §3: every non-empty evaluator note, exactly as written -- the Responses sheet's
+    /// Note column (<c>sheet</c> = Responses, no sentence number) and the Sentences sheet's Note
+    /// column (<c>sheet</c> = Sentences, with the sentence number). Nothing is interpreted here:
+    /// which sentence notes are "standard" (counted) and which are one-offs (quoted) is decided by
+    /// <c>akt summary</c>, across all tests. A note's backslash, tab and line breaks are written as
+    /// <c>\\</c>, <c>\t</c>, <c>\n</c> so one note is always one line; <see cref="NotesTsv.Unescape"/>
+    /// undoes it exactly.
+    /// </summary>
+    private static void WriteNotesTable(string path, IReadOnlyList<ResponseMarking> markings)
+    {
+        var sb = new StringBuilder("sheet\tkey\ttool\tquestion\tsentence_no\tnote\n");
+        foreach (var m in markings.OrderBy(m => m.Id.Tool).ThenBy(m => m.Id.Question))
+        {
+            if (!string.IsNullOrWhiteSpace(m.Note))
+            {
+                sb.Append(string.Join('\t', "Responses", m.Id.ToString(), m.Id.Tool, m.Id.Question, "", NotesTsv.Escape(m.Note))).Append('\n');
+            }
+            foreach (var s in m.Sentences.Where(s => !string.IsNullOrWhiteSpace(s.Note)).OrderBy(s => s.SentenceNo))
+            {
+                sb.Append(string.Join('\t', "Sentences", m.Id.ToString(), m.Id.Tool, m.Id.Question,
+                    s.SentenceNo?.ToString(CultureInfo.InvariantCulture) ?? "", NotesTsv.Escape(s.Note!))).Append('\n');
+            }
         }
         File.WriteAllText(path, sb.ToString(), Encoding.UTF8);
     }
@@ -401,6 +487,7 @@ public static class ReportBuilder
         sb.AppendLine(CultureInfo.InvariantCulture, $"Responses matched to analysis output: {markings.Count(m => recordsById.ContainsKey(m.Id.ToString()))}");
         sb.AppendLine();
         sb.AppendLine(CultureInfo.InvariantCulture, $"Responses excluded (no evaluable content): {markings.Count(HasNoEvaluableContent)}");
+        sb.AppendLine(CultureInfo.InvariantCulture, $"Words in unlabeled sentences of included responses (outside the denominator): {markings.Sum(UnlabelledWordCountOfIncludedResponses)}");
         sb.AppendLine(CultureInfo.InvariantCulture, $"Data integrity warnings: {warnings.Count}");
         foreach (var group in warnings.GroupBy(w => w.Kind))
         {

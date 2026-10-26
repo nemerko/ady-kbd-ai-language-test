@@ -89,6 +89,38 @@ internal static class Commands
         return 0;
     }
 
+    public static int Summary(CommandLineOptions options)
+    {
+        var analysisDir = options.Require("analysis");
+        var outDir = options.GetOrDefault("out", "data/analysis");
+
+        var reportOutDir = options.GetOrDefault("report-out", "data/report");
+
+        var result = SummaryBuilder.Build(analysisDir, outDir);
+
+        Console.WriteLine($"Task-type tables summed over tests: {string.Join(", ", result.TaskTypeTests)}");
+        if (result.ScoreTests.Count > 0)
+        {
+            Console.WriteLine($"Scores averaged over tests: {string.Join(", ", result.ScoreTests)}");
+        }
+        else
+        {
+            Console.WriteLine("No test*-scores.tsv found; summary-scores.tsv not written.");
+        }
+        foreach (var warning in result.Warnings)
+        {
+            Console.WriteLine($"WARNING {warning.Kind}: {warning.Detail}");
+        }
+        Console.WriteLine($"Wrote summary tables to {outDir}");
+
+        // Revision 18: the results pages. Without summary-scores.tsv there is no page, only an error.
+        foreach (var page in ReportPageBuilder.Build(analysisDir, outDir, reportOutDir))
+        {
+            Console.WriteLine($"Wrote report page {page}");
+        }
+        return 0;
+    }
+
     public static int Verify(CommandLineOptions options)
     {
         var raw = options.Require("raw");

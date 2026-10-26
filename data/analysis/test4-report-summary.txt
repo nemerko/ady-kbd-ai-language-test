@@ -1,0 +1,8 @@
+﻿ady-kbd AI Language Testing Tool 1.0.0 -- report for Test 4
+Responses in workbook: 35
+Responses matched to analysis output: 35
+
+Responses excluded (no evaluable content): 1
+Words in unlabeled sentences of included responses (outside the denominator): 96
+Data integrity warnings: 23
+  BLANK_SENTENCE_VERDICT: 23

@@ -2,7 +2,14 @@ namespace AdyKbdTest.TextAnalysis;
 
 public sealed record AnalyzedToken(string Text, int StartOffset, int Length, ScriptClass Script);
 
-public sealed record AnalyzedSentence(int Index, string Text, int StartOffset, IReadOnlyList<AnalyzedToken> Tokens);
+/// <summary>
+/// <paramref name="Text"/> is the counting copy's sentence (repaired; every count and check runs on
+/// it). <paramref name="DisplayText"/> is the same sentence with the response's original characters
+/// -- the only text an evaluator is ever shown (revision 14 §2). They share one set of boundaries
+/// and differ only where repair replaced a palochka look-alike or dropped an invisible (Cf)
+/// character.
+/// </summary>
+public sealed record AnalyzedSentence(int Index, string Text, int StartOffset, IReadOnlyList<AnalyzedToken> Tokens, string DisplayText);
 
 /// <summary>
 /// Per-response measurements, as required by the coding scheme's §4.4. Character/word/sentence

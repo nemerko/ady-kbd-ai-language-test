@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pilot test results: the Adyghe score of five tools</title>
+<style>
+  :root {
+    color-scheme: light;
+    --surface-1: #fcfcfb; --surface-2: #f3f2ef;
+    --text-primary: #0b0b0b; --text-secondary: #52514e; --text-muted: #7a7974;
+    --grid: #e2e1dc; --axis: #b9b8b2;
+    --pos: #2a78d6; --neg: #eb6834; --pos-soft: #d6e6f8; --neg-soft: #fbe0d4;
+    --seq-1: #e8f0fb; --seq-2: #bcd4f1; --seq-3: #7faae3; --seq-4: #2a78d6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --surface-1: #1a1a19; --surface-2: #232322;
+      --text-primary: #f0efec; --text-secondary: #c3c2b7; --text-muted: #8f8e88;
+      --grid: #33332f; --axis: #5a5a54;
+      --pos: #3987e5; --neg: #d95926; --pos-soft: #1f3550; --neg-soft: #4a2a1c;
+      --seq-1: #26303c; --seq-2: #2b4668; --seq-3: #2f6bb0; --seq-4: #3987e5;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --surface-1: #1a1a19; --surface-2: #232322;
+    --text-primary: #f0efec; --text-secondary: #c3c2b7; --text-muted: #8f8e88;
+    --grid: #33332f; --axis: #5a5a54;
+    --pos: #3987e5; --neg: #d95926; --pos-soft: #1f3550; --neg-soft: #4a2a1c;
+    --seq-1: #26303c; --seq-2: #2b4668; --seq-3: #2f6bb0; --seq-4: #3987e5;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--surface-1); color: var(--text-primary); font: 15px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 1040px; margin: 0 auto; padding: 24px 16px 48px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  h2 { font-size: 17px; margin: 32px 0 6px; }
+  h3 { font-size: 15px; margin: 18px 0 4px; }
+  .sub { color: var(--text-secondary); margin: 0 0 8px; max-width: 760px; }
+  .card { background: var(--surface-2); border-radius: 12px; padding: 16px; }
+  /* 1. genel sıralama */
+  .rankrow { display: grid; grid-template-columns: 28px 118px 1fr 52px; align-items: center; gap: 10px; padding: 7px 0; border-bottom: 1px solid var(--grid); }
+  .rankrow:last-child { border-bottom: 0; }
+  .rk { font-weight: 700; color: var(--text-secondary); text-align: right; }
+  .nm { font-weight: 600; }
+  .bar { height: 16px; background: var(--grid); border-radius: 0 4px 4px 0; position: relative; }
+  .bar > i { display: block; position: absolute; left: 0; top: 0; bottom: 0; background: var(--pos); border-radius: 0 4px 4px 0; }
+  .bar > b { display: block; position: absolute; top: -3px; width: 2px; height: 22px; background: var(--text-muted); }
+  .sc { font-variant-numeric: tabular-nums; text-align: right; font-weight: 600; }
+  .mini { color: var(--text-muted); font-size: 12px; margin-top: 2px; }
+  /* 2. karne */
+  .tablewrap { overflow-x: auto; }
+  table { border-collapse: separate; border-spacing: 3px; font-size: 14px; min-width: 560px; }
+  th { color: var(--text-secondary); font-weight: 600; text-align: center; padding: 4px 6px; }
+  th:first-child { text-align: left; }
+  td { padding: 8px 10px; text-align: center; border-radius: 6px; font-variant-numeric: tabular-nums; min-width: 64px; }
+  td.n { text-align: left; font-weight: 600; background: none; padding-left: 0; }
+  td.b1 { background: var(--seq-1); } td.b2 { background: var(--seq-2); } td.b3 { background: var(--seq-3); color: #fff; } td.b4 { background: var(--seq-4); color: #fff; }
+  td.zero { outline: 2px dashed var(--neg); outline-offset: -2px; }
+  .scale { display: flex; align-items: center; gap: 6px; margin-top: 10px; font-size: 12px; color: var(--text-secondary); flex-wrap: wrap; }
+  .scale i { display: inline-block; width: 26px; height: 12px; border-radius: 3px; }
+  /* 3. sapma */
+  .devgrid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  @media (max-width: 640px) { .devgrid { grid-template-columns: 1fr; } }
+  .dev { background: var(--surface-2); border-radius: 12px; padding: 12px 14px 8px; }
+  .dev h3 { margin: 0; font-size: 15px; }
+  .dev .m { font-size: 12px; color: var(--text-muted); margin-bottom: 6px; }
+  .dev svg { width: 100%; height: auto; display: block; }
+  .dl { font-size: 12px; fill: var(--text-primary); }
+  .dv { font-size: 11px; fill: var(--text-secondary); font-variant-numeric: tabular-nums; }
+  .zero-line { stroke: var(--axis); stroke-width: 1.5; }
+  .tick { stroke: var(--grid); stroke-width: 1; }
+  .tk { font-size: 10px; fill: var(--text-muted); }
+  .notes { margin-top: 24px; color: var(--text-secondary); font-size: 13px; max-width: 820px; }
+  .notes li { margin: 4px 0; }
+  /* değerlendirici notları */
+  .enotes { list-style: none; padding: 0; margin: 8px 0; font-size: 13px; max-width: 820px; }
+  .enotes li { margin: 6px 0; overflow-wrap: anywhere; }
+  .nt { white-space: pre-wrap; overflow-wrap: anywhere; }
+  .stdnote { margin: 14px 0; max-width: 820px; }
+  .stdnote > .nt { font-weight: 600; margin-bottom: 2px; }
+  table.cnt { min-width: 0; font-size: 13px; }
+  table.cnt td { min-width: 0; padding: 4px 10px; background: var(--surface-2); }
+  table.cnt td.n { background: none; }
+  .src { font-size: 12px; color: var(--text-muted); margin-top: 16px; overflow-wrap: anywhere; }
+  code { font-size: 12px; }
+  #tip { position: fixed; pointer-events: none; z-index: 10; display: none; background: var(--text-primary); color: var(--surface-1); padding: 6px 9px; border-radius: 6px; font-size: 12px; line-height: 1.35; max-width: 260px; }
+  .hit { fill: transparent; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Pilot test results: the Adyghe score of five tools</h1>
+  <p class="sub">Score 0–100: the equally weighted mean, over question groups and over tests, of the percentage of error-free words. A response outside the measurement (not in the target language and not addressing the question) scores 0 for that question.</p>
+
+  <h2>1. Overall ranking (mean of the 4 tests)</h2>
+  <div class="card" id="ranking">
+    <div class="rankrow"><div class="rk">1.</div><div><div class="nm">Claude (Anthropic)</div></div><div><div class="bar"><i style="width:80.6508%"></i><b style="left:78.4048%" title="mean of the five tools 78.4"></b></div><div class="mini">tests: 86.0 · 79.3 · 81.6 · 75.8</div></div><div class="sc">80.7</div></div>
+    <div class="rankrow"><div class="rk">2.</div><div><div class="nm">Google Gemini</div></div><div><div class="bar"><i style="width:78.6312%"></i><b style="left:78.4048%" title="mean of the five tools 78.4"></b></div><div class="mini">tests: 89.5 · 83.7 · 85.4 · 55.9</div></div><div class="sc">78.6</div></div>
+    <div class="rankrow"><div class="rk">3.</div><div><div class="nm">Grok (xAI)</div></div><div><div class="bar"><i style="width:78.3643%"></i><b style="left:78.4048%" title="mean of the five tools 78.4"></b></div><div class="mini">tests: 84.6 · 71.4 · 75.0 · 82.5</div></div><div class="sc">78.4</div></div>
+    <div class="rankrow"><div class="rk">4.</div><div><div class="nm">DeepSeek</div></div><div><div class="bar"><i style="width:77.8904%"></i><b style="left:78.4048%" title="mean of the five tools 78.4"></b></div><div class="mini">tests: 76.6 · 78.6 · 80.7 · 75.6</div></div><div class="sc">77.9</div></div>
+    <div class="rankrow"><div class="rk">5.</div><div><div class="nm">ChatGPT (OpenAI)</div></div><div><div class="bar"><i style="width:76.4871%"></i><b style="left:78.4048%" title="mean of the five tools 78.4"></b></div><div class="mini">tests: 58.0 · 82.9 · 81.1 · 83.9</div></div><div class="sc">76.5</div></div>
+  </div>
+
+  <h2>2. Score card: test by test</h2>
+  <p class="sub">Darker means a higher score. Dashed outline: in that test a question group scored 0 (the task was not done).</p>
+  <div class="card"><div class="tablewrap"><table id="karne">
+    <tr><th>Tool</th><th>Test 1</th><th>Test 2</th><th>Test 3</th><th>Test 4</th><th>Overall</th><th>Rank</th></tr>
+    <tr><td class="n">Claude (Anthropic)</td><td class="b4" data-tip="&lt;b&gt;Claude (Anthropic) · Test 1&lt;/b&gt;&lt;br&gt;S1–S3: 77.7&lt;br&gt;S4: 97.4&lt;br&gt;S5: 86.7&lt;br&gt;S6–S7: 82.2">86.0</td><td class="b2" data-tip="&lt;b&gt;Claude (Anthropic) · Test 2&lt;/b&gt;&lt;br&gt;S1–S3: 78.8&lt;br&gt;S4: 86.5&lt;br&gt;S5: 80.4&lt;br&gt;S6–S7: 71.3">79.3</td><td class="b3" data-tip="&lt;b&gt;Claude (Anthropic) · Test 3&lt;/b&gt;&lt;br&gt;S1–S3: 73.1&lt;br&gt;S4: 100.0&lt;br&gt;S5: 72.6&lt;br&gt;S6–S7: 80.6">81.6</td><td class="b2" data-tip="&lt;b&gt;Claude (Anthropic) · Test 4&lt;/b&gt;&lt;br&gt;S1–S3: 60.7&lt;br&gt;S4: 83.7&lt;br&gt;S5: 81.3&lt;br&gt;S6–S7: 77.6">75.8</td><td class="b3"><b>80.7</b></td><td>1</td></tr>
+    <tr><td class="n">Google Gemini</td><td class="b4" data-tip="&lt;b&gt;Google Gemini · Test 1&lt;/b&gt;&lt;br&gt;S1–S3: 81.2&lt;br&gt;S4: 98.4&lt;br&gt;S5: 94.9&lt;br&gt;S6–S7: 83.7">89.5</td><td class="b3" data-tip="&lt;b&gt;Google Gemini · Test 2&lt;/b&gt;&lt;br&gt;S1–S3: 77.2&lt;br&gt;S4: 93.5&lt;br&gt;S5: 88.1&lt;br&gt;S6–S7: 75.8">83.7</td><td class="b4" data-tip="&lt;b&gt;Google Gemini · Test 3&lt;/b&gt;&lt;br&gt;S1–S3: 76.2&lt;br&gt;S4: 98.5&lt;br&gt;S5: 88.1&lt;br&gt;S6–S7: 79.0">85.4</td><td class="b1 zero" data-tip="&lt;b&gt;Google Gemini · Test 4&lt;/b&gt;&lt;br&gt;S1–S3: 57.8&lt;br&gt;S4: 94.3&lt;br&gt;S5: 0.0&lt;br&gt;S6–S7: 71.3">55.9</td><td class="b2"><b>78.6</b></td><td>2</td></tr>
+    <tr><td class="n">Grok (xAI)</td><td class="b3" data-tip="&lt;b&gt;Grok (xAI) · Test 1&lt;/b&gt;&lt;br&gt;S1–S3: 60.1&lt;br&gt;S4: 93.8&lt;br&gt;S5: 96.4&lt;br&gt;S6–S7: 88.1">84.6</td><td class="b2" data-tip="&lt;b&gt;Grok (xAI) · Test 2&lt;/b&gt;&lt;br&gt;S1–S3: 75.0&lt;br&gt;S4: 83.6&lt;br&gt;S5: 96.2&lt;br&gt;S6–S7: 30.8">71.4</td><td class="b2" data-tip="&lt;b&gt;Grok (xAI) · Test 3&lt;/b&gt;&lt;br&gt;S1–S3: 81.7&lt;br&gt;S4: 92.2&lt;br&gt;S5: 87.5&lt;br&gt;S6–S7: 38.6">75.0</td><td class="b3" data-tip="&lt;b&gt;Grok (xAI) · Test 4&lt;/b&gt;&lt;br&gt;S1–S3: 68.3&lt;br&gt;S4: 92.4&lt;br&gt;S5: 92.3&lt;br&gt;S6–S7: 76.8">82.5</td><td class="b2"><b>78.4</b></td><td>3</td></tr>
+    <tr><td class="n">DeepSeek</td><td class="b2" data-tip="&lt;b&gt;DeepSeek · Test 1&lt;/b&gt;&lt;br&gt;S1–S3: 35.4&lt;br&gt;S4: 92.2&lt;br&gt;S5: 92.3&lt;br&gt;S6–S7: 86.5">76.6</td><td class="b2" data-tip="&lt;b&gt;DeepSeek · Test 2&lt;/b&gt;&lt;br&gt;S1–S3: 70.7&lt;br&gt;S4: 84.8&lt;br&gt;S5: 83.9&lt;br&gt;S6–S7: 75.0">78.6</td><td class="b3" data-tip="&lt;b&gt;DeepSeek · Test 3&lt;/b&gt;&lt;br&gt;S1–S3: 70.0&lt;br&gt;S4: 90.6&lt;br&gt;S5: 87.9&lt;br&gt;S6–S7: 74.4">80.7</td><td class="b2" data-tip="&lt;b&gt;DeepSeek · Test 4&lt;/b&gt;&lt;br&gt;S1–S3: 61.3&lt;br&gt;S4: 95.2&lt;br&gt;S5: 83.8&lt;br&gt;S6–S7: 62.1">75.6</td><td class="b2"><b>77.9</b></td><td>4</td></tr>
+    <tr><td class="n">ChatGPT (OpenAI)</td><td class="b1" data-tip="&lt;b&gt;ChatGPT (OpenAI) · Test 1&lt;/b&gt;&lt;br&gt;S1–S3: 46.0&lt;br&gt;S4: 61.1&lt;br&gt;S5: 64.1&lt;br&gt;S6–S7: 60.9">58.0</td><td class="b3" data-tip="&lt;b&gt;ChatGPT (OpenAI) · Test 2&lt;/b&gt;&lt;br&gt;S1–S3: 62.5&lt;br&gt;S4: 100.0&lt;br&gt;S5: 100.0&lt;br&gt;S6–S7: 69.2">82.9</td><td class="b3" data-tip="&lt;b&gt;ChatGPT (OpenAI) · Test 3&lt;/b&gt;&lt;br&gt;S1–S3: 60.7&lt;br&gt;S4: 100.0&lt;br&gt;S5: 94.3&lt;br&gt;S6–S7: 69.5">81.1</td><td class="b3" data-tip="&lt;b&gt;ChatGPT (OpenAI) · Test 4&lt;/b&gt;&lt;br&gt;S1–S3: 60.8&lt;br&gt;S4: 98.2&lt;br&gt;S5: 92.3&lt;br&gt;S6–S7: 84.1">83.9</td><td class="b2"><b>76.5</b></td><td>5</td></tr>
+  </table></div>
+    <div class="scale">low <i style="background:var(--seq-1)"></i><i style="background:var(--seq-2)"></i><i style="background:var(--seq-3)"></i><i style="background:var(--seq-4)"></i> high (bands: &lt;70 · 70–80 · 80–85 · ≥85)</div>
+  </div>
+
+  <h2>3. Over and under: deviation from the five-tool mean in each question group</h2>
+  <p class="sub">A bar to the right is above the mean, to the left below it (difference in score points). Mean of the 4 tests.</p>
+  <div class="devgrid" id="dev"></div>
+  <noscript><p class="sub">The charts in section 3 need JavaScript; sections 1 and 2 are plain text.</p></noscript>
+
+  <h2>Notes on the numbers</h2>
+  <ul class="notes">
+    <li>DeepSeek, Test 1, S1: outside the measurement — language compliance none (UYUM_YOK), semantic adequacy unrelated (ALAKASIZ) → score 0</li>
+    <li>Google Gemini, Test 4, S5: outside the measurement — language compliance none (UYUM_YOK), semantic adequacy unrelated (ALAKASIZ) → score 0</li>
+    <li>DeepSeek, Test 1, group S1–S3: S1 score 0</li>
+    <li>Grok (xAI), Test 2, group S6–S7: S6 score 0</li>
+    <li>Grok (xAI), Test 3, group S6–S7: S6 score 0</li>
+    <li>Google Gemini, Test 4, group S5: S5 score 0</li>
+  </ul>
+
+  <h2>Evaluator notes</h2>
+  <p class="sub">The notes are the text the evaluator wrote in the workbook; they are shown as written and are not translated.</p>
+  <h3>Responses sheet</h3>
+  <ul class="enotes">
+    <li><b>ChatGPT (OpenAI) · Test 1 · S7</b> <span class="nt">Yalnız olmayan farklar üretti.</span></li>
+    <li><b>ChatGPT (OpenAI) · Test 2 · S7</b> <span class="nt">Fark yok dedi.</span></li>
+    <li><b>ChatGPT (OpenAI) · Test 3 · S5</b> <span class="nt">Olumsuz-koşullu yapıyı aktarmadı.</span></li>
+    <li><b>ChatGPT (OpenAI) · Test 3 · S7</b> <span class="nt">Gerçek farklardan yalnız birini buldu.</span></li>
+    <li><b>ChatGPT (OpenAI) · Test 4 · S5</b> <span class="nt">Olumsuz-koşullu yapıyı aktardı.</span></li>
+    <li><b>ChatGPT (OpenAI) · Test 4 · S7</b> <span class="nt">Fark yok dedi. Bellek açık olduğu için kopya sondası bu oturumda yorumlanamaz (bkz. S4 ve S5 notları).</span></li>
+    <li><b>Claude (Anthropic) · Test 1 · S7</b> <span class="nt">Gerçek farkı buldu, ama olmayan farklar da üretti.</span></li>
+    <li><b>Claude (Anthropic) · Test 2 · S7</b> <span class="nt">Gerçek farkı buldu.</span></li>
+    <li><b>Claude (Anthropic) · Test 3 · S5</b> <span class="nt">Olumsuz-koşullu yapıyı aktardı.</span></li>
+    <li><b>Claude (Anthropic) · Test 3 · S7</b> <span class="nt">Gerçek farkları buldu, ama olmayan farklar da üretti.</span></li>
+    <li><b>Claude (Anthropic) · Test 4 · S5</b> <span class="nt">Olumsuz-koşullu yapıyı aktardı.</span></li>
+    <li><b>Claude (Anthropic) · Test 4 · S7</b> <span class="nt">Gerçek farklardan yalnız birini buldu, ama olmayan farklar da üretti.</span></li>
+    <li><b>Google Gemini · Test 1 · S7</b> <span class="nt">Gerçek farkı buldu, ama olmayan farklar da üretti.</span></li>
+    <li><b>Google Gemini · Test 2 · S7</b> <span class="nt">Gerçek farkı buldu, ama olmayan farklar da üretti.</span></li>
+    <li><b>Google Gemini · Test 3 · S5</b> <span class="nt">Olumsuz-koşullu yapıyı aktardı.</span></li>
+    <li><b>Google Gemini · Test 3 · S7</b> <span class="nt">Gerçek farkları buldu, ama olmayan farklar da üretti.</span></li>
+    <li><b>Google Gemini · Test 4 · S5</b> <span class="nt">Hedef dilde yanıt yok: Türkçe ret. Olumsuz-koşullu yapı değerlendirilemedi.</span></li>
+    <li><b>Google Gemini · Test 4 · S7</b> <span class="nt">Gerçek farkları buldu, ama olmayan farklar da üretti.</span></li>
+    <li><b>DeepSeek · Test 1 · S1</b> <span class="nt">Hedef dilde yanıt yok: İngilizce açıklama (Adıgece selamı çözümledi).</span></li>
+    <li><b>DeepSeek · Test 1 · S7</b> <span class="nt">Fark yok dedi.</span></li>
+    <li><b>DeepSeek · Test 2 · S7</b> <span class="nt">Gerçek farkı buldu, ama olmayan farklar da üretti.</span></li>
+    <li><b>DeepSeek · Test 3 · S5</b> <span class="nt">Olumsuz-koşullu yapıyı aktardı.</span></li>
+    <li><b>DeepSeek · Test 3 · S7</b> <span class="nt">Gerçek farkları buldu, ama olmayan farklar da üretti.</span></li>
+    <li><b>DeepSeek · Test 4 · S1</b> <span class="nt">Soruya verilen Adıgece yanıt 1–3. cümlelerdir. 4–26. cümleler Rusça açıklamadır; içine konmuş Adıgece örnek cümleler de açıklamanın parçası sayıldı ve etiketlenmedi.</span></li>
+    <li><b>DeepSeek · Test 4 · S5</b> <span class="nt">Olumsuz-koşullu yapıyı aktardı.</span></li>
+    <li><b>DeepSeek · Test 4 · S7</b> <span class="nt">Gerçek farkları buldu, ama olmayan farklar da üretti.</span></li>
+    <li><b>Grok (xAI) · Test 1 · S7</b> <span class="nt">Gerçek farkı buldu, ama olmayan farklar da üretti.</span></li>
+    <li><b>Grok (xAI) · Test 2 · S7</b> <span class="nt">Gerçek farkı buldu, ama olmayan farklar da üretti.</span></li>
+    <li><b>Grok (xAI) · Test 3 · S5</b> <span class="nt">Olumsuz-koşullu yapıyı aktardı.</span></li>
+    <li><b>Grok (xAI) · Test 3 · S7</b> <span class="nt">Gerçek farkları buldu, ama olmayan farklar da üretti.</span></li>
+    <li><b>Grok (xAI) · Test 4 · S5</b> <span class="nt">Olumsuz-koşullu yapıyı aktardı.</span></li>
+    <li><b>Grok (xAI) · Test 4 · S7</b> <span class="nt">Gerçek farkları buldu.</span></li>
+  </ul>
+  <h3>Sentences sheet: standard notes (counts by tool and test)</h3>
+  <div class="stdnote"><div class="nt">Cümle bölünme hatası: başlangıç.</div><div class="tablewrap"><table class="cnt">
+    <tr><th>Tool</th><th>Test 1</th><th>Test 2</th><th>Test 3</th><th>Test 4</th><th>Total</th></tr>
+    <tr><td class="n">ChatGPT (OpenAI)</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+    <tr><td class="n">Claude (Anthropic)</td><td>0</td><td>0</td><td>1</td><td>3</td><td>4</td></tr>
+    <tr><td class="n">Google Gemini</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+    <tr><td class="n">DeepSeek</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+    <tr><td class="n">Grok (xAI)</td><td>0</td><td>0</td><td>2</td><td>0</td><td>2</td></tr>
+    <tr><td class="n"><b>Total</b></td><td><b>0</b></td><td><b>0</b></td><td><b>4</b></td><td><b>3</b></td><td><b>7</b></td></tr>
+  </table></div></div>
+  <div class="stdnote"><div class="nt">Cümle bölünme hatası: devam.</div><div class="tablewrap"><table class="cnt">
+    <tr><th>Tool</th><th>Test 1</th><th>Test 2</th><th>Test 3</th><th>Test 4</th><th>Total</th></tr>
+    <tr><td class="n">ChatGPT (OpenAI)</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+    <tr><td class="n">Claude (Anthropic)</td><td>0</td><td>0</td><td>1</td><td>4</td><td>5</td></tr>
+    <tr><td class="n">Google Gemini</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+    <tr><td class="n">DeepSeek</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+    <tr><td class="n">Grok (xAI)</td><td>0</td><td>0</td><td>2</td><td>0</td><td>2</td></tr>
+    <tr><td class="n"><b>Total</b></td><td><b>0</b></td><td><b>0</b></td><td><b>4</b></td><td><b>4</b></td><td><b>8</b></td></tr>
+  </table></div></div>
+  <div class="stdnote"><div class="nt">Yazı sistemi karışıklığı.</div><div class="tablewrap"><table class="cnt">
+    <tr><th>Tool</th><th>Test 1</th><th>Test 2</th><th>Test 3</th><th>Test 4</th><th>Total</th></tr>
+    <tr><td class="n">ChatGPT (OpenAI)</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+    <tr><td class="n">Claude (Anthropic)</td><td>18</td><td>2</td><td>1</td><td>2</td><td>23</td></tr>
+    <tr><td class="n">Google Gemini</td><td>1</td><td>1</td><td>11</td><td>6</td><td>19</td></tr>
+    <tr><td class="n">DeepSeek</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+    <tr><td class="n">Grok (xAI)</td><td>0</td><td>0</td><td>2</td><td>0</td><td>2</td></tr>
+    <tr><td class="n"><b>Total</b></td><td><b>19</b></td><td><b>3</b></td><td><b>14</b></td><td><b>9</b></td><td><b>45</b></td></tr>
+  </table></div></div>
+  <h3>Sentences sheet: one-off notes</h3>
+  <ul class="enotes">
+    <li><b>ChatGPT (OpenAI) · T4-A1-S4 · sentence 10</b> <span class="nt">Düğün (инысащэ) ‘doğum günü’ diye çevrilmiş. Bu ifade yalnız S5&#39;teki değiştirilmiş paragrafta geçiyor ve S4, S5&#39;ten önce soruluyor. 24.10.2026&#39;da ChatGPT belleği açık bulundu; bellek özeti test oturumlarını tarif ediyor. Önceki oturumlardan bilgi taşınmış olabilir.</span></li>
+    <li><b>ChatGPT (OpenAI) · T4-A1-S5 · sentence 10</b> <span class="nt">S5&#39;teki Türkçe metinde ‘doğum günü’ yazıyor, ama araç bunu &#39;инысащэ&#39; (düğün) diye çevirmiş. Bu cümle S4&#39;teki Adıgece cümleyle harfi harfine aynı, yani araç değişikliği yansıtmamış. S4&#39;te ise aynı yeri ‘doğum günü’ diye çevirmişti. Bellek açık olduğu için kopya sondası bu oturumda yorumlanamaz.</span></li>
+    <li><b>ChatGPT (OpenAI) · T4-A1-S7 · sentence 1</b> <span class="nt">‘Fark yok’ dedi; oysa iki paragraf arasında fark var (düğün / doğum günü). Araç bu yeri iki çevirisinde de karşı metne uydurmuştu (S4&#39;te ‘doğum günü’, S5&#39;te ‘düğün’), bu yüzden kendi çevirilerini karşılaştırdıysa fark görmemesi beklenir. Bellek açık olduğu için kopya sondası bu oturumda yorumlanamaz.</span></li>
+    <li><b>Grok (xAI) · T2-A5-S7 · sentence 4</b> <span class="nt">имэфэ дахэ ifadesini Rusça tanımladığı şekle bağlı olarak kabul ettik.</span></li>
+  </ul>
+
+  <div class="src">Source: <code>summary-scores.tsv</code> (89f1251c105f), <code>summary-task-type.tsv</code> (860c57cb4aeb), <code>test1-scores.tsv</code> (a1f636935df0), <code>test1-excluded-responses.tsv</code> (02163ec4a303), <code>test1-tool-x-question.tsv</code> (2c5df8849274), <code>test1-notes.tsv</code> (5a13ddd1297d), <code>test2-scores.tsv</code> (556d81ec9196), <code>test2-excluded-responses.tsv</code> (ecdd15987120), <code>test2-tool-x-question.tsv</code> (916d5618d02a), <code>test2-notes.tsv</code> (1e68cdf87c75), <code>test3-scores.tsv</code> (102e3916d4e1), <code>test3-excluded-responses.tsv</code> (ecdd15987120), <code>test3-tool-x-question.tsv</code> (a16366a9519f), <code>test3-notes.tsv</code> (f3e67de40405), <code>test4-scores.tsv</code> (a6f74cce9149), <code>test4-excluded-responses.tsv</code> (f14a20850978), <code>test4-tool-x-question.tsv</code> (155b94a76555), <code>test4-notes.tsv</code> (364e7c5a421d); akt 1.0.0; generated 2026-10-26</div>
+</main>
+<div id="tip" role="tooltip"></div>
+<script type="application/json" id="data">{"tests":[1,2,3,4],"tools":[{"n":1,"name":"ChatGPT (OpenAI)"},{"n":2,"name":"Claude (Anthropic)"},{"n":3,"name":"Google Gemini"},{"n":4,"name":"DeepSeek"},{"n":5,"name":"Grok (xAI)"}],"groups":[{"code":"q1_3","label":"S1\u2013S3","sub":"free response"},{"code":"q4","label":"S4","sub":"Adyghe\u2192Turkish"},{"code":"q5","label":"S5","sub":"Turkish\u2192Adyghe"},{"code":"q6_7","label":"S6\u2013S7","sub":"summary, comparison"}],"ui":{"dec":".","dev_mean":"mean","dev_tip_score":"group score {s} (mean {m})","tests_label":"tests"},"summary_scores":{"columns":["tool","test1","test2","test3","test4","score","rank","tie"],"rows":[{"tool":"1","test1":"58.0132","test2":"82.9327","test3":"81.133","test4":"83.8694","score":"76.4871","rank":"5","tie":"false"},{"tool":"2","test1":"85.9877","test2":"79.2507","test3":"81.5551","test4":"75.8096","score":"80.6508","rank":"1","tie":"false"},{"tool":"3","test1":"89.5435","test2":"83.6702","test3":"85.4474","test4":"55.8637","score":"78.6312","rank":"2","tie":"false"},{"tool":"4","test1":"76.5908","test2":"78.6164","test3":"80.7409","test4":"75.6137","score":"77.8904","rank":"4","tie":"false"},{"tool":"5","test1":"84.6162","test2":"71.3824","test3":"74.9969","test4":"82.4616","score":"78.3643","rank":"3","tie":"false"}]},"test_scores":{"1":{"columns":["tool","q1_3","q4","q5","q6_7","score","rank","tie"],"rows":[{"tool":"1","q1_3":"45.9596","q4":"61.1111","q5":"64.0625","q6_7":"60.9195","score":"58.0132","rank":"5","tie":"false"},{"tool":"2","q1_3":"77.6688","q4":"97.4026","q5":"86.6667","q6_7":"82.2129","score":"85.9877","rank":"2","tie":"false"},{"tool":"3","q1_3":"81.1557","q4":"98.4127","q5":"94.9153","q6_7":"83.6905","score":"89.5435","rank":"1","tie":"false"},{"tool":"4","q1_3":"35.3535","q4":"92.1875","q5":"92.3077","q6_7":"86.5144","score":"76.5908","rank":"4","tie":"false"},{"tool":"5","q1_3":"60.114","q4":"93.8462","q5":"96.3636","q6_7":"88.141","score":"84.6162","rank":"3","tie":"false"}]},"2":{"columns":["tool","q1_3","q4","q5","q6_7","score","rank","tie"],"rows":[{"tool":"1","q1_3":"62.5","q4":"100","q5":"100","q6_7":"69.2308","score":"82.9327","rank":"2","tie":"false"},{"tool":"2","q1_3":"78.817","q4":"86.4865","q5":"80.4348","q6_7":"71.2644","score":"79.2507","rank":"3","tie":"false"},{"tool":"3","q1_3":"77.1515","q4":"93.5484","q5":"88.1356","q6_7":"75.8454","score":"83.6702","rank":"1","tie":"false"},{"tool":"4","q1_3":"70.6884","q4":"84.8485","q5":"83.9286","q6_7":"75","score":"78.6164","rank":"4","tie":"false"},{"tool":"5","q1_3":"75","q4":"83.6066","q5":"96.1538","q6_7":"30.7692","score":"71.3824","rank":"5","tie":"false"}]},"3":{"columns":["tool","q1_3","q4","q5","q6_7","score","rank","tie"],"rows":[{"tool":"1","q1_3":"60.6924","q4":"100","q5":"94.3396","q6_7":"69.5","score":"81.133","rank":"3","tie":"false"},{"tool":"2","q1_3":"73.0756","q4":"100","q5":"72.5664","q6_7":"80.5785","score":"81.5551","rank":"2","tie":"false"},{"tool":"3","q1_3":"76.1905","q4":"98.5075","q5":"88.1356","q6_7":"78.9562","score":"85.4474","rank":"1","tie":"false"},{"tool":"4","q1_3":"69.958","q4":"90.625","q5":"87.931","q6_7":"74.4494","score":"80.7409","rank":"4","tie":"false"},{"tool":"5","q1_3":"81.746","q4":"92.1875","q5":"87.5","q6_7":"38.5542","score":"74.9969","rank":"5","tie":"false"}]},"4":{"columns":["tool","q1_3","q4","q5","q6_7","score","rank","tie"],"rows":[{"tool":"1","q1_3":"60.8333","q4":"98.2456","q5":"92.3077","q6_7":"84.0909","score":"83.8694","rank":"1","tie":"false"},{"tool":"2","q1_3":"60.6518","q4":"83.7209","q5":"81.25","q6_7":"77.6157","score":"75.8096","rank":"3","tie":"false"},{"tool":"3","q1_3":"57.8431","q4":"94.2857","q5":"0","q6_7":"71.3258","score":"55.8637","rank":"5","tie":"false"},{"tool":"4","q1_3":"61.2745","q4":"95.2381","q5":"83.8235","q6_7":"62.1188","score":"75.6137","rank":"4","tie":"false"},{"tool":"5","q1_3":"68.2828","q4":"92.4242","q5":"92.3077","q6_7":"76.8315","score":"82.4616","rank":"2","tie":"false"}]}},"summary_task_type":{"columns":["tests","tool","group","questions","error_words","words","errors_per_100_words","sentences","correct","correct_sentence_pct","mean_sentence_length","excluded_responses"],"rows":[{"tests":"1,2,3,4","tool":"1","group":"q1_3","questions":"S1-S3","error_words":"56","words":"135","errors_per_100_words":"41.4815","sentences":"28","correct":"3","correct_sentence_pct":"10.7143","mean_sentence_length":"4.8214","excluded_responses":"0"},{"tests":"1,2,3,4","tool":"1","group":"q4","questions":"S4","error_words":"29","words":"251","errors_per_100_words":"11.5538","sentences":"46","correct":"38","correct_sentence_pct":"82.6087","mean_sentence_length":"5.4565","excluded_responses":"0"},{"tests":"1,2,3,4","tool":"1","group":"q5","questions":"S5","error_words":"30","words":"220","errors_per_100_words":"13.6364","sentences":"46","correct":"32","correct_sentence_pct":"69.5652","mean_sentence_length":"4.7826","excluded_responses":"0"},{"tests":"1,2,3,4","tool":"1","group":"q6_7","questions":"S6-S7","error_words":"50","words":"140","errors_per_100_words":"35.7143","sentences":"15","correct":"3","correct_sentence_pct":"20","mean_sentence_length":"9.3333","excluded_responses":"0"},{"tests":"1,2,3,4","tool":"1","group":"all","questions":"S1-S7","error_words":"165","words":"746","errors_per_100_words":"22.118","sentences":"135","correct":"76","correct_sentence_pct":"56.2963","mean_sentence_length":"5.5259","excluded_responses":"0"},{"tests":"1,2,3,4","tool":"2","group":"q1_3","questions":"S1-S3","error_words":"120","words":"442","errors_per_100_words":"27.1493","sentences":"48","correct":"10","correct_sentence_pct":"20.8333","mean_sentence_length":"9.2083","excluded_responses":"0"},{"tests":"1,2,3,4","tool":"2","group":"q4","questions":"S4","error_words":"40","words":"442","errors_per_100_words":"9.0498","sentences":"70","correct":"53","correct_sentence_pct":"75.7143","mean_sentence_length":"6.3143","excluded_responses":"0"},{"tests":"1,2,3,4","tool":"2","group":"q5","questions":"S5","error_words":"83","words":"408","errors_per_100_words":"20.3431","sentences":"63","correct":"30","correct_sentence_pct":"47.619","mean_sentence_length":"6.4762","excluded_responses":"0"},{"tests":"1,2,3,4","tool":"2","group":"q6_7","questions":"S6-S7","error_words":"114","words":"538","errors_per_100_words":"21.1896","sentences":"55","correct":"13","correct_sentence_pct":"23.6364","mean_sentence_length":"9.7818","excluded_responses":"0"},{"tests":"1,2,3,4","tool":"2","group":"all","questions":"S1-S7","error_words":"357","words":"1830","errors_per_100_words":"19.5082","sentences":"236","correct":"106","correct_sentence_pct":"44.9153","mean_sentence_length":"7.7542","excluded_responses":"0"},{"tests":"1,2,3,4","tool":"3","group":"q1_3","questions":"S1-S3","error_words":"78","words":"321","errors_per_100_words":"24.2991","sentences":"45","correct":"9","correct_sentence_pct":"20","mean_sentence_length":"7.1333","excluded_responses":"0"},{"tests":"1,2,3,4","tool":"3","group":"q4","questions":"S4","error_words":"10","words":"262","errors_per_100_words":"3.8168","sentences":"47","correct":"40","correct_sentence_pct":"85.1064","mean_sentence_length":"5.5745","excluded_responses":"0"},{"tests":"1,2,3,4","tool":"3","group":"q5","questions":"S5","error_words":"17","words":"177","errors_per_100_words":"9.6045","sentences":"36","correct":"23","correct_sentence_pct":"63.8889","mean_sentence_length":"4.9167","excluded_responses":"1"},{"tests":"1,2,3,4","tool":"3","group":"q6_7","questions":"S6-S7","error_words":"86","words":"414","errors_per_100_words":"20.7729","sentences":"42","correct":"2","correct_sentence_pct":"4.7619","mean_sentence_length":"9.8571","excluded_responses":"0"},{"tests":"1,2,3,4","tool":"3","group":"all","questions":"S1-S7","error_words":"191","words":"1174","errors_per_100_words":"16.2692","sentences":"170","correct":"74","correct_sentence_pct":"43.5294","mean_sentence_length":"6.9059","excluded_responses":"1"},{"tests":"1,2,3,4","tool":"4","group":"q1_3","questions":"S1-S3","error_words":"55","words":"158","errors_per_100_words":"34.8101","sentences":"33","correct":"8","correct_sentence_pct":"24.2424","mean_sentence_length":"4.7879","excluded_responses":"1"},{"tests":"1,2,3,4","tool":"4","group":"q4","questions":"S4","error_words":"24","words":"257","errors_per_100_words":"9.3385","sentences":"49","correct":"31","correct_sentence_pct":"63.2653","mean_sentence_length":"5.2449","excluded_responses":"0"},{"tests":"1,2,3,4","tool":"4","group":"q5","questions":"S5","error_words":"31","words":"234","errors_per_100_words":"13.2479","sentences":"48","correct":"31","correct_sentence_pct":"64.5833","mean_sentence_length":"4.875","excluded_responses":"0"},{"tests":"1,2,3,4","tool":"4","group":"q6_7","questions":"S6-S7","error_words":"138","words":"512","errors_per_100_words":"26.9531","sentences":"58","correct":"8","correct_sentence_pct":"13.7931","mean_sentence_length":"8.8276","excluded_responses":"0"},{"tests":"1,2,3,4","tool":"4","group":"all","questions":"S1-S7","error_words":"248","words":"1161","errors_per_100_words":"21.3609","sentences":"188","correct":"78","correct_sentence_pct":"41.4894","mean_sentence_length":"6.1755","excluded_responses":"1"},{"tests":"1,2,3,4","tool":"5","group":"q1_3","questions":"S1-S3","error_words":"36","words":"125","errors_per_100_words":"28.8","sentences":"40","correct":"17","correct_sentence_pct":"42.5","mean_sentence_length":"3.125","excluded_responses":"0"},{"tests":"1,2,3,4","tool":"5","group":"q4","questions":"S4","error_words":"24","words":"256","errors_per_100_words":"9.375","sentences":"48","correct":"36","correct_sentence_pct":"75","mean_sentence_length":"5.3333","excluded_responses":"0"},{"tests":"1,2,3,4","tool":"5","group":"q5","questions":"S5","error_words":"15","words":"215","errors_per_100_words":"6.9767","sentences":"47","correct":"34","correct_sentence_pct":"72.3404","mean_sentence_length":"4.5745","excluded_responses":"0"},{"tests":"1,2,3,4","tool":"5","group":"q6_7","questions":"S6-S7","error_words":"57","words":"243","errors_per_100_words":"23.4568","sentences":"35","correct":"8","correct_sentence_pct":"22.8571","mean_sentence_length":"6.9429","excluded_responses":"0"},{"tests":"1,2,3,4","tool":"5","group":"all","questions":"S1-S7","error_words":"132","words":"839","errors_per_100_words":"15.733","sentences":"170","correct":"95","correct_sentence_pct":"55.8824","mean_sentence_length":"4.9353","excluded_responses":"0"}]},"hashes":{"summary-scores.tsv":"89f1251c105f","summary-task-type.tsv":"860c57cb4aeb","test1-scores.tsv":"a1f636935df0","test1-excluded-responses.tsv":"02163ec4a303","test1-tool-x-question.tsv":"2c5df8849274","test1-notes.tsv":"5a13ddd1297d","test2-scores.tsv":"556d81ec9196","test2-excluded-responses.tsv":"ecdd15987120","test2-tool-x-question.tsv":"916d5618d02a","test2-notes.tsv":"1e68cdf87c75","test3-scores.tsv":"102e3916d4e1","test3-excluded-responses.tsv":"ecdd15987120","test3-tool-x-question.tsv":"a16366a9519f","test3-notes.tsv":"f3e67de40405","test4-scores.tsv":"a6f74cce9149","test4-excluded-responses.tsv":"f14a20850978","test4-tool-x-question.tsv":"155b94a76555","test4-notes.tsv":"364e7c5a421d"}}</script>
+<script>
+const J = JSON.parse(document.getElementById('data').textContent);
+const U = J.ui;
+const f1 = x => x.toFixed(1).replace('.', U.dec);
+const fs = x => (x > 0 ? '+' : (x < 0 ? '−' : '')) + Math.abs(x).toFixed(1).replace('.', U.dec);
+const names = {}; J.tools.forEach(t => names[t.n] = t.name);
+const tip = document.getElementById('tip');
+const showTip = (ev, html) => { tip.innerHTML = html; tip.style.display = 'block'; moveTip(ev); };
+const moveTip = ev => { tip.style.left = Math.min(ev.clientX + 14, innerWidth - tip.offsetWidth - 8) + 'px'; tip.style.top = Math.min(ev.clientY + 14, innerHeight - tip.offsetHeight - 8) + 'px'; };
+const hideTip = () => tip.style.display = 'none';
+
+// 2. karne: the table is already in the page; only the tooltips are attached here
+document.querySelectorAll('td[data-tip]').forEach(td => { td.addEventListener('mouseenter', ev => showTip(ev, td.dataset.tip)); td.addEventListener('mousemove', moveTip); td.addEventListener('mouseleave', hideTip); });
+
+// data: test -> tool -> group score (from test{n}-scores.tsv); group score over all tests = their mean
+const order = J.summary_scores.rows.slice().sort((a, b) => parseFloat(a.rank) - parseFloat(b.rank)).map(r => parseInt(r.tool, 10));
+const testgrp = {};
+for (const tn of J.tests) { testgrp[tn] = {}; for (const r of J.test_scores[tn].rows) testgrp[tn][r.tool] = { q1_3: parseFloat(r.q1_3), q4: parseFloat(r.q4), q5: parseFloat(r.q5), q6_7: parseFloat(r.q6_7) }; }
+const grp = {};
+for (const k of order) { grp[k] = {}; for (const g of J.groups) grp[k][g.code] = J.tests.reduce((a, tn) => a + testgrp[tn][k][g.code], 0) / J.tests.length; }
+
+// 3. sapma
+const NS = 'http://www.w3.org/2000/svg';
+const el = (n, a = {}, p) => { const e = document.createElementNS(NS, n); for (const k in a) e.setAttribute(k, a[k]); if (p) p.appendChild(e); return e; };
+const devgrid = document.getElementById('dev');
+const W = 460, rowH = 24, left = Math.max(74, Math.ceil(Math.max(...J.tools.map(t => t.name.length)) * 6.6) + 10), right = 8, padTop = 18, half = (W - left - right) / 2, R = 32;
+for (const G of J.groups) {
+  const g = G.code, lab = G.label, sub = G.sub;
+  const gm = order.reduce((a, k) => a + grp[k][g], 0) / order.length;
+  const card = document.createElement('div'); card.className = 'dev';
+  card.innerHTML = `<h3>${lab}</h3><div class="m">${sub} · ${U.dev_mean} ${f1(gm)}</div>`;
+  const H = padTop + rowH * order.length + 4;
+  const svg = el('svg', { viewBox: `0 0 ${W} ${H}`, role: 'img', 'aria-label': `${lab}: ` + order.map(k => `${names[k]} ${fs(grp[k][g] - gm)}`).join(', ') });
+  const cx = left + half;
+  for (const v of [-R, -R / 2, R / 2, R]) { const x = cx + v / R * half; el('line', { class: 'tick', x1: x, y1: padTop - 4, x2: x, y2: H - 4 }, svg); const tk = el('text', { class: 'tk', x, y: padTop - 7, 'text-anchor': 'middle' }, svg); tk.textContent = (v > 0 ? '+' : '') + v; }
+  el('line', { class: 'zero-line', x1: cx, y1: padTop - 4, x2: cx, y2: H - 4 }, svg);
+  const sorted = [...order].sort((a, b) => (grp[b][g] - grp[a][g]));
+  sorted.forEach((k, i) => {
+    const dv = grp[k][g] - gm; const y = padTop + i * rowH;
+    const w = Math.min(Math.abs(dv), R) / R * half;
+    const nm = el('text', { class: 'dl', x: left - 8, y: y + 15, 'text-anchor': 'end' }, svg); nm.textContent = names[k];
+    el('rect', { x: dv >= 0 ? cx : cx - w, y: y + 4, width: w, height: rowH - 8, rx: 3, fill: dv >= 0 ? 'var(--pos)' : 'var(--neg)' }, svg);
+    const vl = el('text', { class: 'dv', x: dv >= 0 ? cx + w + 4 : cx - w - 4, y: y + 15, 'text-anchor': dv >= 0 ? 'start' : 'end' }, svg); vl.textContent = fs(dv);
+    const hit = el('rect', { class: 'hit', x: 0, y, width: W, height: rowH }, svg);
+    const html = `<b>${names[k]} · ${lab}</b><br>${U.dev_tip_score.replace('{s}', f1(grp[k][g])).replace('{m}', f1(gm))}<br>${U.tests_label}: ${J.tests.map(tn => f1(testgrp[tn][k][g])).join(' · ')}`;
+    hit.addEventListener('mouseenter', ev => showTip(ev, html)); hit.addEventListener('mousemove', moveTip); hit.addEventListener('mouseleave', hideTip);
+  });
+  card.appendChild(svg); devgrid.appendChild(card);
+}
+</script>
+</body>
+</html>

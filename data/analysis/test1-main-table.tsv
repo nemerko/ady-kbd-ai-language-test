@@ -1,0 +1,6 @@
+﻿tool	q1_3_errors_per_100_words	q1_3_correct_sentence_pct	q1_3_words	q1_3_mean_sentence_length	q4_errors_per_100_words	q4_correct_sentence_pct	q4_words	q4_mean_sentence_length	q5_errors_per_100_words	q5_correct_sentence_pct	q5_words	q5_mean_sentence_length	q6_7_errors_per_100_words	q6_7_correct_sentence_pct	q6_7_words	q6_7_mean_sentence_length	all_errors_per_100_words	all_correct_sentence_pct	all_words	all_mean_sentence_length
+1	52	12.5	25	3.125	38.8889	46.1538	72	5.5385	35.9375	15.3846	64	4.9231	39.2857	0	56	9.3333	39.6313	22.5	217	5.425
+2	20.8333	30	120	12	2.5974	92.8571	77	5.5	13.3333	50	75	5.3571	16.3636	20	110	11	14.3979	52.0833	382	7.9583
+3	17.8947	25	95	7.9167	1.5873	91.6667	63	5.25	5.0847	75	59	4.9167	17.0455	0	88	14.6667	11.8033	54.7619	305	7.2619
+4	41.1765	20	17	3.4	7.8125	66.6667	64	5.3333	7.6923	72.7273	52	4.7273	14.7826	13.3333	115	7.6667	13.3065	44.186	248	5.7674
+5	37.8378	30	37	3.7	6.1538	83.3333	65	5.4167	3.6364	83.3333	55	4.5833	11.2903	33.3333	62	10.3333	12.3288	62.5	219	5.475

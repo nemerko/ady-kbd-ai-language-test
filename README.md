@@ -19,6 +19,7 @@ planning for Adyghe and Kabardian.
     data/raw/         raw answers, one file per tool per repetition
     data/workbooks/   the marking workbooks, labelled by the evaluators
     data/analysis/    the tables the tool produces from those workbooks
+    data/report/      the results page the tool writes from those tables (English, Turkish, Russian)
     tool/             the analysis tool (C#)
 
 ## Method in brief
@@ -114,7 +115,8 @@ records a SHA-256 for every tracked file, and what those hashes attest to differ
 `data/raw/` is unchanged since the answers were collected, and that is the claim the file
 exists to support. `protocol/` holds the versions in force; `coding-scheme.md` carries its
 own revision history. `data/workbooks/` is edited as marking proceeds, and `data/analysis/`
-is produced from those workbooks by the tool and kept together with them: when a marking
+is produced from those workbooks by the tool and kept together with them, and `data/report/`
+is regenerated together with the analysis tables: when a marking
 decision changes, the workbook is corrected and the tables are regenerated, so the two always
 match. Anyone holding both can run the tool and obtain the same numbers.
 

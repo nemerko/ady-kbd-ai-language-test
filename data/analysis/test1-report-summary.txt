@@ -3,4 +3,5 @@ Responses in workbook: 35
 Responses matched to analysis output: 35
 
 Responses excluded (no evaluable content): 1
+Words in unlabeled sentences of included responses (outside the denominator): 0
 Data integrity warnings: 0

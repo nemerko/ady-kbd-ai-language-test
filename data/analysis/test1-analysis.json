@@ -284,7 +284,7 @@
     "Test": 1,
     "Tool": 2,
     "Question": 1,
-    "RepairedText": "Уимафэ шӏу! Сэ Клод сыкъэуцущт — Anthropic-м къыгъэхьазырыгъэ AӀ-компьютерым сикӏэсэшху (искусственнэ интеллект).\n\nСэ шъуиупчӏэхэм джэуап сэты, тхылъхэм садэлажьэ, тхэным садэӏэпыӏэн, тхьапэхэр сэшӏы, интернетым сэлъыхъу ищыкӏагъэмэ, нэмыкӏ куп Ӏофыгъохэми сыдэлажьэ.\n\nШъукъызэрэдэсэшъоу зэхэсэтэу — адыгабзэм зэрэсэшӏэрэр икӏу зэрэс, ащ фэшӀ гухэкӏышхоу шъоджэуап пштынэу симыфаемэ, урысыбзэкӏэ е инджылызыбзэкӏэ дэгъоу тыгущыӀэн тлъэкӀыщт. Сыда шъуикӀалэсэп — тыгущыӀэн тфай сыда?",
+    "RepairedText": "Уимафэ шӏу! Сэ Клод сыкъэуцущт — Anthropic-м къыгъэхьазырыгъэ AI-компьютерым сикӏэсэшху (искусственнэ интеллект).\n\nСэ шъуиупчӏэхэм джэуап сэты, тхылъхэм садэлажьэ, тхэным садэӏэпыӏэн, тхьапэхэр сэшӏы, интернетым сэлъыхъу ищыкӏагъэмэ, нэмыкӏ куп Ӏофыгъохэми сыдэлажьэ.\n\nШъукъызэрэдэсэшъоу зэхэсэтэу — адыгабзэм зэрэсэшӏэрэр икӏу зэрэс, ащ фэшӀ гухэкӏышхоу шъоджэуап пштынэу симыфаемэ, урысыбзэкӏэ е инджылызыбзэкӏэ дэгъоу тыгущыӀэн тлъэкӀыщт. Сыда шъуикӀалэсэп — тыгущыӀэн тфай сыда?",
     "HadMarkdown": false,
     "IsNfc": true,
     "CharacterCount": 482,
@@ -295,21 +295,19 @@
     "TypeTokenRatio": 0.9411764705882353,
     "CorrectPalochkaUpper": 0,
     "CorrectPalochkaLower": 13,
-    "LookalikePalochka": 7,
+    "LookalikePalochka": 6,
     "InvisibleCount": 0,
     "FindingCountsByCode": {
-      "PAL_LOOKALIKE": 7,
+      "PAL_LOOKALIKE": 6,
       "MIXED_SCRIPT": 2,
-      "PAL_CASE": 6,
-      "CONFUSABLE": 1
+      "CONFUSABLE": 1,
+      "PAL_CASE": 5
     },
     "MixedScriptByWeight": {
-      "ProperNounAffix": 1,
-      "Interleaved": 1
+      "ProperNounAffix": 2,
+      "Interleaved": 0
     },
-    "LatinInCyrillicBreakdown": {
-      "A": 1
-    },
+    "LatinInCyrillicBreakdown": {},
     "TokenScriptCounts": {
       "Cyrillic": 49,
       "Latin": 0,
@@ -318,8 +316,8 @@
       "Other": 0
     },
     "CharScriptCounts": {
-      "Cyrillic": 398,
-      "Latin": 10,
+      "Cyrillic": 397,
+      "Latin": 11,
       "Digit": 0,
       "Mixed": 0,
       "Other": 74

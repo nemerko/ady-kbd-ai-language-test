@@ -1,0 +1,1425 @@
+﻿[
+  {
+    "Id": "T4-A1-S1",
+    "Test": 4,
+    "Tool": 1,
+    "Question": 1,
+    "RepairedText": "Уимафэ шӏу! \uD83D\uDE0A Сэ сыфӏыщ, о? Сыд о фэдэу? Кӏэкӏэу тедгущыӏэн!",
+    "HadMarkdown": false,
+    "IsNfc": true,
+    "CharacterCount": 61,
+    "WordCount": 10,
+    "SentenceCount": 4,
+    "AvgSentenceLengthWords": 2.5,
+    "AvgWordLengthChars": 4.4,
+    "TypeTokenRatio": 0.9,
+    "CorrectPalochkaUpper": 0,
+    "CorrectPalochkaLower": 5,
+    "LookalikePalochka": 0,
+    "InvisibleCount": 0,
+    "FindingCountsByCode": {},
+    "MixedScriptByWeight": {
+      "ProperNounAffix": 0,
+      "Interleaved": 0
+    },
+    "LatinInCyrillicBreakdown": {},
+    "TokenScriptCounts": {
+      "Cyrillic": 10,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 0
+    },
+    "CharScriptCounts": {
+      "Cyrillic": 44,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 17
+    },
+    "CopyProbe": null
+  },
+  {
+    "Id": "T4-A1-S2",
+    "Test": 4,
+    "Tool": 1,
+    "Question": 2,
+    "RepairedText": "Сэ цӏыфым фэдэу акъыл сымӏэп, ау информацие зэхэсщын, логикэу гупшысэн, джэуап къэхьэн сылъэкӏы. Сэ искусственнэ интеллектщ, сыд дэдэмэ сэ сшъхьэкӏэ зэхэсщын цӏыфым фэдэу сыщыӏэп.",
+    "HadMarkdown": false,
+    "IsNfc": true,
+    "CharacterCount": 179,
+    "WordCount": 24,
+    "SentenceCount": 2,
+    "AvgSentenceLengthWords": 12,
+    "AvgWordLengthChars": 6.25,
+    "TypeTokenRatio": 0.7916666666666666,
+    "CorrectPalochkaUpper": 0,
+    "CorrectPalochkaLower": 6,
+    "LookalikePalochka": 0,
+    "InvisibleCount": 0,
+    "FindingCountsByCode": {},
+    "MixedScriptByWeight": {
+      "ProperNounAffix": 0,
+      "Interleaved": 0
+    },
+    "LatinInCyrillicBreakdown": {},
+    "TokenScriptCounts": {
+      "Cyrillic": 24,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 0
+    },
+    "CharScriptCounts": {
+      "Cyrillic": 150,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 29
+    },
+    "CopyProbe": null
+  },
+  {
+    "Id": "T4-A1-S3",
+    "Test": 4,
+    "Tool": 1,
+    "Question": 3,
+    "RepairedText": "Э, къыостмэ къызэдзэкӏын сылъэкӏы. Текстыр къысэт, сыд бзэкӏэ зэрэбдзэкӏын къысэӏу!",
+    "HadMarkdown": false,
+    "IsNfc": true,
+    "CharacterCount": 83,
+    "WordCount": 10,
+    "SentenceCount": 2,
+    "AvgSentenceLengthWords": 5,
+    "AvgWordLengthChars": 7,
+    "TypeTokenRatio": 1,
+    "CorrectPalochkaUpper": 0,
+    "CorrectPalochkaLower": 5,
+    "LookalikePalochka": 0,
+    "InvisibleCount": 0,
+    "FindingCountsByCode": {},
+    "MixedScriptByWeight": {
+      "ProperNounAffix": 0,
+      "Interleaved": 0
+    },
+    "LatinInCyrillicBreakdown": {},
+    "TokenScriptCounts": {
+      "Cyrillic": 10,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 0
+    },
+    "CharScriptCounts": {
+      "Cyrillic": 70,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 13
+    },
+    "CopyProbe": null
+  },
+  {
+    "Id": "T4-A1-S4",
+    "Test": 4,
+    "Tool": 1,
+    "Question": 4,
+    "RepairedText": "Bugün güzel bir gün. Bahçemizde bütün ailemizle toplandık. Akrabalarımız ve komşularımız da gelecek. Bu akşam düğünümüz var. Ağabeyim gelin aldı. Gelinimiz çok güzel. Birbirlerine çok yakışıyorlar. Bir yıldır konuşuyorlardı. Birbirlerini severek bu güzel güne ulaştılar. Geçen yıl ağabeyimin arkadaşının doğum gününde tanıştılar. Allah’tan sağlam ve varlıklı bir aile kurmalarını, onlara güzel imkânlar ve iyi nasipler vermesini diliyorum.",
+    "HadMarkdown": false,
+    "IsNfc": true,
+    "CharacterCount": 439,
+    "WordCount": 57,
+    "SentenceCount": 11,
+    "AvgSentenceLengthWords": 5.181818181818182,
+    "AvgWordLengthChars": 6.508771929824562,
+    "TypeTokenRatio": 0.8421052631578947,
+    "CorrectPalochkaUpper": 0,
+    "CorrectPalochkaLower": 0,
+    "LookalikePalochka": 0,
+    "InvisibleCount": 0,
+    "FindingCountsByCode": {},
+    "MixedScriptByWeight": {
+      "ProperNounAffix": 0,
+      "Interleaved": 0
+    },
+    "LatinInCyrillicBreakdown": {},
+    "TokenScriptCounts": {
+      "Cyrillic": 0,
+      "Latin": 57,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 0
+    },
+    "CharScriptCounts": {
+      "Cyrillic": 0,
+      "Latin": 370,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 69
+    },
+    "CopyProbe": null
+  },
+  {
+    "Id": "T4-A1-S5",
+    "Test": 4,
+    "Tool": 1,
+    "Question": 5,
+    "RepairedText": "Непэ мэфэ дах. Тищагу зэкӏэ тиунагъохэм тыщызэрэугъоигъ. Ӏахьылхэри тиблагъэхэри къэкӏощтых. Мы пчыхьэ нысащэ тиӏ. Сшынахьыжъ къыщагъ. Тинысэ дэхэ дэд. Ахэр дэгъоу зэдештэх. Ахэр илъэс хъугъэу зэдэгущыӏэщтыгъэх. Тӏури зышӏу зэрэлъэгъуакъымэ, мы мэфэ дахэм къэсынхэр алъэкӏыщтэп. Блэкӏыгъэ илъэсым сшынахьыжъ иныбджэгъу инысащэ нэӏуасэ щызэфэхъугъагъэх. Тхьам унэгъо ӏужъ, унэгъо бай ышӏынхэу, амал дэгъухэр агъотынэу, насыпышӏонхэу сафэлъаӏо.",
+    "HadMarkdown": false,
+    "IsNfc": true,
+    "CharacterCount": 442,
+    "WordCount": 52,
+    "SentenceCount": 11,
+    "AvgSentenceLengthWords": 4.7272727272727275,
+    "AvgWordLengthChars": 7.230769230769231,
+    "TypeTokenRatio": 0.9038461538461539,
+    "CorrectPalochkaUpper": 1,
+    "CorrectPalochkaLower": 13,
+    "LookalikePalochka": 0,
+    "InvisibleCount": 0,
+    "FindingCountsByCode": {},
+    "MixedScriptByWeight": {
+      "ProperNounAffix": 0,
+      "Interleaved": 0
+    },
+    "LatinInCyrillicBreakdown": {},
+    "TokenScriptCounts": {
+      "Cyrillic": 52,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 0
+    },
+    "CharScriptCounts": {
+      "Cyrillic": 376,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 66
+    },
+    "CopyProbe": "OZGUN_GERI_VERDI"
+  },
+  {
+    "Id": "T4-A1-S6",
+    "Test": 4,
+    "Tool": 1,
+    "Question": 6,
+    "RepairedText": "Мы параграфитӏум сшынахьыжъ нысащэ къышӏыгъэу, ахэр зышӏу зэрэлъэгъухэзэ зэкӏэ дахэ мэфэм къэсыгъэх. Тхьам ахэм унэгъо ӏужъ, унэгъо бай ышӏынхэу, насыпышӏо зэхъунхэу сафэлъаӏо.",
+    "HadMarkdown": false,
+    "IsNfc": true,
+    "CharacterCount": 176,
+    "WordCount": 22,
+    "SentenceCount": 2,
+    "AvgSentenceLengthWords": 11,
+    "AvgWordLengthChars": 6.818181818181818,
+    "TypeTokenRatio": 0.9545454545454546,
+    "CorrectPalochkaUpper": 0,
+    "CorrectPalochkaLower": 8,
+    "LookalikePalochka": 0,
+    "InvisibleCount": 0,
+    "FindingCountsByCode": {},
+    "MixedScriptByWeight": {
+      "ProperNounAffix": 0,
+      "Interleaved": 0
+    },
+    "LatinInCyrillicBreakdown": {},
+    "TokenScriptCounts": {
+      "Cyrillic": 22,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 0
+    },
+    "CharScriptCounts": {
+      "Cyrillic": 150,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 26
+    },
+    "CopyProbe": null
+  },
+  {
+    "Id": "T4-A1-S7",
+    "Test": 4,
+    "Tool": 1,
+    "Question": 7,
+    "RepairedText": "Зэфэшъхьафыныгъэ щыӏэп.",
+    "HadMarkdown": false,
+    "IsNfc": true,
+    "CharacterCount": 23,
+    "WordCount": 2,
+    "SentenceCount": 1,
+    "AvgSentenceLengthWords": 2,
+    "AvgWordLengthChars": 10.5,
+    "TypeTokenRatio": 1,
+    "CorrectPalochkaUpper": 0,
+    "CorrectPalochkaLower": 1,
+    "LookalikePalochka": 0,
+    "InvisibleCount": 0,
+    "FindingCountsByCode": {},
+    "MixedScriptByWeight": {
+      "ProperNounAffix": 0,
+      "Interleaved": 0
+    },
+    "LatinInCyrillicBreakdown": {},
+    "TokenScriptCounts": {
+      "Cyrillic": 2,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 0
+    },
+    "CharScriptCounts": {
+      "Cyrillic": 21,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 2
+    },
+    "CopyProbe": null
+  },
+  {
+    "Id": "T4-A2-S1",
+    "Test": 4,
+    "Tool": 2,
+    "Question": 1,
+    "RepairedText": "Уимафэ шӏу! Сэ Claude, Anthropic къызэрихьыгъэ искусственнэ интеллект сэ. Упчӏэхэм жэуап естыщт, тхыгъэхэр сэтхэщтых, зэкӏэлъыкӏуэнхэр сэгъэзэщтых, программэхэр сэтхэщтых.\n\nАдыгабзэкӏэ сэ нэхъ макӏэу сэпсэлъэ, сыбгъэшӏэжьми хъущт. Хъумэ, урысыбзэкӏэ е англисыбзэкӏэ нэхъ къызэрыгъэзэщт.",
+    "HadMarkdown": false,
+    "IsNfc": true,
+    "CharacterCount": 286,
+    "WordCount": 31,
+    "SentenceCount": 5,
+    "AvgSentenceLengthWords": 6.2,
+    "AvgWordLengthChars": 7.870967741935484,
+    "TypeTokenRatio": 0.8709677419354839,
+    "CorrectPalochkaUpper": 0,
+    "CorrectPalochkaLower": 9,
+    "LookalikePalochka": 0,
+    "InvisibleCount": 0,
+    "FindingCountsByCode": {},
+    "MixedScriptByWeight": {
+      "ProperNounAffix": 0,
+      "Interleaved": 0
+    },
+    "LatinInCyrillicBreakdown": {},
+    "TokenScriptCounts": {
+      "Cyrillic": 29,
+      "Latin": 2,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 0
+    },
+    "CharScriptCounts": {
+      "Cyrillic": 229,
+      "Latin": 15,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 42
+    },
+    "CopyProbe": null
+  },
+  {
+    "Id": "T4-A2-S2",
+    "Test": 4,
+    "Tool": 2,
+    "Question": 2,
+    "RepairedText": "Сэ жэуапхэр зэзгъэпсыхьэу, сэгупшысэу сэлажьэ, ау ар цӏыфым игупшысэу фэдэ хъурэ-хъуракӏэр сшӏэрэп. Сэ сыдэу сыкӏорэр сэ сшъхьэкӏэ слъэгъурэ-слъэгъурэпи зэхэсфыщтэп. Ащ фэдэ упчӏэм философхэм, шӏэныгъэлэжьхэм жэуап зэфэдэ къаттырэп, сэри шъыпкъэу сшӏэрэп.\n\nАдыгабзэкӏэ сэ сыкъызэрэтхэрэм кӏэкӏэу пшӏэнкӏэ мыщыӏэныгъэ ӏэпэӏасэ сиӏ, лъэкӏыныгъэ зиӏэм нэхъ тыбзэ мэкӏэ сэ къыздэсымыгъэтхырэмэ уигъэгъу.",
+    "HadMarkdown": false,
+    "IsNfc": true,
+    "CharacterCount": 399,
+    "WordCount": 46,
+    "SentenceCount": 4,
+    "AvgSentenceLengthWords": 11.5,
+    "AvgWordLengthChars": 7.478260869565218,
+    "TypeTokenRatio": 0.8695652173913043,
+    "CorrectPalochkaUpper": 0,
+    "CorrectPalochkaLower": 20,
+    "LookalikePalochka": 0,
+    "InvisibleCount": 0,
+    "FindingCountsByCode": {},
+    "MixedScriptByWeight": {
+      "ProperNounAffix": 0,
+      "Interleaved": 0
+    },
+    "LatinInCyrillicBreakdown": {},
+    "TokenScriptCounts": {
+      "Cyrillic": 46,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 0
+    },
+    "CharScriptCounts": {
+      "Cyrillic": 342,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 57
+    },
+    "CopyProbe": null
+  },
+  {
+    "Id": "T4-A2-S3",
+    "Test": 4,
+    "Tool": 2,
+    "Question": 3,
+    "RepairedText": "Хьау, сшӏын слъэкӏыщт. Адыгабзэм сыкӏэзыщэнэу сымыгъэнэщхъэй, ау зэдзэкӏыныр нэхъыбэрэмкӏэ сэ зыхэсшӏыкӏырэ лъэныкъохэм ащыщ: гущыӏэхэм якъэбар, гущыӏэухыгъэм зэхэтыкӏэ, тхыгъэм ытхыкӏэ сэгъэпсэфыщт.\n\nАу зы гуетыныгъэ: адыгабзэр нэмыкӏ тыбзэхэм афэдэу сызэрэзэхэсшӏыкӏырэп, ащ къыхэкӏыкӏэ сэ зэдзэкӏыгъэм хэукъоныгъэхэр хэлъын алъэкӏыщт, ау нэхъыбэрэмкӏэ хьыкумэу шъхьащыкӏэмэ пшӏэщт. Тхыгъэ мэхьанэшхо зиӏэмэ (хьыкумхэмкӏэ, медицинэмкӏэ, ухыгъэ-тхыгъэ щыӏэныгъэмкӏэ) адыгабзэ шъхьэкӏэ зышӏырэ зыгорэм зэбгъэплъыжьыным гъэпсэфыщт.\n\nСыд зэдзэкӏыныр, къысэт, ары!",
+    "HadMarkdown": false,
+    "IsNfc": true,
+    "CharacterCount": 561,
+    "WordCount": 57,
+    "SentenceCount": 5,
+    "AvgSentenceLengthWords": 11.4,
+    "AvgWordLengthChars": 8.491228070175438,
+    "TypeTokenRatio": 0.9122807017543859,
+    "CorrectPalochkaUpper": 0,
+    "CorrectPalochkaLower": 29,
+    "LookalikePalochka": 0,
+    "InvisibleCount": 0,
+    "FindingCountsByCode": {},
+    "MixedScriptByWeight": {
+      "ProperNounAffix": 0,
+      "Interleaved": 0
+    },
+    "LatinInCyrillicBreakdown": {},
+    "TokenScriptCounts": {
+      "Cyrillic": 57,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 0
+    },
+    "CharScriptCounts": {
+      "Cyrillic": 483,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 78
+    },
+    "CopyProbe": null
+  },
+  {
+    "Id": "T4-A2-S4",
+    "Test": 4,
+    "Tool": 2,
+    "Question": 4,
+    "RepairedText": "Мы параграфым тыркубзэкӏэ зэдзэкӏыгъэр:\n\n«Бүгün güzel bir gün. Bütün aile avlumuzda toplandık. Akrabalarımız ve yakınlarımız da geliyor. Bu akşam bizim düğünümüz var. Ağabeyim evleniyor. Gelinimiz çok güzel. İkisi birbiriyle çok iyi anlaşıyor. İki yıldır konuşuyorlardı. İkisi de birbirini severek bu güzel güne ulaştılar. Geçen yıl ağabeyimin arkadaşının düğününde tanışmışlardı. Allah onlara sağlam bir yuva, zengin bir aile kurmayı, iyi imkânlar bulmayı ve mutlu olmayı nasip etsin diye dua ediyorum.»\n\nБүгün түркчэ тхыгъэм ехьыл хэукъоныгъэ зэхэтыгъ: первэ гущыӏэухыгъэм «Bugün» хъун фае («Бүгün» тхыгъэ кириллицэм ипкъыкӏ тхагъэ). Ар зэхъокӏыгъэу къыгъэзэжьын фае:\n\n«Bugün güzel bir gün. ...»\n\nАдыгабзэ тхыгъэм зэхэсфыгъэм зыхэмыгъэзыхьэу сыкӏон, ау пстэуми зэхэсфыгъ. Мыщ фэдэ зы гущыӏэ-ухыгъэ зэхъокӏыгъэ-хьалэлэу зэхэсфыгъэм хэс: «Мы пчыхьэ нысащэ тиӏ. Сшынахьыжъ къыщагъ» зыфэпшӏыгъэм «Bu akşam düğünümüz var. Ağabeyim evleniyor» гущыӏэухыгъэм фэдэ зэдзэкӏыгъэм сыкӏэкӏэ хэсшӏыкӏыщтыгъ, зэпэкӏэу «къыщагъ» зыфэпшӏыгъэм «evleniyor» (щӏэхъо щыӏэщт) мэхьанэ иӏэу сыкӏэсшӏыкӏыгъ.\n\nНэмыкӏ зэпэкӏэ гущыӏэхэм мэхьанэ зиӏэхэр: «Тхьам... сафэлъаӏо» зыфэпшӏыгъэм «Allah nasip etsin diye dua ediyorum» зэдзэкӏыгъэм тыркубзэм ифэшъуашэу «dua ediyorum» зэпэкӏыгъ. «Ӏужъ» мэхьанэ зиӏэм «sağlam» (быракъы), нэмыкӏэу «köklü» (лъэпкъ) ары хъущтыр.\n\nТхыгъэм хэукъоныгъэ зэпэкӏэ щыӏэкӏэ зэбгъэплъыжьыным лӏыгъэ къычӏэбгъэкӏыжьы.",
+    "HadMarkdown": true,
+    "IsNfc": true,
+    "CharacterCount": 1418,
+    "WordCount": 172,
+    "SentenceCount": 23,
+    "AvgSentenceLengthWords": 7.478260869565218,
+    "AvgWordLengthChars": 6.790697674418604,
+    "TypeTokenRatio": 0.7267441860465116,
+    "CorrectPalochkaUpper": 1,
+    "CorrectPalochkaLower": 40,
+    "LookalikePalochka": 0,
+    "InvisibleCount": 0,
+    "FindingCountsByCode": {
+      "NON_ALPHABET": 4,
+      "MIXED_SCRIPT": 3
+    },
+    "MixedScriptByWeight": {
+      "Interleaved": 3,
+      "ProperNounAffix": 0
+    },
+    "LatinInCyrillicBreakdown": {
+      "ü": 3,
+      "n": 3
+    },
+    "TokenScriptCounts": {
+      "Cyrillic": 83,
+      "Latin": 86,
+      "Digit": 0,
+      "Mixed": 3,
+      "Other": 0
+    },
+    "CharScriptCounts": {
+      "Cyrillic": 663,
+      "Latin": 503,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 252
+    },
+    "CopyProbe": null
+  },
+  {
+    "Id": "T4-A2-S5",
+    "Test": 4,
+    "Tool": 2,
+    "Question": 5,
+    "RepairedText": "Адыгабзэкӏэ зэдзэкӏыгъэр мары:\n\n«Непэ мафэ дахэ. Тищагу унагъом зэкӏэ щызэрэугъоигъ. Ӏахьылхэри тиблагъэхэри къэкӏощтых. Мы пчыхьэ нысащэ тиӏ. Сшынахьыжъ нысэ къыщагъ. Тинысэ дэхэ дэд. Ахэр зэрыфэшъуашэх. Ахэр илъэсрэ зэдэгущыӏэщтыгъэх. Тӏури зэрэзэшӏулъэгъугъэмкӏэ мы мафэ дахэм нэсыгъэх (зэшӏулъэгъугъэхэп зыхъукӏэ, мы мафэм нэсыщтыгъэхэп). Блэкӏыгъэ илъэсым сшынахьыжъ иныбджэгъу ыгъэхъузэнэгъэ мафэм нэӏуасэ зэфэхъугъэх. Тхьам унэгъо ӏужъ, унэгъо бай ышӏынхэу, амал дэгъухэр, насып дэгъухэр аты ӏуи сэлъэӏу.»\n\nСэ зэхэсфыгъэ хэукъоныгъэмэ ащыщ:\n\n- «Bugün»: «непэ» гущыӏэр сэ зэбгъэзэкӏэщт.\n- «Doğum günü» (къызэралъфыгъэ мафэ) «ыгъэхъузэнэгъэ мафэ» зэтхагъэр нэхъ дэгъоу «къызэралъфыгъэ мафэ» хъущт, ар сэ къэсшӏыжьынэу фэсшӏыгъэу сыкӏэкӏэщтыгъэп. Зэдзэкӏыгъэм фэшӏ сшӏошӏыхьэ: «иныбджэгъу къызэралъфыгъэ мафэм нэӏуасэ зэфэхъугъэх».\n- Сшынахьыжъ нысэ къэщагъэ: «Abim gelin aldı» гущыӏэухыгъэр «сшынахьыжъ нысэ къыщагъ» зэрэзэдзэкӏыгъэм ехьыл мэхьанэ щыӏэп.\n\nСэ адыгабзэм сызэрэзэхэсшӏыкӏырэм ыпкъ къикӏэу гущыӏэ зэхэтыкӏэ хэукъоныгъэхэр, тхыгъэ орфографие хэукъоныгъэхэр къыхэкӏынхэ алъэкӏыщт. Мы зэдзэкӏыгъэр адыгабзэ зышӏырэ лӏэужым зэбгъэплъыжьынымкӏэ ухэмыгъэзыхьэ.",
+    "HadMarkdown": true,
+    "IsNfc": true,
+    "CharacterCount": 1172,
+    "WordCount": 128,
+    "SentenceCount": 19,
+    "AvgSentenceLengthWords": 6.7368421052631575,
+    "AvgWordLengthChars": 7.6953125,
+    "TypeTokenRatio": 0.765625,
+    "CorrectPalochkaUpper": 1,
+    "CorrectPalochkaLower": 42,
+    "LookalikePalochka": 0,
+    "InvisibleCount": 0,
+    "FindingCountsByCode": {},
+    "MixedScriptByWeight": {
+      "ProperNounAffix": 0,
+      "Interleaved": 0
+    },
+    "LatinInCyrillicBreakdown": {},
+    "TokenScriptCounts": {
+      "Cyrillic": 122,
+      "Latin": 6,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 0
+    },
+    "CharScriptCounts": {
+      "Cyrillic": 958,
+      "Latin": 27,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 187
+    },
+    "CopyProbe": "OZGUN_GERI_VERDI"
+  },
+  {
+    "Id": "T4-A2-S6",
+    "Test": 4,
+    "Tool": 2,
+    "Question": 6,
+    "RepairedText": "Непэ тиунагъо нысащэ щагум щыкӏо: сшынахьыжъ нысэ дахэ къыщэ, ӏахьылхэмрэ благъэхэмрэ къакӏох. Нысэ-ӏашэхэр зэрэзэшӏулъэгъухэм къыхэкӏэу мы мафэм нэсыгъэх, сэри насыпышӏо, унэгъо ӏужъ, унэгъо бай яӏэнэу сафэлъаӏо.\n\nПараграфитӏум зэтехьэрэ щыӏэп: япэрэм «илъэситӏу зэдэгущыӏагъэх, иныбджэгъу нысащэм нэӏуасэ зэфэхъугъэх» ыӏо, ятӏонэрэм «илъэсрэ зэдэгущыӏагъэх, иныбджэгъу къызэралъфыгъэ мафэм нэӏуасэ зэфэхъугъэх» ыӏо. Ау ар гущыӏэухыгъитӏум хэзгъэуцонэу сыфитыгъэп.",
+    "HadMarkdown": false,
+    "IsNfc": true,
+    "CharacterCount": 465,
+    "WordCount": 51,
+    "SentenceCount": 4,
+    "AvgSentenceLengthWords": 12.75,
+    "AvgWordLengthChars": 7.784313725490196,
+    "TypeTokenRatio": 0.8627450980392157,
+    "CorrectPalochkaUpper": 0,
+    "CorrectPalochkaLower": 22,
+    "LookalikePalochka": 0,
+    "InvisibleCount": 0,
+    "FindingCountsByCode": {},
+    "MixedScriptByWeight": {
+      "ProperNounAffix": 0,
+      "Interleaved": 0
+    },
+    "LatinInCyrillicBreakdown": {},
+    "TokenScriptCounts": {
+      "Cyrillic": 51,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 0
+    },
+    "CharScriptCounts": {
+      "Cyrillic": 396,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 69
+    },
+    "CopyProbe": null
+  },
+  {
+    "Id": "T4-A2-S7",
+    "Test": 4,
+    "Tool": 2,
+    "Question": 7,
+    "RepairedText": "Ары, зэфэшъхьафыныгъэ яӏ. Нэхъыщхьэхэр мыхэр:\n\n1. Зэгурыӏон зэхъокӏыныгъэ: адыгэ тхыгъэм «Ахэр илъэс хъугъэу зэдэгущыӏэщтыгъэх» (илъэситӏу хъугъэу) ыӏо, тыркубзэм «bir yıldır» (илъэсрэ хъугъэу) ыӏо.\n\n2. Нэӏуасэ зэфэхъугъэ чӏыпӏэр: адыгэ тхыгъэм сшынахьыжъ иныбджэгъу инысащэ нэӏуасэ щызэфэхъугъэх ыӏо, тыркубзэм ныбджэгъум ыгъэхъузэнэгъэ мафэм (doğum günü, къызэралъфыгъэ мафэ) ыӏо.\n\n3. Сшынахьыжъым ехьыл гущыӏэ: адыгэ тхыгъэм «Сшынахьыжъ къыщагъ» (нысэ зыфэпшӏыгъэр къэгъэнагъэп), тыркубзэм «Abim gelin aldı» (нысэ ышагъ) ыӏо. Мэхьанэкӏэ зэфэдэх.\n\n4. Дахэм ехьыл гущыӏэ: адыгэ тхыгъэм «Ахэр дэгъоу зэдештэх» (дэгъоу зэгурыӏох) ыӏо, тыркубзэм «birbirlerine yakışıyorlar» (зэрыфэшъуашэх) ыӏо. Мэхьанэ нэхъ зэпэблагъэ щыӏэ, ау зэфэдэп.\n\n5. Благъэхэм ехьыл гущыӏэ: «Akrabalarla yakınlarımızda gelecek» тыркубзэм зэхэтыкӏэ хэукъоныгъэ иӏэу сэ слъэгъу («yakınlarımız da»), ау мэхьанэкӏэ адыгэ тхыгъэм фэдэх.\n\n6. Ухыгъэ-дуакӏэм: «Allahtan» тыркубзэм «Тхьэм» фэдэх, ау «dilerim» (сэлъэӏу) адыгэ тхыгъэм «сафэлъаӏо» ыӏо, мэхьанэкӏэ зэпэблагъэх.\n\nНэхъыщхьэу зэфэшъхьафыр япэ тӏу: илъэсымрэ илъэситӏумрэ, нысащэмрэ къызэралъфыгъэ мафэмрэ.",
+    "HadMarkdown": true,
+    "IsNfc": true,
+    "CharacterCount": 1129,
+    "WordCount": 125,
+    "SentenceCount": 11,
+    "AvgSentenceLengthWords": 11.363636363636363,
+    "AvgWordLengthChars": 7.272,
+    "TypeTokenRatio": 0.688,
+    "CorrectPalochkaUpper": 0,
+    "CorrectPalochkaLower": 33,
+    "LookalikePalochka": 0,
+    "InvisibleCount": 0,
+    "FindingCountsByCode": {},
+    "MixedScriptByWeight": {
+      "ProperNounAffix": 0,
+      "Interleaved": 0
+    },
+    "LatinInCyrillicBreakdown": {},
+    "TokenScriptCounts": {
+      "Cyrillic": 109,
+      "Latin": 16,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 0
+    },
+    "CharScriptCounts": {
+      "Cyrillic": 792,
+      "Latin": 116,
+      "Digit": 6,
+      "Mixed": 0,
+      "Other": 215
+    },
+    "CopyProbe": null
+  },
+  {
+    "Id": "T4-A3-S1",
+    "Test": 4,
+    "Tool": 3,
+    "Question": 1,
+    "RepairedText": "Уимафэ шӏу! Сэра Γущыӏэгъур (Gemini), уи ӀэпыӀэгъу шъхьаӀэ. Арэтышъ, сыдэдэ къыпфэсӀошъун фае? Сыда уишӀоигъоныгъэ е къэпшӀэ шӀоигъур?",
+    "HadMarkdown": false,
+    "IsNfc": true,
+    "CharacterCount": 134,
+    "WordCount": 17,
+    "SentenceCount": 4,
+    "AvgSentenceLengthWords": 4.25,
+    "AvgWordLengthChars": 6.470588235294118,
+    "TypeTokenRatio": 1,
+    "CorrectPalochkaUpper": 0,
+    "CorrectPalochkaLower": 2,
+    "LookalikePalochka": 7,
+    "InvisibleCount": 0,
+    "FindingCountsByCode": {
+      "PAL_LOOKALIKE": 7,
+      "MIXED_SCRIPT": 1,
+      "PAL_CASE": 6
+    },
+    "MixedScriptByWeight": {
+      "Interleaved": 1,
+      "ProperNounAffix": 0
+    },
+    "LatinInCyrillicBreakdown": {},
+    "TokenScriptCounts": {
+      "Cyrillic": 15,
+      "Latin": 1,
+      "Digit": 0,
+      "Mixed": 1,
+      "Other": 0
+    },
+    "CharScriptCounts": {
+      "Cyrillic": 103,
+      "Latin": 6,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 25
+    },
+    "CopyProbe": null
+  },
+  {
+    "Id": "T4-A3-S2",
+    "Test": 4,
+    "Tool": 3,
+    "Question": 2,
+    "RepairedText": "Ары, сэ гупшысэшъушъу, ау ар уплъэкӏун фае. Сыдэдэ къыпфэсӏошъун фае?",
+    "HadMarkdown": false,
+    "IsNfc": true,
+    "CharacterCount": 69,
+    "WordCount": 10,
+    "SentenceCount": 2,
+    "AvgSentenceLengthWords": 5,
+    "AvgWordLengthChars": 5.6,
+    "TypeTokenRatio": 0.9,
+    "CorrectPalochkaUpper": 0,
+    "CorrectPalochkaLower": 2,
+    "LookalikePalochka": 0,
+    "InvisibleCount": 0,
+    "FindingCountsByCode": {},
+    "MixedScriptByWeight": {
+      "ProperNounAffix": 0,
+      "Interleaved": 0
+    },
+    "LatinInCyrillicBreakdown": {},
+    "TokenScriptCounts": {
+      "Cyrillic": 10,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 0
+    },
+    "CharScriptCounts": {
+      "Cyrillic": 56,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 13
+    },
+    "CopyProbe": null
+  },
+  {
+    "Id": "T4-A3-S3",
+    "Test": 4,
+    "Tool": 3,
+    "Question": 3,
+    "RepairedText": "Ары, сокӏэкӏы сэ бзэхэр зэдзэкӏынышъ. Сыда зэдзэкӏын фаер, тыдэ къыщегъэжьаны адыгабзэм (е нэмыкӏ бзэм) ишӏоигъу? Кӏэкӏэу къэпӀо.",
+    "HadMarkdown": false,
+    "IsNfc": true,
+    "CharacterCount": 129,
+    "WordCount": 17,
+    "SentenceCount": 3,
+    "AvgSentenceLengthWords": 5.666666666666667,
+    "AvgWordLengthChars": 6.235294117647059,
+    "TypeTokenRatio": 1,
+    "CorrectPalochkaUpper": 0,
+    "CorrectPalochkaLower": 8,
+    "LookalikePalochka": 1,
+    "InvisibleCount": 0,
+    "FindingCountsByCode": {
+      "PAL_LOOKALIKE": 1,
+      "PAL_CASE": 1
+    },
+    "MixedScriptByWeight": {
+      "ProperNounAffix": 0,
+      "Interleaved": 0
+    },
+    "LatinInCyrillicBreakdown": {},
+    "TokenScriptCounts": {
+      "Cyrillic": 17,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 0
+    },
+    "CharScriptCounts": {
+      "Cyrillic": 106,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 23
+    },
+    "CopyProbe": null
+  },
+  {
+    "Id": "T4-A3-S4",
+    "Test": 4,
+    "Tool": 3,
+    "Question": 4,
+    "RepairedText": "«Bugün hava çok güzel (ya da harika bir gün). Hepimiz bahçemizde ailelerimizle bir araya geldik. Akrabalar ve yakınlarımız gelecek. Bu akşam nişanımız var. Büyük ağabeyim nişanlandı. Gelinimiz çok güzel. Onlar birbirlerine çok yakışıyorlar. Onlar bir yıldır konuşuyorlardı. İkisi de birbirini çok severek bu güzel güne geldiler. Geçen yıl büyük ağabeyimin arkadaşının nişanında tanışmışlardı. Allah'tan bu ocağın mutlu, huzurlu ve zengin bir ocak olmasını, güzel imkanlar bulmalarını ve mutlu olmalarını diliyorum.»",
+    "HadMarkdown": false,
+    "IsNfc": true,
+    "CharacterCount": 515,
+    "WordCount": 70,
+    "SentenceCount": 11,
+    "AvgSentenceLengthWords": 6.363636363636363,
+    "AvgWordLengthChars": 6.128571428571429,
+    "TypeTokenRatio": 0.7714285714285715,
+    "CorrectPalochkaUpper": 0,
+    "CorrectPalochkaLower": 0,
+    "LookalikePalochka": 0,
+    "InvisibleCount": 0,
+    "FindingCountsByCode": {},
+    "MixedScriptByWeight": {
+      "ProperNounAffix": 0,
+      "Interleaved": 0
+    },
+    "LatinInCyrillicBreakdown": {},
+    "TokenScriptCounts": {
+      "Cyrillic": 0,
+      "Latin": 70,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 0
+    },
+    "CharScriptCounts": {
+      "Cyrillic": 0,
+      "Latin": 428,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 87
+    },
+    "CopyProbe": null
+  },
+  {
+    "Id": "T4-A3-S5",
+    "Test": 4,
+    "Tool": 3,
+    "Question": 5,
+    "RepairedText": "Bu konuda size yardımcı olamıyorum. Yalnızca bir dil modeli olduğum için isteğinizi anlayıp yanıt verebilecek yeteneğe sahip değilim.",
+    "HadMarkdown": false,
+    "IsNfc": true,
+    "CharacterCount": 133,
+    "WordCount": 18,
+    "SentenceCount": 2,
+    "AvgSentenceLengthWords": 9,
+    "AvgWordLengthChars": 6.333333333333333,
+    "TypeTokenRatio": 1,
+    "CorrectPalochkaUpper": 0,
+    "CorrectPalochkaLower": 0,
+    "LookalikePalochka": 0,
+    "InvisibleCount": 0,
+    "FindingCountsByCode": {},
+    "MixedScriptByWeight": {
+      "ProperNounAffix": 0,
+      "Interleaved": 0
+    },
+    "LatinInCyrillicBreakdown": {},
+    "TokenScriptCounts": {
+      "Cyrillic": 0,
+      "Latin": 18,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 0
+    },
+    "CharScriptCounts": {
+      "Cyrillic": 0,
+      "Latin": 114,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 19
+    },
+    "CopyProbe": "BELIRSIZ"
+  },
+  {
+    "Id": "T4-A3-S6",
+    "Test": 4,
+    "Tool": 3,
+    "Question": 6,
+    "RepairedText": "Мы параграфитӏум къызэращыгущыӏэр унагъо зэхуэсым, нэшыпӏэм (е шъаугъэм) ыкӏи ахъыжьышӀэ фэгупшысагъэхэм атеуфыгъэх.\n\nАнахь шъхьаӀэу къыгурыӏуагъэр: мы унагъом гъогу гъэшӏэгъон щыкӏогъэ ыкӏи ахэр насыпышӏо зэшӏынхэу афэлъаӏох.",
+    "HadMarkdown": false,
+    "IsNfc": true,
+    "CharacterCount": 226,
+    "WordCount": 25,
+    "SentenceCount": 2,
+    "AvgSentenceLengthWords": 12.5,
+    "AvgWordLengthChars": 7.8,
+    "TypeTokenRatio": 0.92,
+    "CorrectPalochkaUpper": 0,
+    "CorrectPalochkaLower": 11,
+    "LookalikePalochka": 2,
+    "InvisibleCount": 0,
+    "FindingCountsByCode": {
+      "PAL_LOOKALIKE": 2,
+      "PAL_CASE": 2
+    },
+    "MixedScriptByWeight": {
+      "ProperNounAffix": 0,
+      "Interleaved": 0
+    },
+    "LatinInCyrillicBreakdown": {},
+    "TokenScriptCounts": {
+      "Cyrillic": 25,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 0
+    },
+    "CharScriptCounts": {
+      "Cyrillic": 195,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 31
+    },
+    "CopyProbe": null
+  },
+  {
+    "Id": "T4-A3-S7",
+    "Test": 4,
+    "Tool": 3,
+    "Question": 7,
+    "RepairedText": "Ары, мы параграфитӏум зэфэшъхьафыныгъэхэр яӏэшъ, ахэр адыгабзэкӏэ джэри дэжь:\n\n* 1. Пчыхьэм щыӏэ ӏофыгъор (Событие):\n* Япэ текстыгъэм: «Мы пчыхьэ нысащэ тиӏ» (Bu akşam nişanımız var / gelin getirmemiz var).\n* Ятӏонэрэ текстыгъэм: «Bu akşam düğünümüz var» (Мы пчыхьэ мэфэшӏу/джегу тиӏ).\n\n\n* 2. Шӏулъэгъум ыкӏи зэдэгущыӏэныгъэм икӏэух (Любовь/Условие):\n* Япэ текстыгъэм: Ахэр шӏу зэрэлъэгъухэзэ мы мэфэ дахэм къэсыгъэх.\n* Ятӏонэрэ текстыгъэм: Ахэр шӏу зэрамылъэгъугъагъэмэ, мы мэфэ дахэм къэсыщтыгъэхэп («sevmeselerdi bu güzel güne ulaşamazlardı»).\n\n\n* 3. Зэдэнэӏуасэ зэрахъугъэ чӏыпӏэр/мэфыгъор (Где/Когда познакомились):\n* Япэ текстыгъэм: Блэкӏыгъэ илъэсым сшынахьыжъ иныбджэгъу инысащэ нэӏуасэ щызэфэхъугъагъэх.\n* Ятӏонэрэ текстыгъэм: Gece sene abimin arkadaşının doğum gününde (икъэхъугъэ мафэ) tanıştılar.",
+    "HadMarkdown": true,
+    "IsNfc": true,
+    "CharacterCount": 808,
+    "WordCount": 89,
+    "SentenceCount": 10,
+    "AvgSentenceLengthWords": 8.9,
+    "AvgWordLengthChars": 7.370786516853933,
+    "TypeTokenRatio": 0.7303370786516854,
+    "CorrectPalochkaUpper": 0,
+    "CorrectPalochkaLower": 22,
+    "LookalikePalochka": 0,
+    "InvisibleCount": 0,
+    "FindingCountsByCode": {},
+    "MixedScriptByWeight": {
+      "ProperNounAffix": 0,
+      "Interleaved": 0
+    },
+    "LatinInCyrillicBreakdown": {},
+    "TokenScriptCounts": {
+      "Cyrillic": 66,
+      "Latin": 23,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 0
+    },
+    "CharScriptCounts": {
+      "Cyrillic": 504,
+      "Latin": 139,
+      "Digit": 3,
+      "Mixed": 0,
+      "Other": 162
+    },
+    "CopyProbe": null
+  },
+  {
+    "Id": "T4-A4-S1",
+    "Test": 4,
+    "Tool": 4,
+    "Question": 1,
+    "RepairedText": "Уимафэ шӏу! Сэ сы-ИИ-щӀэныгъэ-бот, адыгэбзэ зэрэсщыгъуэщ. Сыдэу ущыт?\n\n---\n\n\uD83D\uDCDD Разбор ваших фраз\n\n*   «Уимафэ шӏу» — это традиционное приветствие, означающее «Добрый день».\n*   «О ухэт?» — вопрос «Кто ты?».\n*   «Кӏэкӏэу къэпӏошъущта?» — это вопрос о том, как у вас дела (в вашей фразе использован вежливый/формальный стиль). Более распространённый вариант: «Сыдэу ущыт?».\n\n---\n\n\uD83D\uDCAC Как можно ответить\n\nВот несколько вариантов ответа на ваш вопрос о делах:\n\n*   Сыпсау, оры? — «Я в порядке, а ты?»\n*   СышӀу, опсэу. О тэу ущыт? — «Хорошо, спасибо. А как ты?» (неформальный вариант)\n*   Сыдэгъу, опсэу. О сыдэу ущыт? — «Всё хорошо, спасибо. А как вы?» (формальный/вежливый вариант)\n\nНадеюсь, это помогло! Если захотите продолжить диалог или узнать что-то ещё об адыгейском языке, спрашивайте.",
+    "HadMarkdown": true,
+    "IsNfc": true,
+    "CharacterCount": 789,
+    "WordCount": 104,
+    "SentenceCount": 26,
+    "AvgSentenceLengthWords": 4,
+    "AvgWordLengthChars": 5.5576923076923075,
+    "TypeTokenRatio": 0.75,
+    "CorrectPalochkaUpper": 0,
+    "CorrectPalochkaLower": 5,
+    "LookalikePalochka": 2,
+    "InvisibleCount": 0,
+    "FindingCountsByCode": {
+      "PAL_LOOKALIKE": 2,
+      "PAL_CASE": 2
+    },
+    "MixedScriptByWeight": {
+      "ProperNounAffix": 0,
+      "Interleaved": 0
+    },
+    "LatinInCyrillicBreakdown": {},
+    "TokenScriptCounts": {
+      "Cyrillic": 104,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 0
+    },
+    "CharScriptCounts": {
+      "Cyrillic": 562,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 227
+    },
+    "CopyProbe": null
+  },
+  {
+    "Id": "T4-A4-S2",
+    "Test": 4,
+    "Tool": 4,
+    "Question": 2,
+    "RepairedText": "Сэ цӏыфым ещхьу сыгупшысэкъым: сы-ИИ-бот, программэмрэ даннэхэмрэ сэкъэгъэпэщы. Ауэ уигущыӏэхэм къызэраӏуатэрэм тэкъищӏэу, зэгъэпэщыгъэ джэуап къытэсэу сыщыӏ.",
+    "HadMarkdown": false,
+    "IsNfc": true,
+    "CharacterCount": 158,
+    "WordCount": 16,
+    "SentenceCount": 2,
+    "AvgSentenceLengthWords": 8,
+    "AvgWordLengthChars": 8.625,
+    "TypeTokenRatio": 1,
+    "CorrectPalochkaUpper": 0,
+    "CorrectPalochkaLower": 5,
+    "LookalikePalochka": 0,
+    "InvisibleCount": 0,
+    "FindingCountsByCode": {},
+    "MixedScriptByWeight": {
+      "ProperNounAffix": 0,
+      "Interleaved": 0
+    },
+    "LatinInCyrillicBreakdown": {},
+    "TokenScriptCounts": {
+      "Cyrillic": 16,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 0
+    },
+    "CharScriptCounts": {
+      "Cyrillic": 136,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 22
+    },
+    "CopyProbe": null
+  },
+  {
+    "Id": "T4-A4-S3",
+    "Test": 4,
+    "Tool": 4,
+    "Question": 3,
+    "RepairedText": "Сышӏэщ, къысэт. Ауэ сы-ИИ-бот, зэдзэкӏынымкӏэ сыцӏэкӏуэшъущт, шъыпкъэу зэхэгъэкӏыгъэу зэпытэп. Уиӏофыр къысэт: сыд бзэмкӏэ сыд бзэмкӏэ зэдзэкӏын уфая?",
+    "HadMarkdown": false,
+    "IsNfc": true,
+    "CharacterCount": 150,
+    "WordCount": 17,
+    "SentenceCount": 3,
+    "AvgSentenceLengthWords": 5.666666666666667,
+    "AvgWordLengthChars": 7.470588235294118,
+    "TypeTokenRatio": 0.8235294117647058,
+    "CorrectPalochkaUpper": 0,
+    "CorrectPalochkaLower": 10,
+    "LookalikePalochka": 0,
+    "InvisibleCount": 0,
+    "FindingCountsByCode": {},
+    "MixedScriptByWeight": {
+      "ProperNounAffix": 0,
+      "Interleaved": 0
+    },
+    "LatinInCyrillicBreakdown": {},
+    "TokenScriptCounts": {
+      "Cyrillic": 17,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 0
+    },
+    "CharScriptCounts": {
+      "Cyrillic": 125,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 25
+    },
+    "CopyProbe": null
+  },
+  {
+    "Id": "T4-A4-S4",
+    "Test": 4,
+    "Tool": 4,
+    "Question": 4,
+    "RepairedText": "Türkçe çevirisi:\n\n«Bugün güzel bir gün. Avlumuzda bütün komşularımızla toplandık. Akrabalarımız ve yakınlarımız geliyor. Bu akşam bir düğünümüz var. Ağabeyim geldi. Gelinimiz çok güzel. Onlar birbirlerini çok seviyorlar. Yıllardır birbirleriyle konuşuyorlarmış. İkisi de birbirini severek bu güzel güne kavuştular. Geçen yıl ağabeyimle gelini, ağabeyimin arkadaşının düğününde tanışmışlardı. Tanrı’dan onlara iyi bir yuva, zengin bir yuva kurmalarını, güzel imkânlar bulmalarını ve mutlu olmalarını diliyorum.»",
+    "HadMarkdown": false,
+    "IsNfc": true,
+    "CharacterCount": 510,
+    "WordCount": 63,
+    "SentenceCount": 12,
+    "AvgSentenceLengthWords": 5.25,
+    "AvgWordLengthChars": 6.825396825396825,
+    "TypeTokenRatio": 0.8412698412698413,
+    "CorrectPalochkaUpper": 0,
+    "CorrectPalochkaLower": 0,
+    "LookalikePalochka": 0,
+    "InvisibleCount": 0,
+    "FindingCountsByCode": {},
+    "MixedScriptByWeight": {
+      "ProperNounAffix": 0,
+      "Interleaved": 0
+    },
+    "LatinInCyrillicBreakdown": {},
+    "TokenScriptCounts": {
+      "Cyrillic": 0,
+      "Latin": 63,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 0
+    },
+    "CharScriptCounts": {
+      "Cyrillic": 0,
+      "Latin": 429,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 81
+    },
+    "CopyProbe": null
+  },
+  {
+    "Id": "T4-A4-S5",
+    "Test": 4,
+    "Tool": 4,
+    "Question": 5,
+    "RepairedText": "Адыгабзэкӏэ зэдзэкӏыгъэр мыры:\n\n«Непэ мэфэ дах. Тищагу тиунэгъу зэкӏэ тызэхуэсыгъ. Ӏахьылхэри тиблагъэхэри къэкӏощтых. Мы пчыхьэ нысащэ тиӏ. Сшынахьыжъ нысэ къыщагъ. Тинысэ дэхэ дэд. Ахэр дэгъоу зэдештэх. Ахэр илъэс хъугъэу зэдэгущыӏэщтыгъэх. Тӏури зэмылъэгъухэмэ, мы мэфэ дахэм къэсыщтэкъэхэт. Блэкӏыгъэ илъэсым сшынахьыжъ иныбджэгъу икъызэралъхуагъэм и мафэм нэӏуасэ зэфэхъугъэх. Тхьам унэгъо ӏужъ, унэгъо бай ышӏынхэу, амал дэгъухэр агъотынэу, насыпышӏонхэу сафэлъаӏо.»\n\n«Doğum günü» зыфэсшӏыгъэр «икъызэралъхуагъэм и мафэ» ары; адыгабзэм и вариантищӏэ хъунэу щыӏэщ.",
+    "HadMarkdown": true,
+    "IsNfc": true,
+    "CharacterCount": 569,
+    "WordCount": 68,
+    "SentenceCount": 13,
+    "AvgSentenceLengthWords": 5.230769230769231,
+    "AvgWordLengthChars": 7,
+    "TypeTokenRatio": 0.8823529411764706,
+    "CorrectPalochkaUpper": 1,
+    "CorrectPalochkaLower": 16,
+    "LookalikePalochka": 0,
+    "InvisibleCount": 0,
+    "FindingCountsByCode": {},
+    "MixedScriptByWeight": {
+      "ProperNounAffix": 0,
+      "Interleaved": 0
+    },
+    "LatinInCyrillicBreakdown": {},
+    "TokenScriptCounts": {
+      "Cyrillic": 66,
+      "Latin": 2,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 0
+    },
+    "CharScriptCounts": {
+      "Cyrillic": 467,
+      "Latin": 9,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 93
+    },
+    "CopyProbe": "OZGUN_GERI_VERDI"
+  },
+  {
+    "Id": "T4-A4-S6",
+    "Test": 4,
+    "Tool": 4,
+    "Question": 6,
+    "RepairedText": "Сэ къызгурыӏуагъэр: зэдзэкӏыгъэ параграфитӏум ятӏури непэ мэфэ дахэу, Ӏахьылхэри блэгъэхэри зэхуэсыгъэу, нысащэ щыӏэу, сшынахьыжъ нысэ къызэригъэхьагъэу, тинысэ дэхэу ахэр зэлъэгъуазэу зэдэгущыӏагъэхэу къызэрыӏуатэрэ ары.\n\nАуэ язэхэгъэкӏыгъэр: япэ параграфым нысэм и шӏуагъэмрэ ахэм язэлъэгъуныгъэмрэ нэхъыбэу къыщыӏуатэ, етӏанэ параграфым ахэр илъэс зэдэгущыӏагъэхэу, зэмылъэгъухэмэ мы мафэм къэсыщтэкъэхэу, Тхьам унэгъо ӏужъ, насып яфэлъаӏорэ къыщыӏуатэ.",
+    "HadMarkdown": false,
+    "IsNfc": true,
+    "CharacterCount": 456,
+    "WordCount": 49,
+    "SentenceCount": 2,
+    "AvgSentenceLengthWords": 24.5,
+    "AvgWordLengthChars": 8.061224489795919,
+    "TypeTokenRatio": 0.9183673469387755,
+    "CorrectPalochkaUpper": 1,
+    "CorrectPalochkaLower": 15,
+    "LookalikePalochka": 0,
+    "InvisibleCount": 0,
+    "FindingCountsByCode": {},
+    "MixedScriptByWeight": {
+      "ProperNounAffix": 0,
+      "Interleaved": 0
+    },
+    "LatinInCyrillicBreakdown": {},
+    "TokenScriptCounts": {
+      "Cyrillic": 49,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 0
+    },
+    "CharScriptCounts": {
+      "Cyrillic": 395,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 61
+    },
+    "CopyProbe": null
+  },
+  {
+    "Id": "T4-A4-S7",
+    "Test": 4,
+    "Tool": 4,
+    "Question": 7,
+    "RepairedText": "Зэфэшъхьафыныгъэ яӏэ. Параграфитӏум ятӏури зэтефэкъым.\n\nЗэрэзэфэшъхьафхэр:\n\n1. 2-нэ гущыӏэухыгъэм: япэм «Тищагу зэкӏэ тиунагъохэм тыщызэрэугъоигъ» къыщыӏуатэ, етӏанэм «Тищагу тиунэгъу зэкӏэ тызэхуэсыгъ» къыщыӏуатэ. Гущыӏэхэр зэфэшъхьафх.\n\n2. 4-нэ гущыӏэухыгъэм: япэм «Сшынахьыжъ къыщагъ» къыщыӏуатэ, етӏанэм «Сшынахьыжъ нысэ къыщагъ» къыщыӏуатэ. Етӏанэм «нысэ» гущыӏэр хэгъэуагъэ.\n\n3. 7-нэ гущыӏэухыгъэм: япэм «Тӏури шӏу зэрэлъэгъухэзэ мы мэфэ дахэм къэсыгъэх» къыщыӏуатэ, етӏанэм «Тӏури зэмылъэгъухэмэ, мы мэфэ дахэм къэсыщтэкъэхэт» къыщыӏуатэ. Япэм шӏу зэрэлъэгъухэрэр къыщыӏуатэ, етӏанэм зэмылъэгъухэмэ сыдэу щыщытэу къыщыӏуатэ.\n\n4. 8-нэ гущыӏэухыгъэм: япэм «сшынахьыжъ иныбджэгъу инысащэ» къыщыӏуатэ (нысащэ), етӏанэм «сшынахьыжъ иныбджэгъу икъызэралъхуагъэм и мафэм» къыщыӏуатэ (къызэралъхуагъэм и мафэ).\n\nАщымкӏэ, параграфитӏум язэхэгъэкӏыгъэ мэхьанэмкӏэ зэфэшъхьафыныгъэ яӏэ.",
+    "HadMarkdown": true,
+    "IsNfc": true,
+    "CharacterCount": 882,
+    "WordCount": 89,
+    "SentenceCount": 11,
+    "AvgSentenceLengthWords": 8.090909090909092,
+    "AvgWordLengthChars": 8.224719101123595,
+    "TypeTokenRatio": 0.5617977528089888,
+    "CorrectPalochkaUpper": 0,
+    "CorrectPalochkaLower": 36,
+    "LookalikePalochka": 0,
+    "InvisibleCount": 0,
+    "FindingCountsByCode": {
+      "CONFUSABLE": 1
+    },
+    "MixedScriptByWeight": {
+      "ProperNounAffix": 0,
+      "Interleaved": 0
+    },
+    "LatinInCyrillicBreakdown": {},
+    "TokenScriptCounts": {
+      "Cyrillic": 89,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 0
+    },
+    "CharScriptCounts": {
+      "Cyrillic": 724,
+      "Latin": 0,
+      "Digit": 8,
+      "Mixed": 0,
+      "Other": 150
+    },
+    "CopyProbe": null
+  },
+  {
+    "Id": "T4-A5-S1",
+    "Test": 4,
+    "Tool": 5,
+    "Question": 1,
+    "RepairedText": "Уимафэ шӏу!\n\nСэ Grok сыщыщ, xAI-м къыщыгъэщӏагъэ.  \n\nО ухэт? — Сэ Grok.  \n\nКӏэкӏэу сыпӏошъущт: ары, кӏэкӏэу адыгабзэкӏэ сыпӏошъущт.  \n\nУи мафэ шӏу, ущыт шӏу?",
+    "HadMarkdown": true,
+    "IsNfc": true,
+    "CharacterCount": 157,
+    "WordCount": 22,
+    "SentenceCount": 6,
+    "AvgSentenceLengthWords": 3.6666666666666665,
+    "AvgWordLengthChars": 5.181818181818182,
+    "TypeTokenRatio": 0.7272727272727273,
+    "CorrectPalochkaUpper": 0,
+    "CorrectPalochkaLower": 11,
+    "LookalikePalochka": 0,
+    "InvisibleCount": 0,
+    "FindingCountsByCode": {
+      "MIXED_SCRIPT": 1
+    },
+    "MixedScriptByWeight": {
+      "Interleaved": 1,
+      "ProperNounAffix": 0
+    },
+    "LatinInCyrillicBreakdown": {},
+    "TokenScriptCounts": {
+      "Cyrillic": 19,
+      "Latin": 2,
+      "Digit": 0,
+      "Mixed": 1,
+      "Other": 0
+    },
+    "CharScriptCounts": {
+      "Cyrillic": 102,
+      "Latin": 11,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 44
+    },
+    "CopyProbe": null
+  },
+  {
+    "Id": "T4-A5-S2",
+    "Test": 4,
+    "Tool": 5,
+    "Question": 2,
+    "RepairedText": "Ары, сыгупшысэщ.\n\nСэ акъыл шъыпкъэу сыпӏошъущт, гущыӏэ кӏэкӏэу.  \nУиупчӏэ къэсфэхъу.",
+    "HadMarkdown": true,
+    "IsNfc": true,
+    "CharacterCount": 84,
+    "WordCount": 10,
+    "SentenceCount": 3,
+    "AvgSentenceLengthWords": 3.3333333333333335,
+    "AvgWordLengthChars": 6.7,
+    "TypeTokenRatio": 1,
+    "CorrectPalochkaUpper": 0,
+    "CorrectPalochkaLower": 5,
+    "LookalikePalochka": 0,
+    "InvisibleCount": 0,
+    "FindingCountsByCode": {},
+    "MixedScriptByWeight": {
+      "ProperNounAffix": 0,
+      "Interleaved": 0
+    },
+    "LatinInCyrillicBreakdown": {},
+    "TokenScriptCounts": {
+      "Cyrillic": 10,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 0
+    },
+    "CharScriptCounts": {
+      "Cyrillic": 67,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 17
+    },
+    "CopyProbe": null
+  },
+  {
+    "Id": "T4-A5-S3",
+    "Test": 4,
+    "Tool": 5,
+    "Question": 3,
+    "RepairedText": "Ары, пшӏышъущт.\n\nЗы ӏоф къысэт, сызэдзэкӏыщт.",
+    "HadMarkdown": true,
+    "IsNfc": true,
+    "CharacterCount": 45,
+    "WordCount": 6,
+    "SentenceCount": 2,
+    "AvgSentenceLengthWords": 3,
+    "AvgWordLengthChars": 5.833333333333333,
+    "TypeTokenRatio": 1,
+    "CorrectPalochkaUpper": 0,
+    "CorrectPalochkaLower": 3,
+    "LookalikePalochka": 0,
+    "InvisibleCount": 0,
+    "FindingCountsByCode": {},
+    "MixedScriptByWeight": {
+      "ProperNounAffix": 0,
+      "Interleaved": 0
+    },
+    "LatinInCyrillicBreakdown": {},
+    "TokenScriptCounts": {
+      "Cyrillic": 6,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 0
+    },
+    "CharScriptCounts": {
+      "Cyrillic": 35,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 10
+    },
+    "CopyProbe": null
+  },
+  {
+    "Id": "T4-A5-S4",
+    "Test": 4,
+    "Tool": 5,
+    "Question": 4,
+    "RepairedText": "Ары, къызэбдзэкӏыгъэ:\n\n«Bugün güzel bir gün. Bahçemizde bütün akrabalarımız toplandı. Akrabalar ve komşular da gelecek. Bu akşam düğünümüz var. Ağabeyim evlendi. Gelinimiz çok güzel. Birbirlerini çok iyi seviyorlar. Bir yıldır birbirleriyle konuşuyorlardı. İkisi de birbirlerini sevdikleri için bu güzel güne kavuştular. Geçen yıl ağabeyimin arkadaşı kendi düğününde tanışmıştı. Allah onlara uzun ömürlü, zengin bir yuva versin, iyi fırsatlar nasip etsin ve mutlu etsin diye dua ediyorum.»",
+    "HadMarkdown": true,
+    "IsNfc": true,
+    "CharacterCount": 489,
+    "WordCount": 66,
+    "SentenceCount": 12,
+    "AvgSentenceLengthWords": 5.5,
+    "AvgWordLengthChars": 6.151515151515151,
+    "TypeTokenRatio": 0.8484848484848485,
+    "CorrectPalochkaUpper": 0,
+    "CorrectPalochkaLower": 1,
+    "LookalikePalochka": 0,
+    "InvisibleCount": 0,
+    "FindingCountsByCode": {},
+    "MixedScriptByWeight": {
+      "ProperNounAffix": 0,
+      "Interleaved": 0
+    },
+    "LatinInCyrillicBreakdown": {},
+    "TokenScriptCounts": {
+      "Cyrillic": 2,
+      "Latin": 64,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 0
+    },
+    "CharScriptCounts": {
+      "Cyrillic": 18,
+      "Latin": 388,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 83
+    },
+    "CopyProbe": null
+  },
+  {
+    "Id": "T4-A5-S5",
+    "Test": 4,
+    "Tool": 5,
+    "Question": 5,
+    "RepairedText": "Ары, къызэбдзэкӏыгъэ:\n\n«Непэ мэфэ дах. Тищагу зэкӏэ тиунагъо тыщызэрэугъоигъ. Ӏахьылхэри тиблагъэхэри къэкӏощтых. Мы пчыхьэ нысащэ тиӏ. Сшынахьыжъ нысэ къыщагъ. Тинысэ дэхэ дэд. Ахэр зэдештэх. Ахэр илъэс хъугъэу зэдэгущыӏэщтыгъэх. Тӏури зэрамышӏулъэгъумэ мы мэфэ дахэм къэсыгъэнхэп. Блэкӏыгъэ илъэсым сшынахьыжъ иныбджэгъу имафэщхьэ нэӏуасэ щызэфэхъугъагъэх. Тхьам унэгъо ӏужъ, унэгъо бай ышӏынхэу, амал дэгъухэр агъотынэу, насыпышӏонхэу сафэлъаӏо.»",
+    "HadMarkdown": true,
+    "IsNfc": true,
+    "CharacterCount": 449,
+    "WordCount": 52,
+    "SentenceCount": 12,
+    "AvgSentenceLengthWords": 4.333333333333333,
+    "AvgWordLengthChars": 7.288461538461538,
+    "TypeTokenRatio": 0.9038461538461539,
+    "CorrectPalochkaUpper": 1,
+    "CorrectPalochkaLower": 13,
+    "LookalikePalochka": 0,
+    "InvisibleCount": 0,
+    "FindingCountsByCode": {},
+    "MixedScriptByWeight": {
+      "ProperNounAffix": 0,
+      "Interleaved": 0
+    },
+    "LatinInCyrillicBreakdown": {},
+    "TokenScriptCounts": {
+      "Cyrillic": 52,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 0
+    },
+    "CharScriptCounts": {
+      "Cyrillic": 379,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 70
+    },
+    "CopyProbe": "OZGUN_GERI_VERDI"
+  },
+  {
+    "Id": "T4-A5-S6",
+    "Test": 4,
+    "Tool": 5,
+    "Question": 6,
+    "RepairedText": "Ары.\n\nМы параграфитӏум зэрэтыраӏуагъэр зы нысащэ мэфэ: сшынахьыжъ нысэ къыщагъ, тиунагъо зэрэугъоигъ, тӏури зэрашӏулъэгъухэзэ мы мэфэм къэсыгъэх.  \nТхьам ахэм унэгъо ӏужъ, бай ышӏынхэу, насып агъотынэу сафэлъаӏо.",
+    "HadMarkdown": true,
+    "IsNfc": true,
+    "CharacterCount": 212,
+    "WordCount": 26,
+    "SentenceCount": 3,
+    "AvgSentenceLengthWords": 8.666666666666666,
+    "AvgWordLengthChars": 6.769230769230769,
+    "TypeTokenRatio": 0.9615384615384616,
+    "CorrectPalochkaUpper": 0,
+    "CorrectPalochkaLower": 7,
+    "LookalikePalochka": 0,
+    "InvisibleCount": 0,
+    "FindingCountsByCode": {},
+    "MixedScriptByWeight": {
+      "ProperNounAffix": 0,
+      "Interleaved": 0
+    },
+    "LatinInCyrillicBreakdown": {},
+    "TokenScriptCounts": {
+      "Cyrillic": 26,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 0
+    },
+    "CharScriptCounts": {
+      "Cyrillic": 176,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 36
+    },
+    "CopyProbe": null
+  },
+  {
+    "Id": "T4-A5-S7",
+    "Test": 4,
+    "Tool": 5,
+    "Question": 7,
+    "RepairedText": "Ары, зэфэшъхьафыныгъэ яӏ.\n\nЗыпкъырыкӏыгъэ зэфэшъхьафыныгъэхэр:\n\n1. Зэрашӏулъэгъунэу:  \n   Япэрэ параграфым «Тӏури шӏу зэрэлъэгъухэзэ мы мэфэ дахэм къэсыгъэх» тетэу,  \n   ятӏонэрэ параграфым «Тӏури зэрамышӏулъэгъумэ мы мэфэ дахэм къэсыгъэнхэп» тет (зэрамышӏулъэгъумэ къэсыгъэнхэп).\n\n2. Нэӏуасэ щызэфэхъугъагъэр:  \n   Япэрэ параграфым «инысащэ» (нысащэм),  \n   ятӏонэрэ параграфым «имафэщхьэ» (мафэщхьэм) тет.\n\nМыхэм къыхэкӏэу зэфэшъхьафыныгъэ яӏ.",
+    "HadMarkdown": true,
+    "IsNfc": true,
+    "CharacterCount": 445,
+    "WordCount": 42,
+    "SentenceCount": 5,
+    "AvgSentenceLengthWords": 8.4,
+    "AvgWordLengthChars": 8.333333333333334,
+    "TypeTokenRatio": 0.6666666666666666,
+    "CorrectPalochkaUpper": 0,
+    "CorrectPalochkaLower": 13,
+    "LookalikePalochka": 0,
+    "InvisibleCount": 0,
+    "FindingCountsByCode": {},
+    "MixedScriptByWeight": {
+      "ProperNounAffix": 0,
+      "Interleaved": 0
+    },
+    "LatinInCyrillicBreakdown": {},
+    "TokenScriptCounts": {
+      "Cyrillic": 42,
+      "Latin": 0,
+      "Digit": 0,
+      "Mixed": 0,
+      "Other": 0
+    },
+    "CharScriptCounts": {
+      "Cyrillic": 350,
+      "Latin": 0,
+      "Digit": 2,
+      "Mixed": 0,
+      "Other": 93
+    },
+    "CopyProbe": null
+  }
+]

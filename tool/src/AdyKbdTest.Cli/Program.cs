@@ -9,6 +9,7 @@ var Usage = $$"""
       akt analyze  --raw <dir> --test <n> [--profile ady] [--out <dir=data/analysis>] [--profiles <dir=profiles>]
       akt workbook --raw <dir> --test <n> [--profile ady] [--out <dir-or-file=data/workbooks>] [--profiles <dir=profiles>]
       akt report   --workbook <file.xlsx> --analysis <dir> [--out <dir=data/analysis>]
+      akt summary  --analysis <dir> [--out <dir=data/analysis>] [--report-out <dir=data/report>]
       akt verify   --raw <dir>
       akt version
 
@@ -34,6 +35,7 @@ try
         "analyze" => Commands.Analyze(options),
         "workbook" => Commands.Workbook(options),
         "report" => Commands.Report(options),
+        "summary" => Commands.Summary(options),
         "verify" => Commands.Verify(options),
         "version" or "-v" or "--version" => PrintVersion(),
         "-h" or "--help" or "help" => PrintUsage(),

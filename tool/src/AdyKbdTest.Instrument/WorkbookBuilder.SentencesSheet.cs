@@ -93,7 +93,8 @@ public static partial class WorkbookBuilder
                         Cell("B", r, $"S{question}", StyleLockedCenter),
                         NumberCell("C", r, tool, StyleLockedCenter),
                         NumberCell("D", r, sentence.Index + 1, StyleLockedCenter),
-                        Cell("E", r, sentence.Text, StyleLockedWrap),
+                        // Revision 14 §2: the response's original characters, never the repaired counting copy.
+                        Cell("E", r, sentence.DisplayText, StyleLockedWrap),
                         NumberCell("F", r, wordCount, StyleLockedCenter),
                         EmptyCell("G", r, StyleUnlockedCenter),
                         EmptyCell("H", r, StyleUnlockedCenter),

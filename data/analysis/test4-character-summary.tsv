@@ -1,0 +1,6 @@
+﻿tool	correct_palochka	lookalike_palochka	palochka_accuracy	mixed_script_proper_noun	mixed_script_interleaved	latin_in_cyrillic_total
+1	39	0	100	0	0	0
+2	197	0	100	0	3	6
+3	45	10	81.82	0	1	0
+4	89	2	97.8	0	0	0
+5	54	0	100	0	1	0

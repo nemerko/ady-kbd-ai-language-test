@@ -1,0 +1,31 @@
+﻿sheet	key	tool	question	sentence_no	note
+Sentences	T4-A1-S4	1	4	10	Düğün (инысащэ) ‘doğum günü’ diye çevrilmiş. Bu ifade yalnız S5'teki değiştirilmiş paragrafta geçiyor ve S4, S5'ten önce soruluyor. 24.10.2026'da ChatGPT belleği açık bulundu; bellek özeti test oturumlarını tarif ediyor. Önceki oturumlardan bilgi taşınmış olabilir.
+Responses	T4-A1-S5	1	5		Olumsuz-koşullu yapıyı aktardı.
+Sentences	T4-A1-S5	1	5	10	S5'teki Türkçe metinde ‘doğum günü’ yazıyor, ama araç bunu 'инысащэ' (düğün) diye çevirmiş. Bu cümle S4'teki Adıgece cümleyle harfi harfine aynı, yani araç değişikliği yansıtmamış. S4'te ise aynı yeri ‘doğum günü’ diye çevirmişti. Bellek açık olduğu için kopya sondası bu oturumda yorumlanamaz.
+Responses	T4-A1-S7	1	7		Fark yok dedi. Bellek açık olduğu için kopya sondası bu oturumda yorumlanamaz (bkz. S4 ve S5 notları).
+Sentences	T4-A1-S7	1	7	1	‘Fark yok’ dedi; oysa iki paragraf arasında fark var (düğün / doğum günü). Araç bu yeri iki çevirisinde de karşı metne uydurmuştu (S4'te ‘doğum günü’, S5'te ‘düğün’), bu yüzden kendi çevirilerini karşılaştırdıysa fark görmemesi beklenir. Bellek açık olduğu için kopya sondası bu oturumda yorumlanamaz.
+Sentences	T4-A2-S4	2	4	2	Yazı sistemi karışıklığı.
+Sentences	T4-A2-S4	2	4	13	Yazı sistemi karışıklığı.
+Sentences	T4-A2-S4	2	4	14	Cümle bölünme hatası: başlangıç.
+Sentences	T4-A2-S4	2	4	15	Cümle bölünme hatası: devam.
+Sentences	T4-A2-S4	2	4	17	Cümle bölünme hatası: başlangıç.
+Sentences	T4-A2-S4	2	4	18	Cümle bölünme hatası: devam.
+Sentences	T4-A2-S4	2	4	19	Cümle bölünme hatası: devam.
+Sentences	T4-A2-S4	2	4	20	Cümle bölünme hatası: başlangıç.
+Sentences	T4-A2-S4	2	4	21	Cümle bölünme hatası: devam.
+Responses	T4-A2-S5	2	5		Olumsuz-koşullu yapıyı aktardı.
+Responses	T4-A2-S7	2	7		Gerçek farklardan yalnız birini buldu, ama olmayan farklar da üretti.
+Sentences	T4-A3-S1	3	1	2	Yazı sistemi karışıklığı.
+Sentences	T4-A3-S1	3	1	3	Yazı sistemi karışıklığı.
+Sentences	T4-A3-S1	3	1	4	Yazı sistemi karışıklığı.
+Sentences	T4-A3-S3	3	3	3	Yazı sistemi karışıklığı.
+Responses	T4-A3-S5	3	5		Hedef dilde yanıt yok: Türkçe ret. Olumsuz-koşullu yapı değerlendirilemedi.
+Sentences	T4-A3-S6	3	6	1	Yazı sistemi karışıklığı.
+Sentences	T4-A3-S6	3	6	2	Yazı sistemi karışıklığı.
+Responses	T4-A3-S7	3	7		Gerçek farkları buldu, ama olmayan farklar da üretti.
+Responses	T4-A4-S1	4	1		Soruya verilen Adıgece yanıt 1–3. cümlelerdir. 4–26. cümleler Rusça açıklamadır; içine konmuş Adıgece örnek cümleler de açıklamanın parçası sayıldı ve etiketlenmedi.
+Sentences	T4-A4-S1	4	1	2	Yazı sistemi karışıklığı.
+Responses	T4-A4-S5	4	5		Olumsuz-koşullu yapıyı aktardı.
+Responses	T4-A4-S7	4	7		Gerçek farkları buldu, ama olmayan farklar da üretti.
+Responses	T4-A5-S5	5	5		Olumsuz-koşullu yapıyı aktardı.
+Responses	T4-A5-S7	5	7		Gerçek farkları buldu.

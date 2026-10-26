@@ -103,6 +103,7 @@ or publish once and call `akt` directly.
 | `akt analyze --raw <dir> --test <n>` | Character/word analysis of one test. Writes `test{n}-analysis.json` and `.tsv`. |
 | `akt workbook --raw <dir> --test <n>` | Builds the marking workbook `test{n}-marking.xlsx` (four sheets: Info, Responses, Sentences, Summary). |
 | `akt report --workbook <file.xlsx> --analysis <dir>` | Reads the **marked** workbook and writes the report tables. |
+| `akt summary --analysis <dir> [--out <dir>] [--report-out <dir>]` | Adds up the per-test `task-type` tables (raw counts, ratios recomputed from the sums) and averages the per-test scores; then writes the results page `report.html` / `report.tr.html` / `report.ru.html` to `--report-out` (default `data/report`, see *Report page*). Reads what `akt report` wrote; run it deliberately, after the reports. Errors if there is no `test*-task-type.tsv`, or no `summary-scores.tsv` for the page. |
 | `akt verify --raw <dir>` | Checks that every result file in a directory parses and has all seven answers. Run this before anything else. |
 | `akt version` | Prints name and version. |
 
@@ -200,6 +201,42 @@ fresh, empty workbook.
 | `test{n}-character-summary.tsv` | palochka and character findings |
 | `test{n}-integrity-warnings.tsv` | **read this one** — marking mistakes the tool can detect |
 | `test{n}-report-summary.txt` | one-screen summary |
+| `test{n}-task-type.tsv` | per tool × question group (`q1_3`, `q4`, `q5`, `q6_7`, `all`): raw counts (`error_words`, `words`, `sentences`, `correct`, `excluded_responses`) and the ratios derived from them |
+| `test{n}-main-table.tsv` | the same, wide: one row per tool, four columns per group — the report's main table |
+| `test{n}-scores.tsv` | the score of each tool in the test, per group, overall, with rank and tie flag (rule below) |
+| `test{n}-notes.tsv` | the evaluators' notes from the workbook, exactly as written: every non-empty Responses note, and every non-empty Sentences note with its sentence number (see *Report page*) |
+
+`summary` writes, over every test it finds (it never reads a workbook):
+
+| File | Contents |
+|---|---|
+| `summary-task-type.tsv` | `test{n}-task-type.tsv` summed over the tests (a leading `tests` column lists them); ratios recomputed from the sums, never averaged |
+| `summary-main-table.tsv` | the wide form of the same |
+| `summary-scores.tsv` | per tool, the score of each test, their mean as the overall score, and the rank |
+
+The `task-type` tables use only evaluated sentences: a response with no evaluable content and a
+sentence without a verdict are outside every count (only `excluded_responses` records the former).
+A ratio whose denominator is zero is an empty cell, not 0.
+
+### The score
+
+Fixed in advance (`puanlama-kurali-2026-10-26.md`) and computed by the tool, not by hand:
+
+1. **Question score** (0–100) = `100 − error words × 100 / evaluated words`, using the
+   `error_word_count` and `evaluated_word_count` of `tool-x-question`. An excluded response scores
+   0; so does a response that is not excluded but has no evaluated words (which should not happen
+   and is reported as `SCORE_NO_WORDS`).
+2. **Group score** = the mean of its questions' scores, for the four groups `q1_3`, `q4`, `q5`, `q6_7`.
+3. **Test score** = the mean of the four group scores, equally weighted.
+4. **Rank** = 1–5 by test score, highest first; equal scores are ordered by tool number and carry
+   `tie = true`. The overall score in `summary-scores.tsv` is the mean of the test scores.
+
+Rounding happens only when a value is written; every mean is taken over unrounded values.
+`akt summary` recomputes the scores from the per-question counts rather than reading the rounded
+per-test scores. It uses `test{n}-scores.tsv` only as a cross-check: a disagreement is reported as
+`SCORE_DRIFT` (the file was written by another version of the tool), and a test with a scores
+file but no `test{n}-tool-x-question.tsv` is an error. Its warnings go to the console and to
+`summary-integrity-warnings.tsv`.
 
 ### The integrity warnings are not optional
 
@@ -208,6 +245,37 @@ file is the second line of defence and catches, among others: a sentence marked 
 also has error-coded words, word codes summing past the sentence's word count, contact-language
 counts that do not add up to the code-mixing count, non-numeric content in a numeric column,
 and rows left unmarked. Run `akt report` after each marking session, not only at the end.
+
+---
+
+## Report page
+
+`akt summary` also writes the results page, three files in `data/report/` (`--report-out`):
+`report.html` (English), `report.tr.html` (Turkish), `report.ru.html` (Russian). Each is a single,
+self-contained file: no external resource of any kind (no CDN, web font or image), inline SVG,
+a `system-ui` font stack, light and dark mode. It opens offline.
+
+- **Everything on it comes from the tool's tables** — `summary-scores.tsv`, `test{n}-scores.tsv`,
+  `summary-task-type.tsv`, `test{n}-tool-x-question.tsv`, `test{n}-excluded-responses.tsv`,
+  `test{n}-notes.tsv` — and the score tables are **embedded in the page** as a
+  `<script type="application/json" id="data">` block (column names kept), so a reader who saves the
+  page has the data too. The source line at the bottom names the files read and the first 12
+  characters of their SHA-256.
+- **Sections 1 (overall ranking) and 2 (score card) are written into the HTML**; the script only draws
+  section 3 (deviation from the five-tool mean) and the tooltips. There is no separate footnote file.
+- **Footnotes are derived from the tables**: every excluded response (`excluded-responses.tsv`),
+  every question group containing a question that scored 0, every `tie = true` rank.
+- **Evaluator notes come from the workbooks.** `akt report` writes `test{n}-notes.tsv`
+  (`sheet key tool question sentence_no note`): every non-empty Note of the Responses sheet, and of
+  the Sentences sheet with its sentence number. A note's backslash, tab and line breaks are written
+  as `\\`, `\t`, `\n`. `akt summary` shows the Responses notes as written, and splits the Sentences
+  notes: text that occurs on more than one row is a *standard note* (counted per tool and test),
+  text that occurs on exactly one row is quoted with its key and sentence number. Notes are shown
+  in the language they were written in, HTML-escaped, never translated.
+- No `summary-scores.tsv`, no page: `akt summary` stops with an error.
+- Interface text lives in one table, `ReportStrings` (key → text per language); category words
+  (language compliance, semantic adequacy, sentence verdicts, error codes) are the workbooks' own,
+  from `CodingSchemeText`.
 
 ---
 

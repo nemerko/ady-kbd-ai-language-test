@@ -1,0 +1,33 @@
+﻿sheet	key	tool	question	sentence_no	note
+Responses	T3-A1-S5	1	5		Olumsuz-koşullu yapıyı aktarmadı.
+Responses	T3-A1-S7	1	7		Gerçek farklardan yalnız birini buldu.
+Sentences	T3-A2-S4	2	4	18	Cümle bölünme hatası: başlangıç.
+Sentences	T3-A2-S4	2	4	19	Cümle bölünme hatası: devam.
+Responses	T3-A2-S5	2	5		Olumsuz-koşullu yapıyı aktardı.
+Responses	T3-A2-S7	2	7		Gerçek farkları buldu, ama olmayan farklar da üretti.
+Sentences	T3-A2-S7	2	7	18	Yazı sistemi karışıklığı.
+Sentences	T3-A3-S2	3	2	2	Yazı sistemi karışıklığı.
+Sentences	T3-A3-S2	3	2	3	Yazı sistemi karışıklığı.
+Sentences	T3-A3-S3	3	3	4	Yazı sistemi karışıklığı.
+Responses	T3-A3-S5	3	5		Olumsuz-koşullu yapıyı aktardı.
+Sentences	T3-A3-S6	3	6	1	Yazı sistemi karışıklığı.
+Sentences	T3-A3-S6	3	6	2	Yazı sistemi karışıklığı.
+Sentences	T3-A3-S6	3	6	3	Yazı sistemi karışıklığı.
+Responses	T3-A3-S7	3	7		Gerçek farkları buldu, ama olmayan farklar da üretti.
+Sentences	T3-A3-S7	3	7	1	Yazı sistemi karışıklığı.
+Sentences	T3-A3-S7	3	7	6	Yazı sistemi karışıklığı.
+Sentences	T3-A3-S7	3	7	9	Yazı sistemi karışıklığı.
+Sentences	T3-A3-S7	3	7	10	Yazı sistemi karışıklığı.
+Sentences	T3-A3-S7	3	7	12	Yazı sistemi karışıklığı.
+Responses	T3-A4-S5	4	5		Olumsuz-koşullu yapıyı aktardı.
+Responses	T3-A4-S7	4	7		Gerçek farkları buldu, ama olmayan farklar da üretti.
+Sentences	T3-A4-S7	4	7	13	Cümle bölünme hatası: başlangıç.
+Sentences	T3-A4-S7	4	7	14	Cümle bölünme hatası: devam.
+Responses	T3-A5-S5	5	5		Olumsuz-koşullu yapıyı aktardı.
+Sentences	T3-A5-S5	5	5	3	Yazı sistemi karışıklığı.
+Responses	T3-A5-S7	5	7		Gerçek farkları buldu, ama olmayan farklar da üretti.
+Sentences	T3-A5-S7	5	7	3	Yazı sistemi karışıklığı.
+Sentences	T3-A5-S7	5	7	8	Cümle bölünme hatası: başlangıç.
+Sentences	T3-A5-S7	5	7	9	Cümle bölünme hatası: devam.
+Sentences	T3-A5-S7	5	7	11	Cümle bölünme hatası: başlangıç.
+Sentences	T3-A5-S7	5	7	12	Cümle bölünme hatası: devam.

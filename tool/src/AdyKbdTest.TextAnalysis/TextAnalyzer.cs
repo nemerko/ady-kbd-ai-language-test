@@ -20,10 +20,15 @@ public static class TextAnalyzer
         findings.AddRange(normalization.Findings);
         findings.AddRange(repair.Findings);
 
+        var trackedSentences = SentenceSplitter.SplitTracked(repair.RepairedText);
+        var displayTexts = DisplayTextBuilder.Build(
+            normalization.NormalizedText, repair.RepairedText, repair.SourceIndex, repair.Findings, trackedSentences);
+
         var sentences = new List<AnalyzedSentence>();
         var sentenceIndex = 0;
-        foreach (var span in SentenceSplitter.Split(repair.RepairedText))
+        foreach (var tracked in trackedSentences)
         {
+            var span = tracked.Span;
             var tokenSpans = Tokenizer.Tokenize(span);
             var tokens = new List<AnalyzedToken>(tokenSpans.Count);
             var tokenIndex = 0;
@@ -38,7 +43,7 @@ public static class TextAnalyzer
                     ScriptClassifier.ClassifyToken(tokenSpan.Text)));
                 tokenIndex++;
             }
-            sentences.Add(new AnalyzedSentence(sentenceIndex, span.Text, span.StartOffset, tokens));
+            sentences.Add(new AnalyzedSentence(sentenceIndex, span.Text, span.StartOffset, tokens, displayTexts[sentenceIndex]));
             sentenceIndex++;
         }
 
@@ -105,15 +110,21 @@ public static class TextAnalyzer
         var invisibleCount = findingCountsByCode.GetValueOrDefault(FindingCodes.Invisible, 0);
 
         var latinBreakdown = new Dictionary<char, int>();
+        // Revision 14 §3.3: Cyrillic dominance is judged per hyphen-separated part, the same rule
+        // Repairer uses -- the Latin letters of "AI" in "AI-компьютерым" belong to a legitimate Latin
+        // abbreviation with a Cyrillic suffix, not to a Latin letter that strayed into a Cyrillic word.
         foreach (var token in allTokens)
         {
-            var (cyr, lat, _) = ScriptClassifier.CountLetters(token.Text);
-            if (cyr <= lat) continue;
-            foreach (var c in token.Text)
+            foreach (var part in token.Text.Split('-'))
             {
-                if (ScriptClassifier.IsLatinLetter(c))
+                var (cyr, lat, _) = ScriptClassifier.CountLetters(part);
+                if (cyr <= lat) continue;
+                foreach (var c in part)
                 {
-                    latinBreakdown[c] = latinBreakdown.GetValueOrDefault(c) + 1;
+                    if (ScriptClassifier.IsLatinLetter(c))
+                    {
+                        latinBreakdown[c] = latinBreakdown.GetValueOrDefault(c) + 1;
+                    }
                 }
             }
         }
