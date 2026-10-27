@@ -11,10 +11,9 @@ changes a reported number carries the marker ⚠ **Affects output**.
 
 ---
 
-## [Unreleased]
+## [1.0.0] – 2026-10-27
 
-Planned as the first release, 1.0.0, once round 2 has been run and marked.
-It will not be tagged before then. Round 2 entries will be added here.
+First release: the pilot — Adyghe, five tools, four repetitions in two rounds.
 
 ### Added
 
