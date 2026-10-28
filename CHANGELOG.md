@@ -15,6 +15,8 @@ changes a reported number carries the marker ⚠ **Affects output**.
 
 First release: the pilot — Adyghe, five tools, four repetitions in two rounds.
 
+Archived on Zenodo: DOI [10.5281/zenodo.23729296](https://doi.org/10.5281/zenodo.23729296).
+
 ### Added
 
 - `data/raw/round2/Test3-AI-Tool*-Result.txt`: raw answers of round 2,

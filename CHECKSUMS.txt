@@ -12,6 +12,8 @@
 # Regenerated in full on 2026-10-27 for release 1.0.0 (every file in the repository
 # except this one, build outputs and IDE folders); the data/raw lines are identical
 # to the entries made at collection time.
+# 2026-10-28: the README.md, CITATION.cff and CHANGELOG.md lines were updated after the
+# Zenodo DOI was assigned; no other line changed.
 #
 # The absolute claim these hashes support belongs to data/raw/ only: those files are
 # unchanged since the answers were collected. protocol/ holds versioned documents;
@@ -24,10 +26,10 @@
 462475ee5301e77d2a54a64757d95c3f21fc3a79e92e6ec94bdfcc8b36e48964  .gitattributes
 cecdcf578be42a04a093cf13b289090a5108e0ba6413a08fd5beec9ee482cc47  .gitignore
 57d654dbc5797ee0ebec82ad9d4e6da52077caffaba7b1aaa7ea340c07388a1b  .zenodo.json
-2dde08a7ea6334efccdba3e0df5ab8d5fed221bbcfa1bf2db43353effbf052af  CHANGELOG.md
-cadef9d34967052a59104671e5eeae990eb5c582d1b376e5f3a278bf25a20169  CITATION.cff
+091befeb36df4cce4ab68835b31dd5867e7d574a8d8e1ff9fbdfda2c3458326d  CHANGELOG.md
+b3accbafabfa8491cd7c1c50bb89c40fefdfe4057771050200a2b00f43e281f8  CITATION.cff
 4b4baf29edf7c25be6e0eed10a77f7cbb12b1ad69c0a5547ff2729b53718c848  LICENSE
-d08de1e7075b2c6c757c4a6988cb2e91d912ebebcf2cd443c90841882d2b54e3  README.md
+998e3600cd800590ef291a2c88a1242693734e7c7c129e554849119cab8cd49e  README.md
 3a6e8d71059fe64ff685ac33ededf996cfed255530bc3813d57218c3fe9dd214  data/analysis/stability.tsv
 ff3dc11df50dc06b8a9eb1db905ca3d8e8b856460e85354533693a0f90678665  data/analysis/summary-integrity-warnings.tsv
 b06433e75cde0d96dc74f8111d01bbe514e94e1c10c6646f3e0a7a2ff49d864d  data/analysis/summary-main-table.tsv

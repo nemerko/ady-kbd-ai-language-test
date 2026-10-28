@@ -1,5 +1,7 @@
 # ady-kbd-ai-language-test
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23729295.svg)](https://doi.org/10.5281/zenodo.23729295)
+
 Adyghe AI language test
 
 A small, versioned instrument for measuring whether widely used AI chat tools, in their
@@ -57,12 +59,15 @@ Full detail: [`protocol/instrument.md`](protocol/instrument.md) and
 ## Versioning
 
     v1.0.0   pilot: Adyghe, five tools, four repetitions in two rounds
+             DOI 10.5281/zenodo.23729296
 
 Later versions extend rather than replace. The planned next step is the same instrument
 applied to Kabardian (kbd), so that two related languages with markedly different digital
 resource volumes can be compared with one measure.
 
-Each release is tagged. Cite a tag, not the main branch.
+Each release is tagged and archived on Zenodo. Cite a tag, not the main branch: a version
+DOI resolves to that version only; 10.5281/zenodo.23729295 represents all versions and always
+resolves to the latest one.
 
 ## On timestamps
 
@@ -158,6 +163,14 @@ Linguistic evaluation, by consensus: Dr. Saida Abregova Nemlioğlu
 (ORCID 0000-0002-2467-6692), native speaker of Adyghe, and Mehmet Uğur Nemlioğlu.
 Authority over the target language rests with the first; the Turkish reference translation
 used in question 4 rests with the second. Every label is the pair's joint judgement.
+
+## How to cite
+
+Nemlioğlu, M. U., & Abregova Nemlioğlu, S. (2026). *Adyghe AI Language Test: instrument,
+raw data and analysis tool* (v1.0.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.23729296
+
+Machine-readable citation metadata is in `CITATION.cff`; GitHub's "Cite this repository"
+button reads it.
 
 ## Licence
 
